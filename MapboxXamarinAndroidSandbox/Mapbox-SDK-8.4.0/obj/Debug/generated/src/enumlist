@@ -1,0 +1,2 @@
+com.mapbox.mapboxsdk.maps.renderer.egl.EGLConfigChooser$BufferFormat:Com.Mapbox.Mapboxsdk.Maps.Renderer.Egl:EGLConfigChooser.BufferFormat
+com.mapbox.mapboxsdk.maps.renderer.egl.EGLConfigChooser$DepthStencilFormat:Com.Mapbox.Mapboxsdk.Maps.Renderer.Egl:EGLConfigChooser.DepthStencilFormat

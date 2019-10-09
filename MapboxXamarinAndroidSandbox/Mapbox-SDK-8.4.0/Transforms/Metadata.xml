@@ -1,0 +1,22 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+<!--  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='Marker']" />
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='MarkerOptions']" />
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='Polygon']" />
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='Polyline']" />
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='PolygonOptions']" /> -->
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.utils']/class[@name='FileUtils']" />
+  
+
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnGesturesManagerInteractionListener']" />
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnMoveListener']" />
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnRotateListener']" />
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnScaleListener']" />
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnShoveListener']" />
+</metadata>

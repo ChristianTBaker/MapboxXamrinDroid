@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<api>
+  <package name="com.mapbox.mapboxsdk.plugins.annotation" jni-name="com/mapbox/mapboxsdk/plugins/annotation">
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Annotation" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;">
+      <typeParameters>
+        <typeParameter name="T" interfaceBounds="com.mapbox.geojson.Geometry" jni-interfaceBounds="Lcom/mapbox/geojson/Geometry;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.geojson.Geometry"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getGeometry" jni-signature="()Lcom/mapbox/geojson/Geometry;" bridge="false" native="false" return="T" jni-return="TT;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getId" jni-signature="()J" bridge="false" native="false" return="long" jni-return="J" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isDraggable" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setDraggable" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="draggable" type="boolean" jni-type="Z"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setGeometry" jni-signature="(Lcom/mapbox/geojson/Geometry;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="geometry" type="T" jni-type="TT;"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="false" name="geometry" jni-signature="Lcom/mapbox/geojson/Geometry;" static="false" transient="false" type="com.mapbox.geojson.Geometry" type-generic-aware="T" visibility="protected" volatile="false"></field>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="AnnotationManager" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/AnnotationManager;">
+      <typeParameters>
+        <typeParameter name="L" classBound="com.mapbox.mapboxsdk.style.layers.Layer" jni-classBound="Lcom/mapbox/mapboxsdk/style/layers/Layer;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.style.layers.Layer"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+        <typeParameter name="T" classBound="com.mapbox.mapboxsdk.plugins.annotation.Annotation" jni-classBound="Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.Annotation"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+        <typeParameter name="S" classBound="com.mapbox.mapboxsdk.plugins.annotation.Options&lt;T&gt;" jni-classBound="Lcom/mapbox/mapboxsdk/plugins/annotation/Options&lt;TT;&gt;;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.Options&lt;T&gt;"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+        <typeParameter name="D" interfaceBounds="com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationDragListener&lt;T&gt;" jni-interfaceBounds="Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationDragListener&lt;TT;&gt;;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationDragListener&lt;T&gt;"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+        <typeParameter name="U" interfaceBounds="com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationClickListener&lt;T&gt;" jni-interfaceBounds="Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationClickListener&lt;TT;&gt;;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationClickListener&lt;T&gt;"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+        <typeParameter name="V" interfaceBounds="com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationLongClickListener&lt;T&gt;" jni-interfaceBounds="Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationLongClickListener&lt;TT;&gt;;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationLongClickListener&lt;T&gt;"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addClickListener" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationClickListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="u" type="U" jni-type="TU;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addDragListener" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationDragListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="d" type="D" jni-type="TD;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addLongClickListener" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationLongClickListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="V" jni-type="TV;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="create" jni-signature="(Ljava/util/List;)Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;T&gt;" jni-return="Ljava/util/List&lt;TT;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="optionsList" type="java.util.List&lt;S&gt;" jni-type="Ljava/util/List&lt;TS;&gt;;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="create" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/Options;)Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;" bridge="false" native="false" return="T" jni-return="TT;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="options" type="S" jni-type="TS;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="delete" jni-signature="(Ljava/util/List;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="annotationList" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="delete" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="annotation" type="T" jni-type="TT;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="deleteAll" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDestroy" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeClickListener" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationClickListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="u" type="U" jni-type="TU;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeDragListener" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationDragListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="d" type="D" jni-type="TD;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeLongClickListener" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationLongClickListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="V" jni-type="TV;"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="setDataDrivenPropertyIsUsed" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="update" jni-signature="(Ljava/util/List;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="annotationList" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="update" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="annotation" type="T" jni-type="TT;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="updateSource" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <field deprecated="not deprecated" final="false" name="layer" jni-signature="Lcom/mapbox/mapboxsdk/style/layers/Layer;" static="false" transient="false" type="com.mapbox.mapboxsdk.style.layers.Layer" type-generic-aware="L" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="mapboxMap" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap;" static="false" transient="false" type="com.mapbox.mapboxsdk.maps.MapboxMap" type-generic-aware="com.mapbox.mapboxsdk.maps.MapboxMap" visibility="protected" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="AnnotationManager.1" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/AnnotationManager$1;">
+      <implements name="com.mapbox.mapboxsdk.maps.MapView.OnDidFinishLoadingStyleListener" name-generic-aware="com.mapbox.mapboxsdk.maps.MapView.OnDidFinishLoadingStyleListener" jni-type="Lcom/mapbox/mapboxsdk/maps/MapView$OnDidFinishLoadingStyleListener;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDidFinishLoadingStyle" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="AnnotationManager.1.1" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/AnnotationManager$1$1;">
+      <implements name="com.mapbox.mapboxsdk.maps.Style.OnStyleLoaded" name-generic-aware="com.mapbox.mapboxsdk.maps.Style.OnStyleLoaded" jni-type="Lcom/mapbox/mapboxsdk/maps/Style$OnStyleLoaded;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onStyleLoaded" jni-signature="(Lcom/mapbox/mapboxsdk/maps/Style;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="loadedStyle" type="com.mapbox.mapboxsdk.maps.Style" jni-type="Lcom/mapbox/mapboxsdk/maps/Style;"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="AnnotationManager.MapClickResolver" static="false" visibility="private" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/AnnotationManager$MapClickResolver;">
+      <implements name="com.mapbox.mapboxsdk.maps.MapboxMap.OnMapClickListener" name-generic-aware="com.mapbox.mapboxsdk.maps.MapboxMap.OnMapClickListener" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnMapClickListener;"></implements>
+      <implements name="com.mapbox.mapboxsdk.maps.MapboxMap.OnMapLongClickListener" name-generic-aware="com.mapbox.mapboxsdk.maps.MapboxMap.OnMapLongClickListener" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnMapLongClickListener;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMapClick" jni-signature="(Lcom/mapbox/mapboxsdk/geometry/LatLng;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="point" type="com.mapbox.mapboxsdk.geometry.LatLng" jni-type="Lcom/mapbox/mapboxsdk/geometry/LatLng;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMapLongClick" jni-signature="(Lcom/mapbox/mapboxsdk/geometry/LatLng;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="point" type="com.mapbox.mapboxsdk.geometry.LatLng" jni-type="Lcom/mapbox/mapboxsdk/geometry/LatLng;"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="com.mapbox.mapboxsdk.plugins.annotation.BuildConfig" synthetic="false" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="APPLICATION_ID" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.mapbox.mapboxsdk.plugins.annotation&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="FLAVOR" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="VERSION_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="-1" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="VERSION_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="CircleElementProvider" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/CircleElementProvider;">
+      <implements name="com.mapbox.mapboxsdk.plugins.annotation.CoreElementProvider" name-generic-aware="com.mapbox.mapboxsdk.plugins.annotation.CoreElementProvider&lt;com.mapbox.mapboxsdk.style.layers.CircleLayer&gt;" jni-type="Lcom/mapbox/mapboxsdk/plugins/annotation/CoreElementProvider&lt;Lcom/mapbox/mapboxsdk/style/layers/CircleLayer;&gt;;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLayer" jni-signature="()Lcom/mapbox/mapboxsdk/style/layers/CircleLayer;" bridge="false" native="false" return="com.mapbox.mapboxsdk.style.layers.CircleLayer" jni-return="Lcom/mapbox/mapboxsdk/style/layers/CircleLayer;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLayerId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSource" jni-signature="(Lcom/mapbox/mapboxsdk/style/sources/GeoJsonOptions;)Lcom/mapbox/mapboxsdk/style/sources/GeoJsonSource;" bridge="false" native="false" return="com.mapbox.mapboxsdk.style.sources.GeoJsonSource" jni-return="Lcom/mapbox/mapboxsdk/style/sources/GeoJsonSource;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="geoJsonOptions" type="com.mapbox.mapboxsdk.style.sources.GeoJsonOptions" jni-type="Lcom/mapbox/mapboxsdk/style/sources/GeoJsonOptions;"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ConvertUtils" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/ConvertUtils;"></class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="CoreElementProvider" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/CoreElementProvider;">
+      <typeParameters>
+        <typeParameter name="L" classBound="com.mapbox.mapboxsdk.style.layers.Layer" jni-classBound="Lcom/mapbox/mapboxsdk/style/layers/Layer;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.style.layers.Layer"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getLayer" jni-signature="()Lcom/mapbox/mapboxsdk/style/layers/Layer;" bridge="false" native="false" return="L" jni-return="TL;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getLayerId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getSource" jni-signature="(Lcom/mapbox/mapboxsdk/style/sources/GeoJsonOptions;)Lcom/mapbox/mapboxsdk/style/sources/GeoJsonSource;" bridge="false" native="false" return="com.mapbox.mapboxsdk.style.sources.GeoJsonSource" jni-return="Lcom/mapbox/mapboxsdk/style/sources/GeoJsonSource;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.mapboxsdk.style.sources.GeoJsonOptions" jni-type="Lcom/mapbox/mapboxsdk/style/sources/GeoJsonOptions;"></parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="DraggableAnnotationController" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/DraggableAnnotationController;">
+      <typeParameters>
+        <typeParameter name="T" classBound="com.mapbox.mapboxsdk.plugins.annotation.Annotation" jni-classBound="Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.Annotation"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+        <typeParameter name="D" interfaceBounds="com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationDragListener&lt;T&gt;" jni-interfaceBounds="Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationDragListener&lt;TT;&gt;;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationDragListener&lt;T&gt;"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="DraggableAnnotationController.1" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/DraggableAnnotationController$1;">
+      <implements name="android.view.View.OnTouchListener" name-generic-aware="android.view.View.OnTouchListener" jni-type="Landroid/view/View$OnTouchListener;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTouch" jni-signature="(Landroid/view/View;Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;"></parameter>
+        <parameter name="event" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="FillElementProvider" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/FillElementProvider;">
+      <implements name="com.mapbox.mapboxsdk.plugins.annotation.CoreElementProvider" name-generic-aware="com.mapbox.mapboxsdk.plugins.annotation.CoreElementProvider&lt;com.mapbox.mapboxsdk.style.layers.FillLayer&gt;" jni-type="Lcom/mapbox/mapboxsdk/plugins/annotation/CoreElementProvider&lt;Lcom/mapbox/mapboxsdk/style/layers/FillLayer;&gt;;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLayer" jni-signature="()Lcom/mapbox/mapboxsdk/style/layers/FillLayer;" bridge="false" native="false" return="com.mapbox.mapboxsdk.style.layers.FillLayer" jni-return="Lcom/mapbox/mapboxsdk/style/layers/FillLayer;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLayerId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSource" jni-signature="(Lcom/mapbox/mapboxsdk/style/sources/GeoJsonOptions;)Lcom/mapbox/mapboxsdk/style/sources/GeoJsonSource;" bridge="false" native="false" return="com.mapbox.mapboxsdk.style.sources.GeoJsonSource" jni-return="Lcom/mapbox/mapboxsdk/style/sources/GeoJsonSource;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="geoJsonOptions" type="com.mapbox.mapboxsdk.style.sources.GeoJsonOptions" jni-type="Lcom/mapbox/mapboxsdk/style/sources/GeoJsonOptions;"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="LineElementProvider" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/LineElementProvider;">
+      <implements name="com.mapbox.mapboxsdk.plugins.annotation.CoreElementProvider" name-generic-aware="com.mapbox.mapboxsdk.plugins.annotation.CoreElementProvider&lt;com.mapbox.mapboxsdk.style.layers.LineLayer&gt;" jni-type="Lcom/mapbox/mapboxsdk/plugins/annotation/CoreElementProvider&lt;Lcom/mapbox/mapboxsdk/style/layers/LineLayer;&gt;;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLayer" jni-signature="()Lcom/mapbox/mapboxsdk/style/layers/LineLayer;" bridge="false" native="false" return="com.mapbox.mapboxsdk.style.layers.LineLayer" jni-return="Lcom/mapbox/mapboxsdk/style/layers/LineLayer;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLayerId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSource" jni-signature="(Lcom/mapbox/mapboxsdk/style/sources/GeoJsonOptions;)Lcom/mapbox/mapboxsdk/style/sources/GeoJsonSource;" bridge="false" native="false" return="com.mapbox.mapboxsdk.style.sources.GeoJsonSource" jni-return="Lcom/mapbox/mapboxsdk/style/sources/GeoJsonSource;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="geoJsonOptions" type="com.mapbox.mapboxsdk.style.sources.GeoJsonOptions" jni-type="Lcom/mapbox/mapboxsdk/style/sources/GeoJsonOptions;"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="OnAnnotationClickListener" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationClickListener;">
+      <typeParameters>
+        <typeParameter name="T" classBound="com.mapbox.mapboxsdk.plugins.annotation.Annotation" jni-classBound="Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.Annotation"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onAnnotationClick" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="T" jni-type="TT;"></parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="OnAnnotationDragListener" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationDragListener;">
+      <typeParameters>
+        <typeParameter name="T" classBound="com.mapbox.mapboxsdk.plugins.annotation.Annotation" jni-classBound="Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.Annotation"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onAnnotationDrag" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="T" jni-type="TT;"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onAnnotationDragFinished" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="T" jni-type="TT;"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onAnnotationDragStarted" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="T" jni-type="TT;"></parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="OnAnnotationLongClickListener" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/OnAnnotationLongClickListener;">
+      <typeParameters>
+        <typeParameter name="T" classBound="com.mapbox.mapboxsdk.plugins.annotation.Annotation" jni-classBound="Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.Annotation"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onAnnotationLongClick" jni-signature="(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="T" jni-type="TT;"></parameter>
+      </method>
+    </interface>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Options" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/Options;">
+      <typeParameters>
+        <typeParameter name="T" classBound="com.mapbox.mapboxsdk.plugins.annotation.Annotation" jni-classBound="Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;">
+          <genericConstraints>
+            <genericConstraint type="com.mapbox.mapboxsdk.plugins.annotation.Annotation"></genericConstraint>
+          </genericConstraints>
+        </typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="Options" jni-signature="()V" bridge="false" static="false" type="com.mapbox.mapboxsdk.plugins.annotation.Options" synthetic="false" visibility="public"></constructor>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SymbolElementProvider" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/plugins/annotation/SymbolElementProvider;">
+      <implements name="com.mapbox.mapboxsdk.plugins.annotation.CoreElementProvider" name-generic-aware="com.mapbox.mapboxsdk.plugins.annotation.CoreElementProvider&lt;com.mapbox.mapboxsdk.style.layers.SymbolLayer&gt;" jni-type="Lcom/mapbox/mapboxsdk/plugins/annotation/CoreElementProvider&lt;Lcom/mapbox/mapboxsdk/style/layers/SymbolLayer;&gt;;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLayer" jni-signature="()Lcom/mapbox/mapboxsdk/style/layers/SymbolLayer;" bridge="false" native="false" return="com.mapbox.mapboxsdk.style.layers.SymbolLayer" jni-return="Lcom/mapbox/mapboxsdk/style/layers/SymbolLayer;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLayerId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSource" jni-signature="(Lcom/mapbox/mapboxsdk/style/sources/GeoJsonOptions;)Lcom/mapbox/mapboxsdk/style/sources/GeoJsonSource;" bridge="false" native="false" return="com.mapbox.mapboxsdk.style.sources.GeoJsonSource" jni-return="Lcom/mapbox/mapboxsdk/style/sources/GeoJsonSource;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="geoJsonOptions" type="com.mapbox.mapboxsdk.style.sources.GeoJsonOptions" jni-type="Lcom/mapbox/mapboxsdk/style/sources/GeoJsonOptions;"></parameter>
+      </method>
+    </class>
+  </package>
+</api>

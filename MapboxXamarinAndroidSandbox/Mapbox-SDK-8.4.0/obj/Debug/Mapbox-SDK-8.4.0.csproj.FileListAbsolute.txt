@@ -1,0 +1,7 @@
+D:\MapboxJavaBinding\MapboxJavaBinding\Mapbox-SDK-8.4.0\bin\Debug\Mapbox-SDK-8.4.0.dll
+D:\MapboxJavaBinding\MapboxJavaBinding\Mapbox-SDK-8.4.0\bin\Debug\Mapbox-SDK-8.4.0.pdb
+D:\MapboxJavaBinding\MapboxJavaBinding\Mapbox-SDK-8.4.0\obj\Debug\Mapbox-SDK-8.4.0.csproj.CoreCompileInputs.cache
+D:\MapboxJavaBinding\MapboxJavaBinding\Mapbox-SDK-8.4.0\obj\Debug\Mapbox-SDK-8.4.0.dll
+D:\MapboxJavaBinding\MapboxJavaBinding\Mapbox-SDK-8.4.0\obj\Debug\Mapbox-SDK-8.4.0.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-SDK-8.4.0\obj\Debug\Mapbox-SDK-8.4.0.csprojAssemblyReference.cache
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-SDK-8.4.0\obj\Debug\Mapbox-SDK-8.4.0.csproj.CoreCompileInputs.cache

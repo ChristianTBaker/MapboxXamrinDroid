@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj": {}
+  },
+  "projects": {
+    "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj",
+        "projectName": "Mapbox-Android-Plugin -Annotation-v8-0.7.0",
+        "projectPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj",
+        "packagesPath": "C:\\Users\\cbaker2\\.nuget\\packages\\",
+        "outputPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cbaker2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-SDK-8.4.0\\Mapbox-SDK-8.4.0.csproj": {
+                "projectPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-SDK-8.4.0\\Mapbox-SDK-8.4.0.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {}
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-SDK-8.4.0\\Mapbox-SDK-8.4.0.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-SDK-8.4.0\\Mapbox-SDK-8.4.0.csproj",
+        "projectName": "Mapbox-SDK-8.4.0",
+        "projectPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-SDK-8.4.0\\Mapbox-SDK-8.4.0.csproj",
+        "packagesPath": "C:\\Users\\cbaker2\\.nuget\\packages\\",
+        "outputPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-SDK-8.4.0\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cbaker2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {}
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

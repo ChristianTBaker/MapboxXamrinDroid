@@ -1,0 +1,34 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <add-node path="/api/package[@name='com.mapbox.android.telemetry']">
+    <interface abstract="true"
+               deprecated="not deprecated"
+               final="false"
+               name="FullQueueCallback"
+               static="false"
+               visibility="public">
+      <method abstract="true"
+              deprecated="not deprecated"
+              final="false"
+              name="onFullQueue"
+              native="false"
+              return="void"
+              static="false"
+              synchronized="false"
+              visibility="public">
+        <parameter name="fullQueue"
+                   type="java.util.List&lt;com.mapbox.android.telemetry.Event&gt;">
+        </parameter>
+      </method>
+    </interface>
+  </add-node>
+
+  <attr path="/api/package[@name='com.mapbox.android.telemetry']/interface[@name='ServiceTaskCallback']"
+        name="visibility">public</attr>
+</metadata>

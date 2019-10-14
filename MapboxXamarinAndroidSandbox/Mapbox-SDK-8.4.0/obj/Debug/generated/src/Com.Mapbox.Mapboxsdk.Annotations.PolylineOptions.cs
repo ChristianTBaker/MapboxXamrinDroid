@@ -100,19 +100,6 @@ namespace Com.Mapbox.Mapboxsdk.Annotations {
 			}
 		}
 
-		public unsafe global::Com.Mapbox.Mapboxsdk.Annotations.Polyline Polyline {
-			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='PolylineOptions']/method[@name='getPolyline' and count(parameter)=0]"
-			[Register ("getPolyline", "()Lcom/mapbox/mapboxsdk/annotations/Polyline;", "GetGetPolylineHandler")]
-			get {
-				const string __id = "getPolyline.()Lcom/mapbox/mapboxsdk/annotations/Polyline;";
-				try {
-					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
-					return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Polyline> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
-				} finally {
-				}
-			}
-		}
-
 		public unsafe float Width {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='PolylineOptions']/method[@name='getWidth' and count(parameter)=0]"
 			[Register ("getWidth", "()F", "GetGetWidthHandler")]

@@ -1,0 +1,778 @@
+<api>
+  <package name="com.facebook.soloader" jni-name="com/facebook/soloader">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Api18TraceUtils" static="false" visibility="" jni-signature="Lcom/facebook/soloader/Api18TraceUtils;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="beginTraceSection" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="sectionName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="endSection" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.ExtractFromZipSoSource" extends-generic-aware="com.facebook.soloader.ExtractFromZipSoSource" jni-extends="Lcom/facebook/soloader/ExtractFromZipSoSource;" final="false" name="ApkSoSource" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/ApkSoSource;">
+      <constructor deprecated="not deprecated" final="false" name="ApkSoSource" jni-signature="(Landroid/content/Context;Ljava/io/File;Ljava/lang/String;I)V" bridge="false" static="false" type="com.facebook.soloader.ApkSoSource" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="apkPath" type="java.io.File" jni-type="Ljava/io/File;">
+        </parameter>
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="ApkSoSource" jni-signature="(Landroid/content/Context;Ljava/lang/String;I)V" bridge="false" static="false" type="com.facebook.soloader.ApkSoSource" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+      </constructor>
+      <field deprecated="not deprecated" final="true" name="PREFER_ANDROID_LIBS_DIRECTORY" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.ExtractFromZipSoSource.ZipUnpacker" extends-generic-aware="com.facebook.soloader.ExtractFromZipSoSource.ZipUnpacker" jni-extends="Lcom/facebook/soloader/ExtractFromZipSoSource$ZipUnpacker;" final="false" name="ApkSoSource.ApkUnpacker" static="false" visibility="protected" jni-signature="Lcom/facebook/soloader/ApkSoSource$ApkUnpacker;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="shouldExtract" jni-signature="(Ljava/util/zip/ZipEntry;Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="ze" type="java.util.zip.ZipEntry" jni-type="Ljava/util/zip/ZipEntry;">
+        </parameter>
+        <parameter name="soName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.SoSource" extends-generic-aware="com.facebook.soloader.SoSource" jni-extends="Lcom/facebook/soloader/SoSource;" final="false" name="ApplicationSoSource" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/ApplicationSoSource;">
+      <constructor deprecated="not deprecated" final="false" name="ApplicationSoSource" jni-signature="(Landroid/content/Context;I)V" bridge="false" static="false" type="com.facebook.soloader.ApplicationSoSource" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="checkAndMaybeUpdate" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadLibrary" jni-signature="(Ljava/lang/String;ILandroid/os/StrictMode$ThreadPolicy;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="soName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="loadFlags" type="int" jni-type="I">
+        </parameter>
+        <parameter name="threadPolicy" type="android.os.StrictMode.ThreadPolicy" jni-type="Landroid/os/StrictMode$ThreadPolicy;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unpackLibrary" jni-signature="(Ljava/lang/String;)Ljava/io/File;" bridge="false" native="false" return="java.io.File" jni-return="Ljava/io/File;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="soName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.SoSource" extends-generic-aware="com.facebook.soloader.SoSource" jni-extends="Lcom/facebook/soloader/SoSource;" final="false" name="DirectorySoSource" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/DirectorySoSource;">
+      <constructor deprecated="not deprecated" final="false" name="DirectorySoSource" jni-signature="(Ljava/io/File;I)V" bridge="false" static="false" type="com.facebook.soloader.DirectorySoSource" synthetic="false" visibility="public">
+        <parameter name="soDirectory" type="java.io.File" jni-type="Ljava/io/File;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadLibrary" jni-signature="(Ljava/lang/String;ILandroid/os/StrictMode$ThreadPolicy;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="soName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="loadFlags" type="int" jni-type="I">
+        </parameter>
+        <parameter name="threadPolicy" type="android.os.StrictMode.ThreadPolicy" jni-type="Landroid/os/StrictMode$ThreadPolicy;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadLibraryFrom" jni-signature="(Ljava/lang/String;ILjava/io/File;Landroid/os/StrictMode$ThreadPolicy;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="soName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="loadFlags" type="int" jni-type="I">
+        </parameter>
+        <parameter name="libDir" type="java.io.File" jni-type="Ljava/io/File;">
+        </parameter>
+        <parameter name="threadPolicy" type="android.os.StrictMode.ThreadPolicy" jni-type="Landroid/os/StrictMode$ThreadPolicy;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unpackLibrary" jni-signature="(Ljava/lang/String;)Ljava/io/File;" bridge="false" native="false" return="java.io.File" jni-return="Ljava/io/File;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="soName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <field deprecated="not deprecated" final="true" name="ON_LD_LIBRARY_PATH" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="RESOLVE_DEPENDENCIES" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="flags" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="soDirectory" jni-signature="Ljava/io/File;" static="false" transient="false" type="java.io.File" type-generic-aware="java.io.File" visibility="protected" volatile="false">
+      </field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="DoNotOptimize" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/DoNotOptimize;">
+      <implements name="java.lang.annotation.Annotation" name-generic-aware="java.lang.annotation.Annotation" jni-type="Ljava/lang/annotation/Annotation;">
+      </implements>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="Elf32_Dyn" static="false" visibility="" jni-signature="Lcom/facebook/soloader/Elf32_Dyn;">
+      <field deprecated="not deprecated" final="true" name="d_tag" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="d_un" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="Elf32_Ehdr" static="false" visibility="" jni-signature="Lcom/facebook/soloader/Elf32_Ehdr;">
+      <field deprecated="not deprecated" final="true" name="e_ehsize" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="40" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_entry" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="24" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_flags" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="36" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_ident" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_machine" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="18" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_phentsize" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="42" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_phnum" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="44" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_phoff" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="28" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_shentsize" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="46" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_shnum" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="48" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_shoff" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="32" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_shstrndx" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="50" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_type" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="16" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_version" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="20" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="Elf32_Phdr" static="false" visibility="" jni-signature="Lcom/facebook/soloader/Elf32_Phdr;">
+      <field deprecated="not deprecated" final="true" name="p_align" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="28" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_filesz" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="16" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_flags" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="24" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_memsz" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="20" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_offset" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_paddr" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="12" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_type" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_vaddr" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="Elf32_Shdr" static="false" visibility="" jni-signature="Lcom/facebook/soloader/Elf32_Shdr;">
+      <field deprecated="not deprecated" final="true" name="sh_addr" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="12" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_addralign" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="32" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_entsize" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="36" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_flags" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_info" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="28" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_link" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="24" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_name" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_offset" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="16" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_size" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="20" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_type" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="Elf64_Dyn" static="false" visibility="" jni-signature="Lcom/facebook/soloader/Elf64_Dyn;">
+      <field deprecated="not deprecated" final="true" name="d_tag" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="d_un" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="Elf64_Ehdr" static="false" visibility="" jni-signature="Lcom/facebook/soloader/Elf64_Ehdr;">
+      <field deprecated="not deprecated" final="true" name="e_ehsize" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="52" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_entry" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="24" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_flags" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="48" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_ident" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_machine" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="18" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_phentsize" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="54" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_phnum" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="56" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_phoff" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="32" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_shentsize" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="58" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_shnum" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="60" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_shoff" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="40" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_shstrndx" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="62" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_type" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="16" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="e_version" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="20" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="Elf64_Phdr" static="false" visibility="" jni-signature="Lcom/facebook/soloader/Elf64_Phdr;">
+      <field deprecated="not deprecated" final="true" name="p_align" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="48" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_filesz" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="32" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_flags" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_memsz" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="40" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_offset" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_paddr" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="24" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_type" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="p_vaddr" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="16" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="Elf64_Shdr" static="false" visibility="" jni-signature="Lcom/facebook/soloader/Elf64_Shdr;">
+      <field deprecated="not deprecated" final="true" name="sh_addr" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="16" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_addralign" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="48" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_entsize" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="56" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_flags" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_info" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="44" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_link" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="40" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_name" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_offset" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="24" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_size" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="32" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="sh_type" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.UnpackingSoSource" extends-generic-aware="com.facebook.soloader.UnpackingSoSource" jni-extends="Lcom/facebook/soloader/UnpackingSoSource;" final="true" name="ExoSoSource" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/ExoSoSource;">
+      <constructor deprecated="not deprecated" final="false" name="ExoSoSource" jni-signature="(Landroid/content/Context;Ljava/lang/String;)V" bridge="false" static="false" type="com.facebook.soloader.ExoSoSource" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="makeUnpacker" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$Unpacker;" bridge="false" native="false" return="com.facebook.soloader.UnpackingSoSource.Unpacker" jni-return="Lcom/facebook/soloader/UnpackingSoSource$Unpacker;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ExoSoSource.1" static="true" visibility="" jni-signature="Lcom/facebook/soloader/ExoSoSource$1;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.UnpackingSoSource.Unpacker" extends-generic-aware="com.facebook.soloader.UnpackingSoSource.Unpacker" jni-extends="Lcom/facebook/soloader/UnpackingSoSource$Unpacker;" final="true" name="ExoSoSource.ExoUnpacker" static="false" visibility="private" jni-signature="Lcom/facebook/soloader/ExoSoSource$ExoUnpacker;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDsoManifest" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$DsoManifest;" bridge="false" native="false" return="com.facebook.soloader.UnpackingSoSource.DsoManifest" jni-return="Lcom/facebook/soloader/UnpackingSoSource$DsoManifest;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="openDsoIterator" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$InputDsoIterator;" bridge="false" native="false" return="com.facebook.soloader.UnpackingSoSource.InputDsoIterator" jni-return="Lcom/facebook/soloader/UnpackingSoSource$InputDsoIterator;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.UnpackingSoSource.InputDsoIterator" extends-generic-aware="com.facebook.soloader.UnpackingSoSource.InputDsoIterator" jni-extends="Lcom/facebook/soloader/UnpackingSoSource$InputDsoIterator;" final="true" name="ExoSoSource.ExoUnpacker.FileBackedInputDsoIterator" static="false" visibility="private" jni-signature="Lcom/facebook/soloader/ExoSoSource$ExoUnpacker$FileBackedInputDsoIterator;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="hasNext" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="next" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$InputDso;" bridge="false" native="false" return="java.lang.Object" jni-return="Lcom/facebook/soloader/UnpackingSoSource$InputDso;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.UnpackingSoSource.Dso" extends-generic-aware="com.facebook.soloader.UnpackingSoSource.Dso" jni-extends="Lcom/facebook/soloader/UnpackingSoSource$Dso;" final="true" name="ExoSoSource.FileDso" static="true" visibility="private" jni-signature="Lcom/facebook/soloader/ExoSoSource$FileDso;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.UnpackingSoSource" extends-generic-aware="com.facebook.soloader.UnpackingSoSource" jni-extends="Lcom/facebook/soloader/UnpackingSoSource;" final="false" name="ExtractFromZipSoSource" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/ExtractFromZipSoSource;">
+      <constructor deprecated="not deprecated" final="false" name="ExtractFromZipSoSource" jni-signature="(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;)V" bridge="false" static="false" type="com.facebook.soloader.ExtractFromZipSoSource" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="zipFileName" type="java.io.File" jni-type="Ljava/io/File;">
+        </parameter>
+        <parameter name="zipSearchPattern" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="makeUnpacker" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$Unpacker;" bridge="false" native="false" return="com.facebook.soloader.UnpackingSoSource.Unpacker" jni-return="Lcom/facebook/soloader/UnpackingSoSource$Unpacker;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <field deprecated="not deprecated" final="true" name="mZipFileName" jni-signature="Ljava/io/File;" static="false" transient="false" type="java.io.File" type-generic-aware="java.io.File" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="mZipSearchPattern" jni-signature="Ljava/lang/String;" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ExtractFromZipSoSource.1" static="true" visibility="" jni-signature="Lcom/facebook/soloader/ExtractFromZipSoSource$1;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.UnpackingSoSource.Dso" extends-generic-aware="com.facebook.soloader.UnpackingSoSource.Dso" jni-extends="Lcom/facebook/soloader/UnpackingSoSource$Dso;" final="true" name="ExtractFromZipSoSource.ZipDso" static="true" visibility="private" jni-signature="Lcom/facebook/soloader/ExtractFromZipSoSource$ZipDso;">
+      <implements name="java.lang.Comparable" name-generic-aware="java.lang.Comparable" jni-type="Ljava/lang/Comparable;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="compareTo" jni-signature="(Ljava/lang/Object;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="other" type="java.lang.Object" jni-type="Ljava/lang/Object;">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.UnpackingSoSource.Unpacker" extends-generic-aware="com.facebook.soloader.UnpackingSoSource.Unpacker" jni-extends="Lcom/facebook/soloader/UnpackingSoSource$Unpacker;" final="false" name="ExtractFromZipSoSource.ZipUnpacker" static="false" visibility="protected" jni-signature="Lcom/facebook/soloader/ExtractFromZipSoSource$ZipUnpacker;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getDsoManifest" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$DsoManifest;" bridge="false" native="false" return="com.facebook.soloader.UnpackingSoSource.DsoManifest" jni-return="Lcom/facebook/soloader/UnpackingSoSource$DsoManifest;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="openDsoIterator" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$InputDsoIterator;" bridge="false" native="false" return="com.facebook.soloader.UnpackingSoSource.InputDsoIterator" jni-return="Lcom/facebook/soloader/UnpackingSoSource$InputDsoIterator;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="shouldExtract" jni-signature="(Ljava/util/zip/ZipEntry;Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="ze" type="java.util.zip.ZipEntry" jni-type="Ljava/util/zip/ZipEntry;">
+        </parameter>
+        <parameter name="soName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.UnpackingSoSource.InputDsoIterator" extends-generic-aware="com.facebook.soloader.UnpackingSoSource.InputDsoIterator" jni-extends="Lcom/facebook/soloader/UnpackingSoSource$InputDsoIterator;" final="true" name="ExtractFromZipSoSource.ZipUnpacker.ZipBackedInputDsoIterator" static="false" visibility="private" jni-signature="Lcom/facebook/soloader/ExtractFromZipSoSource$ZipUnpacker$ZipBackedInputDsoIterator;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="hasNext" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="next" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$InputDso;" bridge="false" native="false" return="java.lang.Object" jni-return="Lcom/facebook/soloader/UnpackingSoSource$InputDso;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="FileLocker" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/FileLocker;">
+      <implements name="java.io.Closeable" name-generic-aware="java.io.Closeable" jni-type="Ljava/io/Closeable;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="lock" jni-signature="(Ljava/io/File;)Lcom/facebook/soloader/FileLocker;" bridge="false" native="false" return="com.facebook.soloader.FileLocker" jni-return="Lcom/facebook/soloader/FileLocker;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="lockFile" type="java.io.File" jni-type="Ljava/io/File;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="MergedSoMapping" static="false" visibility="" jni-signature="Lcom/facebook/soloader/MergedSoMapping;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="MinElf" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/MinElf;">
+      <constructor deprecated="not deprecated" final="false" name="MinElf" jni-signature="()V" bridge="false" static="false" type="com.facebook.soloader.MinElf" synthetic="false" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="extract_DT_NEEDED" jni-signature="(Ljava/io/File;)[Ljava/lang/String;" bridge="false" native="false" return="java.lang.String[]" jni-return="[Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="elfFile" type="java.io.File" jni-type="Ljava/io/File;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="extract_DT_NEEDED" jni-signature="(Ljava/nio/channels/FileChannel;)[Ljava/lang/String;" bridge="false" native="false" return="java.lang.String[]" jni-return="[Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="fc" type="java.nio.channels.FileChannel" jni-type="Ljava/nio/channels/FileChannel;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <field deprecated="not deprecated" final="true" name="DT_NEEDED" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="DT_NULL" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="DT_STRTAB" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="5" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="ELF_MAGIC" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1179403647" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="PN_XNUM" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="65535" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="PT_DYNAMIC" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="PT_LOAD" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" extends-generic-aware="java.lang.RuntimeException" jni-extends="Ljava/lang/RuntimeException;" final="false" name="MinElf.ElfError" static="true" visibility="private" jni-signature="Lcom/facebook/soloader/MinElf$ElfError;"></class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="NativeLibrary" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/NativeLibrary;">
+      <constructor deprecated="not deprecated" final="false" name="NativeLibrary" jni-signature="(Ljava/util/List;)V" bridge="false" static="false" type="com.facebook.soloader.NativeLibrary" synthetic="false" visibility="protected">
+        <parameter name="libraryNames" type="java.util.List&lt;java.lang.String&gt;" jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="ensureLoaded" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="UnsatisfiedLinkError" type="java.lang.UnsatisfiedLinkError">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getError" jni-signature="()Ljava/lang/UnsatisfiedLinkError;" bridge="false" native="false" return="java.lang.UnsatisfiedLinkError" jni-return="Ljava/lang/UnsatisfiedLinkError;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="initialNativeCheck" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="UnsatisfiedLinkError" type="java.lang.UnsatisfiedLinkError">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadLibraries" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.facebook.soloader.SoSource" extends-generic-aware="com.facebook.soloader.SoSource" jni-extends="Lcom/facebook/soloader/SoSource;" final="false" name="NoopSoSource" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/NoopSoSource;">
+      <constructor deprecated="not deprecated" final="false" name="NoopSoSource" jni-signature="()V" bridge="false" static="false" type="com.facebook.soloader.NoopSoSource" synthetic="false" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadLibrary" jni-signature="(Ljava/lang/String;ILandroid/os/StrictMode$ThreadPolicy;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="soName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="loadFlags" type="int" jni-type="I">
+        </parameter>
+        <parameter name="threadPolicy" type="android.os.StrictMode.ThreadPolicy" jni-type="Landroid/os/StrictMode$ThreadPolicy;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unpackLibrary" jni-signature="(Ljava/lang/String;)Ljava/io/File;" bridge="false" native="false" return="java.io.File" jni-return="Ljava/io/File;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="soName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="SoFileLoader" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/SoFileLoader;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="load" jni-signature="(Ljava/lang/String;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="p1" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SoLoader" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/SoLoader;">
+      <constructor deprecated="not deprecated" final="false" name="SoLoader" jni-signature="()V" bridge="false" static="false" type="com.facebook.soloader.SoLoader" synthetic="false" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="areSoSourcesAbisSupported" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="deinitForTest" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLibraryPath" jni-signature="(Ljava/lang/String;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="libName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="init" jni-signature="(Landroid/content/Context;Z)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="nativeExopackage" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="init" jni-signature="(Landroid/content/Context;I)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadLibrary" jni-signature="(Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="shortName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="loadLibrary" jni-signature="(Ljava/lang/String;I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="shortName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="loadFlags" type="int" jni-type="I">
+        </parameter>
+        <exception name="UnsatisfiedLinkError" type="java.lang.UnsatisfiedLinkError">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="makeLdLibraryPath" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="makeNonZipPath" jni-signature="(Ljava/lang/String;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="localLdLibraryPath" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="prependSoSource" jni-signature="(Lcom/facebook/soloader/SoSource;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="extraSoSource" type="com.facebook.soloader.SoSource" jni-type="Lcom/facebook/soloader/SoSource;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setInTestMode" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSystemLoadLibraryWrapper" jni-signature="(Lcom/facebook/soloader/SystemLoadLibraryWrapper;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="wrapper" type="com.facebook.soloader.SystemLoadLibraryWrapper" jni-type="Lcom/facebook/soloader/SystemLoadLibraryWrapper;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unpackLibraryAndDependencies" jni-signature="(Ljava/lang/String;)Ljava/io/File;" bridge="false" native="false" return="java.io.File" jni-return="Ljava/io/File;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="shortName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="UnsatisfiedLinkError" type="java.lang.UnsatisfiedLinkError">
+        </exception>
+      </method>
+      <field deprecated="not deprecated" final="true" name="SOLOADER_ALLOW_ASYNC_INIT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="SOLOADER_DISABLE_BACKUP_SOSOURCE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="SOLOADER_ENABLE_EXOPACKAGE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="SOLOADER_LOOK_IN_ZIP" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SoLoader.1" static="true" visibility="" jni-signature="Lcom/facebook/soloader/SoLoader$1;">
+      <implements name="com.facebook.soloader.SoFileLoader" name-generic-aware="com.facebook.soloader.SoFileLoader" jni-type="Lcom/facebook/soloader/SoFileLoader;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="load" jni-signature="(Ljava/lang/String;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="pathToSoFile" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="loadFlags" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SoLoader.Api14Utils" static="true" visibility="private" jni-signature="Lcom/facebook/soloader/SoLoader$Api14Utils;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getClassLoaderLdLoadLibrary" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.UnsatisfiedLinkError" extends-generic-aware="java.lang.UnsatisfiedLinkError" jni-extends="Ljava/lang/UnsatisfiedLinkError;" final="true" name="SoLoader.WrongAbiError" static="true" visibility="public" jni-signature="Lcom/facebook/soloader/SoLoader$WrongAbiError;"></class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SoSource" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/SoSource;">
+      <constructor deprecated="not deprecated" final="false" name="SoSource" jni-signature="()V" bridge="false" static="false" type="com.facebook.soloader.SoSource" synthetic="false" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addToLdLibraryPath" jni-signature="(Ljava/util/Collection;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="paths" type="java.util.Collection&lt;java.lang.String&gt;" jni-type="Ljava/util/Collection&lt;Ljava/lang/String;&gt;;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLibraryPath" jni-signature="(Ljava/lang/String;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="soFileName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSoSourceAbis" jni-signature="()[Ljava/lang/String;" bridge="false" native="false" return="java.lang.String[]" jni-return="[Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="loadLibrary" jni-signature="(Ljava/lang/String;ILandroid/os/StrictMode$ThreadPolicy;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="p1" type="int" jni-type="I">
+        </parameter>
+        <parameter name="p2" type="android.os.StrictMode.ThreadPolicy" jni-type="Landroid/os/StrictMode$ThreadPolicy;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="prepare" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="unpackLibrary" jni-signature="(Ljava/lang/String;)Ljava/io/File;" bridge="false" native="false" return="java.io.File" jni-return="Ljava/io/File;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <field deprecated="not deprecated" final="true" name="LOAD_FLAG_ALLOW_IMPLICIT_PROVISION" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="LOAD_FLAG_ALLOW_SOURCE_CHANGE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="LOAD_FLAG_MIN_CUSTOM_FLAG" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="LOAD_RESULT_CORRUPTED_LIB_FILE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="LOAD_RESULT_IMPLICITLY_PROVIDED" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="LOAD_RESULT_LOADED" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="LOAD_RESULT_NOT_FOUND" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="PREPARE_FLAG_ALLOW_ASYNC_INIT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="PREPARE_FLAG_FORCE_REFRESH" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+      </field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="SystemLoadLibraryWrapper" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/SystemLoadLibraryWrapper;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="loadLibrary" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SysUtil" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/SysUtil;">
+      <constructor deprecated="not deprecated" final="false" name="SysUtil" jni-signature="()V" bridge="false" static="false" type="com.facebook.soloader.SysUtil" synthetic="false" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="deleteOrThrow" jni-signature="(Ljava/io/File;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="file" type="java.io.File" jni-type="Ljava/io/File;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="dumbDeleteRecursive" jni-signature="(Ljava/io/File;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="file" type="java.io.File" jni-type="Ljava/io/File;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="fallocateIfSupported" jni-signature="(Ljava/io/FileDescriptor;J)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="fd" type="java.io.FileDescriptor" jni-type="Ljava/io/FileDescriptor;">
+        </parameter>
+        <parameter name="length" type="long" jni-type="J">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="findAbiScore" jni-signature="([Ljava/lang/String;Ljava/lang/String;)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="supportedAbis" type="java.lang.String[]" jni-type="[Ljava/lang/String;">
+        </parameter>
+        <parameter name="abi" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAppVersionCode" jni-signature="(Landroid/content/Context;)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSupportedAbis" jni-signature="()[Ljava/lang/String;" bridge="false" native="false" return="java.lang.String[]" jni-return="[Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="makeApkDepBlock" jni-signature="(Ljava/io/File;Landroid/content/Context;)[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="apkFile" type="java.io.File" jni-type="Ljava/io/File;">
+        </parameter>
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="SysUtil.LollipopSysdeps" static="true" visibility="private" jni-signature="Lcom/facebook/soloader/SysUtil$LollipopSysdeps;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="fallocateIfSupported" jni-signature="(Ljava/io/FileDescriptor;J)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="fd" type="java.io.FileDescriptor" jni-type="Ljava/io/FileDescriptor;">
+        </parameter>
+        <parameter name="length" type="long" jni-type="J">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSupportedAbis" jni-signature="()[Ljava/lang/String;" bridge="false" native="false" return="java.lang.String[]" jni-return="[Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="com.facebook.soloader.DirectorySoSource" extends-generic-aware="com.facebook.soloader.DirectorySoSource" jni-extends="Lcom/facebook/soloader/DirectorySoSource;" final="false" name="UnpackingSoSource" static="false" visibility="public" jni-signature="Lcom/facebook/soloader/UnpackingSoSource;">
+      <constructor deprecated="not deprecated" final="false" name="UnpackingSoSource" jni-signature="(Landroid/content/Context;Ljava/io/File;)V" bridge="false" static="false" type="com.facebook.soloader.UnpackingSoSource" synthetic="false" visibility="protected">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="storePath" type="java.io.File" jni-type="Ljava/io/File;">
+        </parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="UnpackingSoSource" jni-signature="(Landroid/content/Context;Ljava/lang/String;)V" bridge="false" static="false" type="com.facebook.soloader.UnpackingSoSource" synthetic="false" visibility="protected">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDepsBlock" jni-signature="()[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSoStorePath" jni-signature="(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;" bridge="false" native="false" return="java.io.File" jni-return="Ljava/io/File;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="makeUnpacker" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$Unpacker;" bridge="false" native="false" return="com.facebook.soloader.UnpackingSoSource.Unpacker" jni-return="Lcom/facebook/soloader/UnpackingSoSource$Unpacker;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="prepare" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="true" synthetic="false" visibility="protected">
+        <parameter name="soName" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSoSourceAbis" jni-signature="([Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="abis" type="java.lang.String[]" jni-type="[Ljava/lang/String;">
+        </parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="mContext" jni-signature="Landroid/content/Context;" static="false" transient="false" type="android.content.Context" type-generic-aware="android.content.Context" visibility="protected" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="false" name="mCorruptedLib" jni-signature="Ljava/lang/String;" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="UnpackingSoSource.1" static="false" visibility="" jni-signature="Lcom/facebook/soloader/UnpackingSoSource$1;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="UnpackingSoSource.Dso" static="true" visibility="public" jni-signature="Lcom/facebook/soloader/UnpackingSoSource$Dso;">
+      <constructor deprecated="not deprecated" final="false" name="UnpackingSoSource.Dso" jni-signature="(Ljava/lang/String;Ljava/lang/String;)V" bridge="false" static="false" type="com.facebook.soloader.UnpackingSoSource.Dso" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+        <parameter name="hash" type="java.lang.String" jni-type="Ljava/lang/String;">
+        </parameter>
+      </constructor>
+      <field deprecated="not deprecated" final="true" name="hash" jni-signature="Ljava/lang/String;" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="name" jni-signature="Ljava/lang/String;" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="UnpackingSoSource.DsoManifest" static="true" visibility="public" jni-signature="Lcom/facebook/soloader/UnpackingSoSource$DsoManifest;">
+      <constructor deprecated="not deprecated" final="false" name="UnpackingSoSource.DsoManifest" jni-signature="([Lcom/facebook/soloader/UnpackingSoSource$Dso;)V" bridge="false" static="false" type="com.facebook.soloader.UnpackingSoSource.DsoManifest" synthetic="false" visibility="public">
+        <parameter name="dsos" type="com.facebook.soloader.UnpackingSoSource.Dso[]" jni-type="[Lcom/facebook/soloader/UnpackingSoSource$Dso;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="write" jni-signature="(Ljava/io/DataOutput;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="xdo" type="java.io.DataOutput" jni-type="Ljava/io/DataOutput;">
+        </parameter>
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <field deprecated="not deprecated" final="true" name="dsos" jni-signature="[Lcom/facebook/soloader/UnpackingSoSource$Dso;" static="false" transient="false" type="com.facebook.soloader.UnpackingSoSource.Dso[]" type-generic-aware="com.facebook.soloader.UnpackingSoSource.Dso[]" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="UnpackingSoSource.InputDso" static="true" visibility="protected" jni-signature="Lcom/facebook/soloader/UnpackingSoSource$InputDso;">
+      <implements name="java.io.Closeable" name-generic-aware="java.io.Closeable" jni-type="Ljava/io/Closeable;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="UnpackingSoSource.InputDso" jni-signature="(Lcom/facebook/soloader/UnpackingSoSource$Dso;Ljava/io/InputStream;)V" bridge="false" static="false" type="com.facebook.soloader.UnpackingSoSource.InputDso" synthetic="false" visibility="public">
+        <parameter name="dso" type="com.facebook.soloader.UnpackingSoSource.Dso" jni-type="Lcom/facebook/soloader/UnpackingSoSource$Dso;">
+        </parameter>
+        <parameter name="content" type="java.io.InputStream" jni-type="Ljava/io/InputStream;">
+        </parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <field deprecated="not deprecated" final="true" name="content" jni-signature="Ljava/io/InputStream;" static="false" transient="false" type="java.io.InputStream" type-generic-aware="java.io.InputStream" visibility="public" volatile="false">
+      </field>
+      <field deprecated="not deprecated" final="true" name="dso" jni-signature="Lcom/facebook/soloader/UnpackingSoSource$Dso;" static="false" transient="false" type="com.facebook.soloader.UnpackingSoSource.Dso" type-generic-aware="com.facebook.soloader.UnpackingSoSource.Dso" visibility="public" volatile="false">
+      </field>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="UnpackingSoSource.InputDsoIterator" static="true" visibility="protected" jni-signature="Lcom/facebook/soloader/UnpackingSoSource$InputDsoIterator;">
+      <implements name="java.io.Closeable" name-generic-aware="java.io.Closeable" jni-type="Ljava/io/Closeable;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="UnpackingSoSource.InputDsoIterator" jni-signature="()V" bridge="false" static="false" type="com.facebook.soloader.UnpackingSoSource.InputDsoIterator" synthetic="false" visibility="protected">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="hasNext" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="next" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$InputDso;" bridge="false" native="false" return="java.lang.Object" jni-return="Lcom/facebook/soloader/UnpackingSoSource$InputDso;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="UnpackingSoSource.Unpacker" static="true" visibility="protected" jni-signature="Lcom/facebook/soloader/UnpackingSoSource$Unpacker;">
+      <implements name="java.io.Closeable" name-generic-aware="java.io.Closeable" jni-type="Ljava/io/Closeable;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="UnpackingSoSource.Unpacker" jni-signature="()V" bridge="false" static="false" type="com.facebook.soloader.UnpackingSoSource.Unpacker" synthetic="false" visibility="protected">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getDsoManifest" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$DsoManifest;" bridge="false" native="false" return="com.facebook.soloader.UnpackingSoSource.DsoManifest" jni-return="Lcom/facebook/soloader/UnpackingSoSource$DsoManifest;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="openDsoIterator" jni-signature="()Lcom/facebook/soloader/UnpackingSoSource$InputDsoIterator;" bridge="false" native="false" return="com.facebook.soloader.UnpackingSoSource.InputDsoIterator" jni-return="Lcom/facebook/soloader/UnpackingSoSource$InputDsoIterator;" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <exception name="IOException" type="java.io.IOException">
+        </exception>
+      </method>
+    </class>
+  </package>
+</api>

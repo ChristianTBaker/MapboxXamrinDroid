@@ -1,0 +1,5561 @@
+<api
+  api-source="class-parse">
+  <package
+    name="com.mapbox.android.telemetry"
+    jni-name="com/mapbox/android/telemetry">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/content/BroadcastReceiver;"
+      extends="android.content.BroadcastReceiver"
+      extends-generic-aware="android.content.BroadcastReceiver"
+      final="false"
+      name="AlarmReceiver"
+      jni-signature="Lcom/mapbox/android/telemetry/AlarmReceiver;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onReceive"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/content/Intent;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="intent"
+          type="android.content.Intent"
+          jni-type="Landroid/content/Intent;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AlarmSchedulerFlusher"
+      jni-signature="Lcom/mapbox/android/telemetry/AlarmSchedulerFlusher;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.SchedulerFlusher"
+        name-generic-aware="com.mapbox.android.telemetry.SchedulerFlusher"
+        jni-type="Lcom/mapbox/android/telemetry/SchedulerFlusher;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="register"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="schedule"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(J)V">
+        <parameter
+          name="elapsedRealTime"
+          type="long"
+          jni-type="J" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="unregister"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mapbox/android/telemetry/Event;"
+      extends="com.mapbox.android.telemetry.Event"
+      extends-generic-aware="com.mapbox.android.telemetry.Event"
+      final="false"
+      name="AppUserTurnstile"
+      jni-signature="Lcom/mapbox/android/telemetry/AppUserTurnstile;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.os.Parcelable"
+        name-generic-aware="android.os.Parcelable"
+        jni-type="Landroid/os/Parcelable;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AppUserTurnstile"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="sdkIdentifier"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="sdkVersion"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="describeContents"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSkuId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setSkuId"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="skuId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="writeToParcel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;I)V">
+        <parameter
+          name="dest"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+        <parameter
+          name="flags"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CREATOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="android.os.Parcelable.Creator"
+        type-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.android.telemetry.AppUserTurnstile&gt;"
+        jni-signature="Landroid/os/Parcelable$Creator;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="AppUserTurnstile.1"
+      jni-signature="Lcom/mapbox/android/telemetry/AppUserTurnstile$1;"
+      static="true"
+      visibility="">
+      <implements
+        name="android.os.Parcelable.Creator"
+        name-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.android.telemetry.AppUserTurnstile&gt;"
+        jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/mapbox/android/telemetry/AppUserTurnstile;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="com.mapbox.android.telemetry.AppUserTurnstile"
+        jni-return="Lcom/mapbox/android/telemetry/AppUserTurnstile;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;)Lcom/mapbox/android/telemetry/AppUserTurnstile;">
+        <parameter
+          name="in"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Landroid/os/Parcel;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="com.mapbox.android.telemetry.AppUserTurnstile[]"
+        jni-return="[Lcom/mapbox/android/telemetry/AppUserTurnstile;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)[Lcom/mapbox/android/telemetry/AppUserTurnstile;">
+        <parameter
+          name="size"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="java.lang.Object[]"
+        jni-return="[Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(I)[Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mapbox/android/telemetry/Event;"
+      extends="com.mapbox.android.telemetry.Event"
+      extends-generic-aware="com.mapbox.android.telemetry.Event"
+      final="false"
+      name="Attachment"
+      jni-signature="Lcom/mapbox/android/telemetry/Attachment;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.os.Parcelable"
+        name-generic-aware="android.os.Parcelable"
+        jni-type="Landroid/os/Parcelable;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Attachment"
+        static="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;)V">
+        <parameter
+          name="in"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addAttachment"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/FileAttachment;)V">
+        <parameter
+          name="attachment"
+          type="com.mapbox.android.telemetry.FileAttachment"
+          jni-type="Lcom/mapbox/android/telemetry/FileAttachment;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="describeContents"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAttachments"
+        native="false"
+        return="java.util.List&lt;com.mapbox.android.telemetry.FileAttachment&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/mapbox/android/telemetry/FileAttachment;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="writeToParcel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;I)V">
+        <parameter
+          name="dest"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+        <parameter
+          name="flags"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CREATOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="android.os.Parcelable.Creator"
+        type-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.android.telemetry.Attachment&gt;"
+        jni-signature="Landroid/os/Parcelable$Creator;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="Attachment.1"
+      jni-signature="Lcom/mapbox/android/telemetry/Attachment$1;"
+      static="true"
+      visibility="">
+      <implements
+        name="android.os.Parcelable.Creator"
+        name-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.android.telemetry.Attachment&gt;"
+        jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/mapbox/android/telemetry/Attachment;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="com.mapbox.android.telemetry.Attachment"
+        jni-return="Lcom/mapbox/android/telemetry/Attachment;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;)Lcom/mapbox/android/telemetry/Attachment;">
+        <parameter
+          name="in"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Landroid/os/Parcel;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="com.mapbox.android.telemetry.Attachment[]"
+        jni-return="[Lcom/mapbox/android/telemetry/Attachment;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)[Lcom/mapbox/android/telemetry/Attachment;">
+        <parameter
+          name="size"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="java.lang.Object[]"
+        jni-return="[Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(I)[Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="AttachmentListener"
+      jni-signature="Lcom/mapbox/android/telemetry/AttachmentListener;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onAttachmentFailure"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/util/List;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.util.List&lt;java.lang.String&gt;"
+          jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onAttachmentResponse"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;ILjava/util/List;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p2"
+          type="java.util.List&lt;java.lang.String&gt;"
+          jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AttachmentMetadata"
+      jni-signature="Lcom/mapbox/android/telemetry/AttachmentMetadata;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AttachmentMetadata"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="fileId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="format"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="type"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="sessionId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCreated"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getEndTime"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getFileId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getFormat"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getName"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSessionId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSize"
+        native="false"
+        return="java.lang.Integer"
+        jni-return="Ljava/lang/Integer;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/Integer;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getStartTime"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getType"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setEndTime"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="endTime"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setSize"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="size"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setStartTime"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="startTime"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Lcom/mapbox/android/telemetry/BuildConfig;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="APPLICATION_ID"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.mapbox.android.telemetry&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;release&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        value="false"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="FLAVOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;full&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;4.5.1&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="CertificateBlacklist"
+      jni-signature="Lcom/mapbox/android/telemetry/CertificateBlacklist;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.ConfigurationChangeHandler"
+        name-generic-aware="com.mapbox.android.telemetry.ConfigurationChangeHandler"
+        jni-type="Lcom/mapbox/android/telemetry/ConfigurationChangeHandler;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onUpdate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="data"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/google/gson/reflect/TypeToken;"
+      extends="com.google.gson.reflect.TypeToken"
+      extends-generic-aware="com.google.gson.reflect.TypeToken&lt;java.util.List&lt;java.lang.String&gt;&gt;"
+      final="false"
+      name="CertificateBlacklist.1"
+      jni-signature="Lcom/mapbox/android/telemetry/CertificateBlacklist$1;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="CertificatePinnerFactory"
+      jni-signature="Lcom/mapbox/android/telemetry/CertificatePinnerFactory;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;com.mapbox.android.telemetry.Environment, java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;&gt;"
+      final="true"
+      name="CertificatePinnerFactory.1"
+      jni-signature="Lcom/mapbox/android/telemetry/CertificatePinnerFactory$1;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ChinaCertificatePins"
+      jni-signature="Lcom/mapbox/android/telemetry/ChinaCertificatePins;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;"
+      final="true"
+      name="ChinaCertificatePins.1"
+      jni-signature="Lcom/mapbox/android/telemetry/ChinaCertificatePins$1;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/ArrayList;"
+      extends="java.util.ArrayList"
+      extends-generic-aware="java.util.ArrayList&lt;java.lang.String&gt;"
+      final="false"
+      name="ChinaCertificatePins.1.1"
+      jni-signature="Lcom/mapbox/android/telemetry/ChinaCertificatePins$1$1;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ChinaServerInformation"
+      jni-signature="Lcom/mapbox/android/telemetry/ChinaServerInformation;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.EnvironmentResolver"
+        name-generic-aware="com.mapbox.android.telemetry.EnvironmentResolver"
+        jni-type="Lcom/mapbox/android/telemetry/EnvironmentResolver;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="nextChain"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/EnvironmentResolver;)V">
+        <parameter
+          name="chain"
+          type="com.mapbox.android.telemetry.EnvironmentResolver"
+          jni-type="Lcom/mapbox/android/telemetry/EnvironmentResolver;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="obtainServerInformation"
+        native="false"
+        return="com.mapbox.android.telemetry.ServerInformation"
+        jni-return="Lcom/mapbox/android/telemetry/ServerInformation;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)Lcom/mapbox/android/telemetry/ServerInformation;">
+        <parameter
+          name="appMetaData"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="Clock"
+      jni-signature="Lcom/mapbox/android/telemetry/Clock;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ComCertificatePins"
+      jni-signature="Lcom/mapbox/android/telemetry/ComCertificatePins;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;"
+      final="true"
+      name="ComCertificatePins.1"
+      jni-signature="Lcom/mapbox/android/telemetry/ComCertificatePins$1;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/ArrayList;"
+      extends="java.util.ArrayList"
+      extends-generic-aware="java.util.ArrayList&lt;java.lang.String&gt;"
+      final="false"
+      name="ComCertificatePins.1.1"
+      jni-signature="Lcom/mapbox/android/telemetry/ComCertificatePins$1$1;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ComServerInformation"
+      jni-signature="Lcom/mapbox/android/telemetry/ComServerInformation;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.EnvironmentResolver"
+        name-generic-aware="com.mapbox.android.telemetry.EnvironmentResolver"
+        jni-type="Lcom/mapbox/android/telemetry/EnvironmentResolver;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="nextChain"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/EnvironmentResolver;)V">
+        <parameter
+          name="chain"
+          type="com.mapbox.android.telemetry.EnvironmentResolver"
+          jni-type="Lcom/mapbox/android/telemetry/EnvironmentResolver;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="obtainServerInformation"
+        native="false"
+        return="com.mapbox.android.telemetry.ServerInformation"
+        jni-return="Lcom/mapbox/android/telemetry/ServerInformation;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)Lcom/mapbox/android/telemetry/ServerInformation;">
+        <parameter
+          name="appMetaData"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ConcurrentQueue"
+      jni-signature="Lcom/mapbox/android/telemetry/ConcurrentQueue;"
+      static="false"
+      visibility="">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="ConfigurationChangeHandler"
+      jni-signature="Lcom/mapbox/android/telemetry/ConfigurationChangeHandler;"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onUpdate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ConfigurationClient"
+      jni-signature="Lcom/mapbox/android/telemetry/ConfigurationClient;"
+      static="false"
+      visibility="">
+      <implements
+        name="okhttp3.Callback"
+        name-generic-aware="okhttp3.Callback"
+        jni-type="Lokhttp3/Callback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onFailure"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lokhttp3/Call;Ljava/io/IOException;)V">
+        <parameter
+          name="call"
+          type="okhttp3.Call"
+          jni-type="Lokhttp3/Call;" />
+        <parameter
+          name="e"
+          type="java.io.IOException"
+          jni-type="Ljava/io/IOException;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onResponse"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lokhttp3/Call;Lokhttp3/Response;)V">
+        <parameter
+          name="call"
+          type="okhttp3.Call"
+          jni-type="Lokhttp3/Call;" />
+        <parameter
+          name="response"
+          type="okhttp3.Response"
+          jni-type="Lokhttp3/Response;" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;com.mapbox.android.telemetry.Environment, java.lang.String&gt;"
+      final="true"
+      name="ConfigurationClient.1"
+      jni-signature="Lcom/mapbox/android/telemetry/ConfigurationClient$1;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mapbox/android/telemetry/Event;"
+      extends="com.mapbox.android.telemetry.Event"
+      extends-generic-aware="com.mapbox.android.telemetry.Event"
+      final="false"
+      name="CrashEvent"
+      jni-signature="Lcom/mapbox/android/telemetry/CrashEvent;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CrashEvent"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="event"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="created"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="describeContents"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getHash"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isValid"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="writeToParcel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;I)V">
+        <parameter
+          name="dest"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+        <parameter
+          name="flags"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.mapbox.android.telemetry.Environment&gt;"
+      final="true"
+      name="Environment"
+      jni-signature="Lcom/mapbox/android/telemetry/Environment;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.mapbox.android.telemetry.Environment"
+        jni-return="Lcom/mapbox/android/telemetry/Environment;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/mapbox/android/telemetry/Environment;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.mapbox.android.telemetry.Environment[]"
+        jni-return="[Lcom/mapbox/android/telemetry/Environment;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/mapbox/android/telemetry/Environment;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CHINA"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Environment"
+        type-generic-aware="com.mapbox.android.telemetry.Environment"
+        jni-signature="Lcom/mapbox/android/telemetry/Environment;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="COM"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Environment"
+        type-generic-aware="com.mapbox.android.telemetry.Environment"
+        jni-signature="Lcom/mapbox/android/telemetry/Environment;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="STAGING"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Environment"
+        type-generic-aware="com.mapbox.android.telemetry.Environment"
+        jni-signature="Lcom/mapbox/android/telemetry/Environment;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="EnvironmentChain"
+      jni-signature="Lcom/mapbox/android/telemetry/EnvironmentChain;"
+      static="false"
+      visibility="" />
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="EnvironmentResolver"
+      jni-signature="Lcom/mapbox/android/telemetry/EnvironmentResolver;"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="nextChain"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/EnvironmentResolver;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.telemetry.EnvironmentResolver"
+          jni-type="Lcom/mapbox/android/telemetry/EnvironmentResolver;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="obtainServerInformation"
+        native="false"
+        return="com.mapbox.android.telemetry.ServerInformation"
+        jni-return="Lcom/mapbox/android/telemetry/ServerInformation;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)Lcom/mapbox/android/telemetry/ServerInformation;">
+        <parameter
+          name="p0"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+    </interface>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="Event"
+      jni-signature="Lcom/mapbox/android/telemetry/Event;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.os.Parcelable"
+        name-generic-aware="android.os.Parcelable"
+        jni-type="Landroid/os/Parcelable;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Event"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.mapbox.android.telemetry.Event.Type&gt;"
+      final="true"
+      name="Event.Type"
+      jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.mapbox.android.telemetry.Event.Type"
+        jni-return="Lcom/mapbox/android/telemetry/Event$Type;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/mapbox/android/telemetry/Event$Type;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.mapbox.android.telemetry.Event.Type[]"
+        jni-return="[Lcom/mapbox/android/telemetry/Event$Type;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/mapbox/android/telemetry/Event$Type;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CRASH"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="LOCATION"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="MAP_CLICK"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="MAP_DRAGEND"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="MAP_LOAD"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAV_ARRIVE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAV_CANCEL"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAV_DEPART"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAV_FASTER_ROUTE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAV_FEEDBACK"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAV_REROUTE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NO_OP"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="OFFLINE_DOWNLOAD_COMPLETE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="OFFLINE_DOWNLOAD_START"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="TURNSTILE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VIS_ATTACHMENT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VIS_GENERAL"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VIS_OBJ_DETECTION"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.Event.Type"
+        type-generic-aware="com.mapbox.android.telemetry.Event.Type"
+        jni-signature="Lcom/mapbox/android/telemetry/Event$Type;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="EventsQueue"
+      jni-signature="Lcom/mapbox/android/telemetry/EventsQueue;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="EventsQueue.1"
+      jni-signature="Lcom/mapbox/android/telemetry/EventsQueue$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="FileAttachment"
+      jni-signature="Lcom/mapbox/android/telemetry/FileAttachment;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAttachmentMetadata"
+        native="false"
+        return="com.mapbox.android.telemetry.AttachmentMetadata"
+        jni-return="Lcom/mapbox/android/telemetry/AttachmentMetadata;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/mapbox/android/telemetry/AttachmentMetadata;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getFileData"
+        native="false"
+        return="com.mapbox.android.telemetry.FileData"
+        jni-return="Lcom/mapbox/android/telemetry/FileData;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/mapbox/android/telemetry/FileData;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="FileData"
+      jni-signature="Lcom/mapbox/android/telemetry/FileData;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getFilePath"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getType"
+        native="false"
+        return="okhttp3.MediaType"
+        jni-return="Lokhttp3/MediaType;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lokhttp3/MediaType;" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="FullQueueCallback"
+      jni-signature="Lcom/mapbox/android/telemetry/FullQueueCallback;"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onFullQueue"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;)V">
+        <parameter
+          name="p0"
+          type="java.util.List&lt;com.mapbox.android.telemetry.Event&gt;"
+          jni-type="Ljava/util/List&lt;Lcom/mapbox/android/telemetry/Event;&gt;;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="GzipRequestInterceptor"
+      jni-signature="Lcom/mapbox/android/telemetry/GzipRequestInterceptor;"
+      static="false"
+      visibility="">
+      <implements
+        name="okhttp3.Interceptor"
+        name-generic-aware="okhttp3.Interceptor"
+        jni-type="Lokhttp3/Interceptor;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="intercept"
+        native="false"
+        return="okhttp3.Response"
+        jni-return="Lokhttp3/Response;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;">
+        <parameter
+          name="chain"
+          type="okhttp3.Interceptor.Chain"
+          jni-type="Lokhttp3/Interceptor$Chain;" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lokhttp3/RequestBody;"
+      extends="okhttp3.RequestBody"
+      extends-generic-aware="okhttp3.RequestBody"
+      final="false"
+      name="GzipRequestInterceptor.1"
+      jni-signature="Lcom/mapbox/android/telemetry/GzipRequestInterceptor$1;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="contentLength"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="contentType"
+        native="false"
+        return="okhttp3.MediaType"
+        jni-return="Lokhttp3/MediaType;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lokhttp3/MediaType;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="writeTo"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lokio/BufferedSink;)V">
+        <parameter
+          name="sink"
+          type="okio.BufferedSink"
+          jni-type="Lokio/BufferedSink;" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mapbox/android/telemetry/Event;"
+      extends="com.mapbox.android.telemetry.Event"
+      extends-generic-aware="com.mapbox.android.telemetry.Event"
+      final="false"
+      name="LocationEvent"
+      jni-signature="Lcom/mapbox/android/telemetry/LocationEvent;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.os.Parcelable"
+        name-generic-aware="android.os.Parcelable"
+        jni-type="Landroid/os/Parcelable;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LocationEvent"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;DDLjava/lang/String;)V">
+        <parameter
+          name="sessionId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="latitude"
+          type="double"
+          jni-type="D" />
+        <parameter
+          name="longitude"
+          type="double"
+          jni-type="D" />
+        <parameter
+          name="applicationState"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="describeContents"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setAccuracy"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Float;)V">
+        <parameter
+          name="accuracy"
+          type="java.lang.Float"
+          jni-type="Ljava/lang/Float;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setAltitude"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Double;)V">
+        <parameter
+          name="altitude"
+          type="java.lang.Double"
+          jni-type="Ljava/lang/Double;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="writeToParcel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;I)V">
+        <parameter
+          name="dest"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+        <parameter
+          name="flags"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CREATOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="android.os.Parcelable.Creator"
+        type-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.android.telemetry.LocationEvent&gt;"
+        jni-signature="Landroid/os/Parcelable$Creator;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="LocationEvent.1"
+      jni-signature="Lcom/mapbox/android/telemetry/LocationEvent$1;"
+      static="true"
+      visibility="">
+      <implements
+        name="android.os.Parcelable.Creator"
+        name-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.android.telemetry.LocationEvent&gt;"
+        jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/mapbox/android/telemetry/LocationEvent;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="com.mapbox.android.telemetry.LocationEvent"
+        jni-return="Lcom/mapbox/android/telemetry/LocationEvent;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;)Lcom/mapbox/android/telemetry/LocationEvent;">
+        <parameter
+          name="in"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Landroid/os/Parcel;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="com.mapbox.android.telemetry.LocationEvent[]"
+        jni-return="[Lcom/mapbox/android/telemetry/LocationEvent;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)[Lcom/mapbox/android/telemetry/LocationEvent;">
+        <parameter
+          name="size"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="java.lang.Object[]"
+        jni-return="[Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(I)[Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="Logger"
+      jni-signature="Lcom/mapbox/android/telemetry/Logger;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="MapboxTelemetry"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetry;"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.mapbox.android.telemetry.FullQueueCallback"
+        name-generic-aware="com.mapbox.android.telemetry.FullQueueCallback"
+        jni-type="Lcom/mapbox/android/telemetry/FullQueueCallback;" />
+      <implements
+        name="com.mapbox.android.telemetry.ServiceTaskCallback"
+        name-generic-aware="com.mapbox.android.telemetry.ServiceTaskCallback"
+        jni-type="Lcom/mapbox/android/telemetry/ServiceTaskCallback;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="MapboxTelemetry"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="accessToken"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="userAgent"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addAttachmentListener"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/AttachmentListener;)Z">
+        <parameter
+          name="listener"
+          type="com.mapbox.android.telemetry.AttachmentListener"
+          jni-type="Lcom/mapbox/android/telemetry/AttachmentListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addTelemetryListener"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/TelemetryListener;)Z">
+        <parameter
+          name="listener"
+          type="com.mapbox.android.telemetry.TelemetryListener"
+          jni-type="Lcom/mapbox/android/telemetry/TelemetryListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="disable"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="enable"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onFullQueue"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;)V">
+        <parameter
+          name="fullQueue"
+          type="java.util.List&lt;com.mapbox.android.telemetry.Event&gt;"
+          jni-type="Ljava/util/List&lt;Lcom/mapbox/android/telemetry/Event;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onTaskRemoved"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="push"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/Event;)Z">
+        <parameter
+          name="event"
+          type="com.mapbox.android.telemetry.Event"
+          jni-type="Lcom/mapbox/android/telemetry/Event;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeAttachmentListener"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/AttachmentListener;)Z">
+        <parameter
+          name="listener"
+          type="com.mapbox.android.telemetry.AttachmentListener"
+          jni-type="Lcom/mapbox/android/telemetry/AttachmentListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeTelemetryListener"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/TelemetryListener;)Z">
+        <parameter
+          name="listener"
+          type="com.mapbox.android.telemetry.TelemetryListener"
+          jni-type="Lcom/mapbox/android/telemetry/TelemetryListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="updateAccessToken"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Z">
+        <parameter
+          name="accessToken"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="updateDebugLoggingEnabled"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="isDebugLoggingEnabled"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="updateSessionIdRotationInterval"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/SessionInterval;)Z">
+        <parameter
+          name="interval"
+          type="com.mapbox.android.telemetry.SessionInterval"
+          jni-type="Lcom/mapbox/android/telemetry/SessionInterval;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="updateUserAgent"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="userAgent"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="MapboxTelemetry.1"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetry$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="MapboxTelemetry.2"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetry$2;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.SchedulerCallback"
+        name-generic-aware="com.mapbox.android.telemetry.SchedulerCallback"
+        jni-type="Lcom/mapbox/android/telemetry/SchedulerCallback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onError"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onPeriodRaised"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="MapboxTelemetry.3"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetry$3;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="MapboxTelemetry.4"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetry$4;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="MapboxTelemetry.5"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetry$5;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="MapboxTelemetry.6"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetry$6;"
+      static="true"
+      visibility="">
+      <implements
+        name="okhttp3.Callback"
+        name-generic-aware="okhttp3.Callback"
+        jni-type="Lokhttp3/Callback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onFailure"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lokhttp3/Call;Ljava/io/IOException;)V">
+        <parameter
+          name="call"
+          type="okhttp3.Call"
+          jni-type="Lokhttp3/Call;" />
+        <parameter
+          name="e"
+          type="java.io.IOException"
+          jni-type="Ljava/io/IOException;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onResponse"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lokhttp3/Call;Lokhttp3/Response;)V">
+        <parameter
+          name="call"
+          type="okhttp3.Call"
+          jni-type="Lokhttp3/Call;" />
+        <parameter
+          name="response"
+          type="okhttp3.Response"
+          jni-type="Lokhttp3/Response;" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="MapboxTelemetry.7"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetry$7;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="MapboxTelemetry.ExecutorServiceFactory"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetry$ExecutorServiceFactory;"
+      static="true"
+      visibility="private" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="MapboxTelemetry.ExecutorServiceFactory.1"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetry$ExecutorServiceFactory$1;"
+      static="true"
+      visibility="">
+      <implements
+        name="java.util.concurrent.ThreadFactory"
+        name-generic-aware="java.util.concurrent.ThreadFactory"
+        jni-type="Ljava/util/concurrent/ThreadFactory;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newThread"
+        native="false"
+        return="java.lang.Thread"
+        jni-return="Ljava/lang/Thread;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Runnable;)Ljava/lang/Thread;">
+        <parameter
+          name="runnable"
+          type="java.lang.Runnable"
+          jni-type="Ljava/lang/Runnable;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="MapboxTelemetryConstants"
+      jni-signature="Lcom/mapbox/android/telemetry/MapboxTelemetryConstants;"
+      static="false"
+      visibility="public">
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="ACTION_TOKEN_CHANGED"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.mapbox.android.telemetry.action.TOKEN_CHANGED&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="LOCATION_COLLECTOR_ENABLED"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;mapboxTelemetryLocationState&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="MAPBOX_SHARED_PREFERENCES"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;MapboxSharedPreferences&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="MAPBOX_TELEMETRY_PACKAGE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.mapbox.android.telemetry&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="SESSION_ROTATION_INTERVAL_MILLIS"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;mapboxSessionRotationInterval&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SchedulerCallback"
+      jni-signature="Lcom/mapbox/android/telemetry/SchedulerCallback;"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onError"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onPeriodRaised"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SchedulerFlusher"
+      jni-signature="Lcom/mapbox/android/telemetry/SchedulerFlusher;"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="register"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="schedule"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(J)V">
+        <parameter
+          name="p0"
+          type="long"
+          jni-type="J" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="unregister"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SchedulerFlusherFactory"
+      jni-signature="Lcom/mapbox/android/telemetry/SchedulerFlusherFactory;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ServerInformation"
+      jni-signature="Lcom/mapbox/android/telemetry/ServerInformation;"
+      static="false"
+      visibility="" />
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="ServiceTaskCallback"
+      jni-signature="Lcom/mapbox/android/telemetry/ServiceTaskCallback;"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onTaskRemoved"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SessionInterval"
+      jni-signature="Lcom/mapbox/android/telemetry/SessionInterval;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SessionInterval"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="interval"
+          type="int"
+          jni-type="I" />
+      </constructor>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="StagingCertificatePins"
+      jni-signature="Lcom/mapbox/android/telemetry/StagingCertificatePins;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;"
+      final="true"
+      name="StagingCertificatePins.1"
+      jni-signature="Lcom/mapbox/android/telemetry/StagingCertificatePins$1;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/ArrayList;"
+      extends="java.util.ArrayList"
+      extends-generic-aware="java.util.ArrayList&lt;java.lang.String&gt;"
+      final="false"
+      name="StagingCertificatePins.1.1"
+      jni-signature="Lcom/mapbox/android/telemetry/StagingCertificatePins$1$1;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="StagingServerInformation"
+      jni-signature="Lcom/mapbox/android/telemetry/StagingServerInformation;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.EnvironmentResolver"
+        name-generic-aware="com.mapbox.android.telemetry.EnvironmentResolver"
+        jni-type="Lcom/mapbox/android/telemetry/EnvironmentResolver;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="nextChain"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/EnvironmentResolver;)V">
+        <parameter
+          name="chain"
+          type="com.mapbox.android.telemetry.EnvironmentResolver"
+          jni-type="Lcom/mapbox/android/telemetry/EnvironmentResolver;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="obtainServerInformation"
+        native="false"
+        return="com.mapbox.android.telemetry.ServerInformation"
+        jni-return="Lcom/mapbox/android/telemetry/ServerInformation;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)Lcom/mapbox/android/telemetry/ServerInformation;">
+        <parameter
+          name="appMetaData"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="TelemetryCallback"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryCallback;"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onBackground"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onForeground"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TelemetryClient"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClient;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TelemetryClient.1"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClient$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="okhttp3.Callback"
+        name-generic-aware="okhttp3.Callback"
+        jni-type="Lokhttp3/Callback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onFailure"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lokhttp3/Call;Ljava/io/IOException;)V">
+        <parameter
+          name="call"
+          type="okhttp3.Call"
+          jni-type="Lokhttp3/Call;" />
+        <parameter
+          name="exception"
+          type="java.io.IOException"
+          jni-type="Ljava/io/IOException;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onResponse"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lokhttp3/Call;Lokhttp3/Response;)V">
+        <parameter
+          name="call"
+          type="okhttp3.Call"
+          jni-type="Lokhttp3/Call;" />
+        <parameter
+          name="response"
+          type="okhttp3.Response"
+          jni-type="Lokhttp3/Response;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="TelemetryClientBuild"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClientBuild;"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="build"
+        native="false"
+        return="com.mapbox.android.telemetry.TelemetryClient"
+        jni-return="Lcom/mapbox/android/telemetry/TelemetryClient;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/ServerInformation;)Lcom/mapbox/android/telemetry/TelemetryClient;">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.telemetry.ServerInformation"
+          jni-type="Lcom/mapbox/android/telemetry/ServerInformation;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TelemetryClientFactory"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClientFactory;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;com.mapbox.android.telemetry.Environment, com.mapbox.android.telemetry.TelemetryClientBuild&gt;"
+      final="false"
+      name="TelemetryClientFactory.1"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClientFactory$1;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TelemetryClientFactory.1.1"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClientFactory$1$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.TelemetryClientBuild"
+        name-generic-aware="com.mapbox.android.telemetry.TelemetryClientBuild"
+        jni-type="Lcom/mapbox/android/telemetry/TelemetryClientBuild;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="build"
+        native="false"
+        return="com.mapbox.android.telemetry.TelemetryClient"
+        jni-return="Lcom/mapbox/android/telemetry/TelemetryClient;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/ServerInformation;)Lcom/mapbox/android/telemetry/TelemetryClient;">
+        <parameter
+          name="serverInformation"
+          type="com.mapbox.android.telemetry.ServerInformation"
+          jni-type="Lcom/mapbox/android/telemetry/ServerInformation;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TelemetryClientFactory.1.2"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClientFactory$1$2;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.TelemetryClientBuild"
+        name-generic-aware="com.mapbox.android.telemetry.TelemetryClientBuild"
+        jni-type="Lcom/mapbox/android/telemetry/TelemetryClientBuild;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="build"
+        native="false"
+        return="com.mapbox.android.telemetry.TelemetryClient"
+        jni-return="Lcom/mapbox/android/telemetry/TelemetryClient;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/ServerInformation;)Lcom/mapbox/android/telemetry/TelemetryClient;">
+        <parameter
+          name="serverInformation"
+          type="com.mapbox.android.telemetry.ServerInformation"
+          jni-type="Lcom/mapbox/android/telemetry/ServerInformation;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TelemetryClientFactory.1.3"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClientFactory$1$3;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.TelemetryClientBuild"
+        name-generic-aware="com.mapbox.android.telemetry.TelemetryClientBuild"
+        jni-type="Lcom/mapbox/android/telemetry/TelemetryClientBuild;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="build"
+        native="false"
+        return="com.mapbox.android.telemetry.TelemetryClient"
+        jni-return="Lcom/mapbox/android/telemetry/TelemetryClient;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/ServerInformation;)Lcom/mapbox/android/telemetry/TelemetryClient;">
+        <parameter
+          name="serverInformation"
+          type="com.mapbox.android.telemetry.ServerInformation"
+          jni-type="Lcom/mapbox/android/telemetry/ServerInformation;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TelemetryClientSettings"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClientSettings;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;com.mapbox.android.telemetry.Environment, java.lang.String&gt;"
+      final="true"
+      name="TelemetryClientSettings.1"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClientSettings$1;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="TelemetryClientSettings.Builder"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryClientSettings$Builder;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TelemetryEnabler"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryEnabler;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="retrieveTelemetryStateFromPreferences"
+        native="false"
+        return="com.mapbox.android.telemetry.TelemetryEnabler.State"
+        jni-return="Lcom/mapbox/android/telemetry/TelemetryEnabler$State;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/mapbox/android/telemetry/TelemetryEnabler$State;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="updateTelemetryState"
+        native="false"
+        return="com.mapbox.android.telemetry.TelemetryEnabler.State"
+        jni-return="Lcom/mapbox/android/telemetry/TelemetryEnabler$State;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/TelemetryEnabler$State;)Lcom/mapbox/android/telemetry/TelemetryEnabler$State;">
+        <parameter
+          name="telemetryState"
+          type="com.mapbox.android.telemetry.TelemetryEnabler.State"
+          jni-type="Lcom/mapbox/android/telemetry/TelemetryEnabler$State;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;com.mapbox.android.telemetry.TelemetryEnabler.State, java.lang.Boolean&gt;"
+      final="true"
+      name="TelemetryEnabler.1"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryEnabler$1;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;java.lang.String, com.mapbox.android.telemetry.TelemetryEnabler.State&gt;"
+      final="true"
+      name="TelemetryEnabler.2"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryEnabler$2;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.mapbox.android.telemetry.TelemetryEnabler.State&gt;"
+      final="true"
+      name="TelemetryEnabler.State"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryEnabler$State;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.mapbox.android.telemetry.TelemetryEnabler.State"
+        jni-return="Lcom/mapbox/android/telemetry/TelemetryEnabler$State;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/mapbox/android/telemetry/TelemetryEnabler$State;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.mapbox.android.telemetry.TelemetryEnabler.State[]"
+        jni-return="[Lcom/mapbox/android/telemetry/TelemetryEnabler$State;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/mapbox/android/telemetry/TelemetryEnabler$State;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DISABLED"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.TelemetryEnabler.State"
+        type-generic-aware="com.mapbox.android.telemetry.TelemetryEnabler.State"
+        jni-signature="Lcom/mapbox/android/telemetry/TelemetryEnabler$State;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="ENABLED"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.mapbox.android.telemetry.TelemetryEnabler.State"
+        type-generic-aware="com.mapbox.android.telemetry.TelemetryEnabler.State"
+        jni-signature="Lcom/mapbox/android/telemetry/TelemetryEnabler$State;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="TelemetryListener"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryListener;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onHttpFailure"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onHttpResponse"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ZI)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TelemetryResponse"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryResponse;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="equals"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Z">
+        <parameter
+          name="response"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hashCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TelemetryUtils"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryUtils;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TelemetryUtils"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="generateCreateDateFormatted"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/Date;)Ljava/lang/String;">
+        <parameter
+          name="date"
+          type="java.util.Date"
+          jni-type="Ljava/util/Date;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isPluggedIn"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)Z">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="obtainApplicationState"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)Ljava/lang/String;">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="obtainBatteryLevel"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)I">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="obtainCellularNetworkType"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)Ljava/lang/String;">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="obtainCurrentDate"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="obtainUniversalUniqueIdentifier"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="retrieveVendorId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toHumanReadableAscii"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Ljava/lang/String;">
+        <parameter
+          name="s"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;java.lang.Integer, java.lang.String&gt;"
+      final="true"
+      name="TelemetryUtils.1"
+      jni-signature="Lcom/mapbox/android/telemetry/TelemetryUtils$1;"
+      static="true"
+      visibility="" />
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="VisionBuildEvent"
+      jni-signature="Lcom/mapbox/android/telemetry/VisionBuildEvent;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="build"
+        native="false"
+        return="com.mapbox.android.telemetry.Event"
+        jni-return="Lcom/mapbox/android/telemetry/Event;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/mapbox/android/telemetry/Event;" />
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mapbox/android/telemetry/Event;"
+      extends="com.mapbox.android.telemetry.Event"
+      extends-generic-aware="com.mapbox.android.telemetry.Event"
+      final="false"
+      name="VisionEvent"
+      jni-signature="Lcom/mapbox/android/telemetry/VisionEvent;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.os.Parcelable"
+        name-generic-aware="android.os.Parcelable"
+        jni-type="Landroid/os/Parcelable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="describeContents"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getContents"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/HashMap;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setContents"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/HashMap;)V">
+        <parameter
+          name="contents"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setName"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="writeToParcel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;I)V">
+        <parameter
+          name="dest"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+        <parameter
+          name="flags"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CREATOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="android.os.Parcelable.Creator"
+        type-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.android.telemetry.VisionEvent&gt;"
+        jni-signature="Landroid/os/Parcelable$Creator;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="VisionEvent.1"
+      jni-signature="Lcom/mapbox/android/telemetry/VisionEvent$1;"
+      static="true"
+      visibility="">
+      <implements
+        name="android.os.Parcelable.Creator"
+        name-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.android.telemetry.VisionEvent&gt;"
+        jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/mapbox/android/telemetry/VisionEvent;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="com.mapbox.android.telemetry.VisionEvent"
+        jni-return="Lcom/mapbox/android/telemetry/VisionEvent;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;)Lcom/mapbox/android/telemetry/VisionEvent;">
+        <parameter
+          name="in"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Landroid/os/Parcel;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="com.mapbox.android.telemetry.VisionEvent[]"
+        jni-return="[Lcom/mapbox/android/telemetry/VisionEvent;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)[Lcom/mapbox/android/telemetry/VisionEvent;">
+        <parameter
+          name="size"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="java.lang.Object[]"
+        jni-return="[Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(I)[Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="VisionEventFactory"
+      jni-signature="Lcom/mapbox/android/telemetry/VisionEventFactory;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="VisionEventFactory"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createAttachment"
+        native="false"
+        return="com.mapbox.android.telemetry.Attachment"
+        jni-return="Lcom/mapbox/android/telemetry/Attachment;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/Event$Type;)Lcom/mapbox/android/telemetry/Attachment;">
+        <parameter
+          name="type"
+          type="com.mapbox.android.telemetry.Event.Type"
+          jni-type="Lcom/mapbox/android/telemetry/Event$Type;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFileAttachment"
+        native="false"
+        return="com.mapbox.android.telemetry.FileAttachment"
+        jni-return="Lcom/mapbox/android/telemetry/FileAttachment;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lokhttp3/MediaType;Lcom/mapbox/android/telemetry/AttachmentMetadata;)Lcom/mapbox/android/telemetry/FileAttachment;">
+        <parameter
+          name="filePath"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="mediaType"
+          type="okhttp3.MediaType"
+          jni-type="Lokhttp3/MediaType;" />
+        <parameter
+          name="attachmentMetadata"
+          type="com.mapbox.android.telemetry.AttachmentMetadata"
+          jni-type="Lcom/mapbox/android/telemetry/AttachmentMetadata;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createVisionEvent"
+        native="false"
+        return="com.mapbox.android.telemetry.Event"
+        jni-return="Lcom/mapbox/android/telemetry/Event;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/Event$Type;)Lcom/mapbox/android/telemetry/Event;">
+        <parameter
+          name="type"
+          type="com.mapbox.android.telemetry.Event.Type"
+          jni-type="Lcom/mapbox/android/telemetry/Event$Type;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/util/HashMap;"
+      extends="java.util.HashMap"
+      extends-generic-aware="java.util.HashMap&lt;com.mapbox.android.telemetry.Event.Type, com.mapbox.android.telemetry.VisionBuildEvent&gt;"
+      final="false"
+      name="VisionEventFactory.1"
+      jni-signature="Lcom/mapbox/android/telemetry/VisionEventFactory$1;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="VisionEventFactory.1.1"
+      jni-signature="Lcom/mapbox/android/telemetry/VisionEventFactory$1$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.VisionBuildEvent"
+        name-generic-aware="com.mapbox.android.telemetry.VisionBuildEvent"
+        jni-type="Lcom/mapbox/android/telemetry/VisionBuildEvent;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="build"
+        native="false"
+        return="com.mapbox.android.telemetry.Event"
+        jni-return="Lcom/mapbox/android/telemetry/Event;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/mapbox/android/telemetry/Event;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mapbox/android/telemetry/Event;"
+      extends="com.mapbox.android.telemetry.Event"
+      extends-generic-aware="com.mapbox.android.telemetry.Event"
+      final="false"
+      name="VisionObjectDetectionEvent"
+      jni-signature="Lcom/mapbox/android/telemetry/VisionObjectDetectionEvent;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.os.Parcelable"
+        name-generic-aware="android.os.Parcelable"
+        jni-type="Landroid/os/Parcelable;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="VisionObjectDetectionEvent"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="created"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="describeContents"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getClazz"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCreated"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getDistanceFromCamera"
+        native="false"
+        return="double"
+        jni-return="D"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()D" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getEvent"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getObjectLatitude"
+        native="false"
+        return="double"
+        jni-return="D"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()D" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getObjectLongitude"
+        native="false"
+        return="double"
+        jni-return="D"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()D" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getObjectPositionHeight"
+        native="false"
+        return="double"
+        jni-return="D"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()D" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getObjectSizeHeight"
+        native="false"
+        return="double"
+        jni-return="D"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()D" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getObjectSizeWidth"
+        native="false"
+        return="double"
+        jni-return="D"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()D" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSignValue"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVehicleLatitude"
+        native="false"
+        return="double"
+        jni-return="D"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()D" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVehicleLongitude"
+        native="false"
+        return="double"
+        jni-return="D"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()D" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setClazz"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="clazz"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setDistanceFromCamera"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(D)V">
+        <parameter
+          name="distance_from_camera"
+          type="double"
+          jni-type="D" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setObjectLatitude"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(D)V">
+        <parameter
+          name="latitude"
+          type="double"
+          jni-type="D" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setObjectLongitude"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(D)V">
+        <parameter
+          name="longitude"
+          type="double"
+          jni-type="D" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setObjectPositionHeight"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(D)V">
+        <parameter
+          name="object_pos_height"
+          type="double"
+          jni-type="D" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setObjectSizeHeight"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(D)V">
+        <parameter
+          name="object_size_height"
+          type="double"
+          jni-type="D" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setObjectSizeWidth"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(D)V">
+        <parameter
+          name="object_size_width"
+          type="double"
+          jni-type="D" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setSignValue"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="sign_value"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setVehicleLatitude"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(D)V">
+        <parameter
+          name="latitude"
+          type="double"
+          jni-type="D" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setVehicleLongitude"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(D)V">
+        <parameter
+          name="longitude"
+          type="double"
+          jni-type="D" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="writeToParcel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;I)V">
+        <parameter
+          name="dest"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+        <parameter
+          name="flags"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CREATOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="android.os.Parcelable.Creator"
+        type-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.android.telemetry.VisionObjectDetectionEvent&gt;"
+        jni-signature="Landroid/os/Parcelable$Creator;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="VisionObjectDetectionEvent.1"
+      jni-signature="Lcom/mapbox/android/telemetry/VisionObjectDetectionEvent$1;"
+      static="true"
+      visibility="">
+      <implements
+        name="android.os.Parcelable.Creator"
+        name-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.android.telemetry.VisionObjectDetectionEvent&gt;"
+        jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/mapbox/android/telemetry/VisionObjectDetectionEvent;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="com.mapbox.android.telemetry.VisionObjectDetectionEvent"
+        jni-return="Lcom/mapbox/android/telemetry/VisionObjectDetectionEvent;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;)Lcom/mapbox/android/telemetry/VisionObjectDetectionEvent;">
+        <parameter
+          name="in"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Landroid/os/Parcel;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="com.mapbox.android.telemetry.VisionObjectDetectionEvent[]"
+        jni-return="[Lcom/mapbox/android/telemetry/VisionObjectDetectionEvent;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)[Lcom/mapbox/android/telemetry/VisionObjectDetectionEvent;">
+        <parameter
+          name="size"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="java.lang.Object[]"
+        jni-return="[Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(I)[Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.mapbox.android.telemetry.crash"
+    jni-name="com/mapbox/android/telemetry/crash">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="CrashReporterClient"
+      jni-signature="Lcom/mapbox/android/telemetry/crash/CrashReporterClient;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="CrashReporterClient.1"
+      jni-signature="Lcom/mapbox/android/telemetry/crash/CrashReporterClient$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.TelemetryListener"
+        name-generic-aware="com.mapbox.android.telemetry.TelemetryListener"
+        jni-type="Lcom/mapbox/android/telemetry/TelemetryListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onHttpFailure"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="message"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onHttpResponse"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ZI)V">
+        <parameter
+          name="successful"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="code"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v4/app/JobIntentService;"
+      extends="android.support.v4.app.JobIntentService"
+      extends-generic-aware="android.support.v4.app.JobIntentService"
+      final="true"
+      name="CrashReporterJobIntentService"
+      jni-signature="Lcom/mapbox/android/telemetry/crash/CrashReporterJobIntentService;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CrashReporterJobIntentService"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onHandleWork"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Intent;)V">
+        <parameter
+          name="intent"
+          type="android.content.Intent"
+          jni-type="Landroid/content/Intent;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/content/BroadcastReceiver;"
+      extends="android.content.BroadcastReceiver"
+      extends-generic-aware="android.content.BroadcastReceiver"
+      final="false"
+      name="TokenChangeBroadcastReceiver"
+      jni-signature="Lcom/mapbox/android/telemetry/crash/TokenChangeBroadcastReceiver;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TokenChangeBroadcastReceiver"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onReceive"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/content/Intent;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="intent"
+          type="android.content.Intent"
+          jni-type="Landroid/content/Intent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="register"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.mapbox.android.telemetry.location"
+    jni-name="com/mapbox/android/telemetry/location">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="LocationCollectionClient"
+      jni-signature="Lcom/mapbox/android/telemetry/location/LocationCollectionClient;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.content.SharedPreferences.OnSharedPreferenceChangeListener"
+        name-generic-aware="android.content.SharedPreferences.OnSharedPreferenceChangeListener"
+        jni-type="Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="install"
+        native="false"
+        return="com.mapbox.android.telemetry.location.LocationCollectionClient"
+        jni-return="Lcom/mapbox/android/telemetry/location/LocationCollectionClient;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;J)Lcom/mapbox/android/telemetry/location/LocationCollectionClient;">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="defaultInterval"
+          type="long"
+          jni-type="J" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSharedPreferenceChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/SharedPreferences;Ljava/lang/String;)V">
+        <parameter
+          name="sharedPreferences"
+          type="android.content.SharedPreferences"
+          jni-type="Landroid/content/SharedPreferences;" />
+        <parameter
+          name="key"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEFAULT_SESSION_ROTATION_INTERVAL_HOURS"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="24"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/os/Handler;"
+      extends="android.os.Handler"
+      extends-generic-aware="android.os.Handler"
+      final="false"
+      name="LocationCollectionClient.1"
+      jni-signature="Lcom/mapbox/android/telemetry/location/LocationCollectionClient$1;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleMessage"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Message;)V">
+        <parameter
+          name="msg"
+          type="android.os.Message"
+          jni-type="Landroid/os/Message;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="LocationEngineController"
+      jni-signature="Lcom/mapbox/android/telemetry/location/LocationEngineController;"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onDestroy"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onPause"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onResume"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="LocationEngineControllerImpl"
+      jni-signature="Lcom/mapbox/android/telemetry/location/LocationEngineControllerImpl;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.telemetry.location.LocationEngineController"
+        name-generic-aware="com.mapbox.android.telemetry.location.LocationEngineController"
+        jni-type="Lcom/mapbox/android/telemetry/location/LocationEngineController;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onDestroy"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onPause"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onResume"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="LocationMapper"
+      jni-signature="Lcom/mapbox/android/telemetry/location/LocationMapper;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LocationMapper"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="create"
+        native="false"
+        return="com.mapbox.android.telemetry.LocationEvent"
+        jni-return="Lcom/mapbox/android/telemetry/LocationEvent;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/location/Location;Ljava/lang/String;)Lcom/mapbox/android/telemetry/LocationEvent;">
+        <parameter
+          name="location"
+          type="android.location.Location"
+          jni-type="Landroid/location/Location;" />
+        <parameter
+          name="sessionId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="from"
+        native="false"
+        return="com.mapbox.android.telemetry.LocationEvent"
+        jni-return="Lcom/mapbox/android/telemetry/LocationEvent;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/location/Location;Ljava/lang/String;)Lcom/mapbox/android/telemetry/LocationEvent;">
+        <parameter
+          name="location"
+          type="android.location.Location"
+          jni-type="Landroid/location/Location;" />
+        <parameter
+          name="applicationState"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="updateSessionIdentifier"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/telemetry/location/SessionIdentifier;)V">
+        <parameter
+          name="sessionIdentifier"
+          type="com.mapbox.android.telemetry.location.SessionIdentifier"
+          jni-type="Lcom/mapbox/android/telemetry/location/SessionIdentifier;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/content/BroadcastReceiver;"
+      extends="android.content.BroadcastReceiver"
+      extends-generic-aware="android.content.BroadcastReceiver"
+      final="false"
+      name="LocationUpdatesBroadcastReceiver"
+      jni-signature="Lcom/mapbox/android/telemetry/location/LocationUpdatesBroadcastReceiver;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LocationUpdatesBroadcastReceiver"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onReceive"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/content/Intent;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="intent"
+          type="android.content.Intent"
+          jni-type="Landroid/content/Intent;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SessionIdentifier"
+      jni-signature="Lcom/mapbox/android/telemetry/location/SessionIdentifier;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SessionIdentifier"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="deprecated"
+        final="false"
+        name="SessionIdentifier"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="rotationInterval"
+          type="int"
+          jni-type="I" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SessionIdentifier"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(J)V">
+        <parameter
+          name="intervalMillis"
+          type="long"
+          jni-type="J" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getInterval"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+    </class>
+  </package>
+  <package
+    name="com.mapbox.android.telemetry.provider"
+    jni-name="com/mapbox/android/telemetry/provider">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/content/ContentProvider;"
+      extends="android.content.ContentProvider"
+      extends-generic-aware="android.content.ContentProvider"
+      final="false"
+      name="MapboxTelemetryInitProvider"
+      jni-signature="Lcom/mapbox/android/telemetry/provider/MapboxTelemetryInitProvider;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="MapboxTelemetryInitProvider"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="attachInfo"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="info"
+          type="android.content.pm.ProviderInfo"
+          jni-type="Landroid/content/pm/ProviderInfo;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="delete"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I">
+        <parameter
+          name="uri"
+          type="android.net.Uri"
+          jni-type="Landroid/net/Uri;" />
+        <parameter
+          name="selection"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="selectionArgs"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getType"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/net/Uri;)Ljava/lang/String;">
+        <parameter
+          name="uri"
+          type="android.net.Uri"
+          jni-type="Landroid/net/Uri;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="insert"
+        native="false"
+        return="android.net.Uri"
+        jni-return="Landroid/net/Uri;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;">
+        <parameter
+          name="uri"
+          type="android.net.Uri"
+          jni-type="Landroid/net/Uri;" />
+        <parameter
+          name="values"
+          type="android.content.ContentValues"
+          jni-type="Landroid/content/ContentValues;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreate"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="query"
+        native="false"
+        return="android.database.Cursor"
+        jni-return="Landroid/database/Cursor;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;">
+        <parameter
+          name="uri"
+          type="android.net.Uri"
+          jni-type="Landroid/net/Uri;" />
+        <parameter
+          name="projection"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+        <parameter
+          name="selection"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="selectionArgs"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+        <parameter
+          name="sortOrder"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="update"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I">
+        <parameter
+          name="uri"
+          type="android.net.Uri"
+          jni-type="Landroid/net/Uri;" />
+        <parameter
+          name="values"
+          type="android.content.ContentValues"
+          jni-type="Landroid/content/ContentValues;" />
+        <parameter
+          name="selection"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="selectionArgs"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+      </method>
+    </class>
+  </package>
+</api>

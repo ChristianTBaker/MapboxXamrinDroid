@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<api>
+  <package name="com.mapbox.android.accounts.v1" jni-name="com/mapbox/android/accounts/v1">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="MapboxAccounts" static="false" visibility="public" jni-signature="Lcom/mapbox/android/accounts/v1/MapboxAccounts;">
+      <constructor deprecated="not deprecated" final="false" name="MapboxAccounts" jni-signature="()V" bridge="false" static="false" type="com.mapbox.android.accounts.v1.MapboxAccounts" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getNow" jni-signature="()J" bridge="false" native="false" return="long" jni-return="J" static="true" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="obtainEndUserId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="obtainMapsSkuUserToken" jni-signature="(Ljava/lang/String;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="obtainNavigationSkuSessionToken" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="obtainNavigationSkuUserToken" jni-signature="(Ljava/lang/String;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="SKU_ID_MAPS_MAUS" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;00&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="SKU_ID_NAVIGATION_MAUS" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;02&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="SKU_ID_NAVIGATION_TRIPS" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;03&quot;" visibility="public" volatile="false"></field>
+    </class>
+  </package>
+</api>

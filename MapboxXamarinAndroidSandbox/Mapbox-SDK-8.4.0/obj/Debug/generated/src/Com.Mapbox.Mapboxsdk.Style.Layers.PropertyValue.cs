@@ -32,6 +32,28 @@ namespace Com.Mapbox.Mapboxsdk.Style.Layers {
 				}
 			}
 		}
+
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.mapbox.mapboxsdk.style.layers']/class[@name='PropertyValue']/field[@name='value']"
+		[Register ("value")]
+		public global::Java.Lang.Object _value {
+			get {
+				const string __id = "value.Ljava/lang/Object;";
+
+				var __v = _members.InstanceFields.GetObjectValue (__id, this);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Object> (__v.Handle, JniHandleOwnership.TransferLocalRef);
+			}
+			set {
+				const string __id = "value.Ljava/lang/Object;";
+
+				IntPtr native_value = global::Android.Runtime.JNIEnv.ToLocalJniHandle (value);
+				try {
+					_members.InstanceFields.SetValue (__id, this, new JniObjectReference (native_value));
+				} finally {
+					global::Android.Runtime.JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+		}
 		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mapbox/mapboxsdk/style/layers/PropertyValue", typeof (PropertyValue));
 		internal static new IntPtr class_ref {
 			get {

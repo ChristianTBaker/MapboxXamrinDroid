@@ -6,17 +6,11 @@
   <!-- Classes -->
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.Annotation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.BaseMarkerOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.BasePointCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.BubbleLayout.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.Icon.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.IconFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.InfoWindow.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.Marker.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.MarkerOptions.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.Polygon.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.PolygonOptions.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.Polyline.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.PolylineOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Attribution.Attribution.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Attribution.AttributionLayout.cs" />
@@ -86,6 +80,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Maps.Renderer.MapRenderer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Maps.Renderer.Textureview.TextureViewMapRenderer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Maps.Style.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Maps.SupportMapFragment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Maps.Transform.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Maps.UiSettings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Maps.Widgets.CompassView.cs" />
@@ -93,6 +88,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Module.Http.HttpRequestImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Module.Http.HttpRequestUtil.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Module.Loader.LibraryLoaderProviderImpl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Module.Telemetry.OfflineDownloadEndEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Module.Telemetry.OfflineDownloadStartEvent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Module.Telemetry.TelemetryImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.ModuleProviderImpl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Net.ConnectivityReceiver.cs" />
@@ -104,6 +101,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Offline.OfflineRegionError.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Offline.OfflineRegionStatus.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Offline.OfflineTilePyramidRegionDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.R.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Snapshotter.MapSnapshot.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Snapshotter.MapSnapshotter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Storage.FileSource.cs" />

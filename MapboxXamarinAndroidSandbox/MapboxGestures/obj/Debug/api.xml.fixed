@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<api>
+  <package name="com.mapbox.android.gestures" jni-name="com/mapbox/android/gestures">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="AndroidGesturesManager" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/AndroidGesturesManager;">
+      <constructor deprecated="not deprecated" final="false" name="AndroidGesturesManager" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="com.mapbox.android.gestures.AndroidGesturesManager" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="AndroidGesturesManager" jni-signature="(Landroid/content/Context;Z)V" bridge="false" static="false" type="com.mapbox.android.gestures.AndroidGesturesManager" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="applyDefaultThresholds" type="boolean" jni-type="Z"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="AndroidGesturesManager" jni-signature="(Landroid/content/Context;Ljava/util/List;Z)V" bridge="false" static="false" type="com.mapbox.android.gestures.AndroidGesturesManager" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="exclusiveGestures" type="java.util.List&lt;java.util.Set&lt;java.lang.Integer&gt;&gt;" jni-type="Ljava/util/List&lt;Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;&gt;;"></parameter>
+        <parameter name="applyDefaultThresholds" type="boolean" jni-type="Z"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDetectors" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.mapbox.android.gestures.BaseGesture&gt;" jni-return="Ljava/util/List&lt;Lcom/mapbox/android/gestures/BaseGesture;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMoveGestureDetector" jni-signature="()Lcom/mapbox/android/gestures/MoveGestureDetector;" bridge="false" native="false" return="com.mapbox.android.gestures.MoveGestureDetector" jni-return="Lcom/mapbox/android/gestures/MoveGestureDetector;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMultiFingerTapGestureDetector" jni-signature="()Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector;" bridge="false" native="false" return="com.mapbox.android.gestures.MultiFingerTapGestureDetector" jni-return="Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMutuallyExclusiveGestures" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;java.util.Set&lt;java.lang.Integer&gt;&gt;" jni-return="Ljava/util/List&lt;Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRotateGestureDetector" jni-signature="()Lcom/mapbox/android/gestures/RotateGestureDetector;" bridge="false" native="false" return="com.mapbox.android.gestures.RotateGestureDetector" jni-return="Lcom/mapbox/android/gestures/RotateGestureDetector;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getShoveGestureDetector" jni-signature="()Lcom/mapbox/android/gestures/ShoveGestureDetector;" bridge="false" native="false" return="com.mapbox.android.gestures.ShoveGestureDetector" jni-return="Lcom/mapbox/android/gestures/ShoveGestureDetector;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSidewaysShoveGestureDetector" jni-signature="()Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;" bridge="false" native="false" return="com.mapbox.android.gestures.SidewaysShoveGestureDetector" jni-return="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStandardGestureDetector" jni-signature="()Lcom/mapbox/android/gestures/StandardGestureDetector;" bridge="false" native="false" return="com.mapbox.android.gestures.StandardGestureDetector" jni-return="Lcom/mapbox/android/gestures/StandardGestureDetector;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStandardScaleGestureDetector" jni-signature="()Lcom/mapbox/android/gestures/StandardScaleGestureDetector;" bridge="false" native="false" return="com.mapbox.android.gestures.StandardScaleGestureDetector" jni-return="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTouchEvent" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="motionEvent" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeMoveGestureListener" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeMultiFingerTapGestureListener" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeRotateGestureListener" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeShoveGestureListener" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeSidewaysShoveGestureListener" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeStandardGestureListener" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeStandardScaleGestureListener" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMoveGestureListener" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector$OnMoveGestureListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.mapbox.android.gestures.MoveGestureDetector.OnMoveGestureListener" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector$OnMoveGestureListener;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMultiFingerTapGestureListener" jni-signature="(Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector$OnMultiFingerTapGestureListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.mapbox.android.gestures.MultiFingerTapGestureDetector.OnMultiFingerTapGestureListener" jni-type="Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector$OnMultiFingerTapGestureListener;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMutuallyExclusiveGestures" jni-signature="(Ljava/util/List;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="exclusiveGestures" type="java.util.List&lt;java.util.Set&lt;java.lang.Integer&gt;&gt;" jni-type="Ljava/util/List&lt;Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;&gt;;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setRotateGestureListener" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector$OnRotateGestureListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.mapbox.android.gestures.RotateGestureDetector.OnRotateGestureListener" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector$OnRotateGestureListener;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setShoveGestureListener" jni-signature="(Lcom/mapbox/android/gestures/ShoveGestureDetector$OnShoveGestureListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.mapbox.android.gestures.ShoveGestureDetector.OnShoveGestureListener" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector$OnShoveGestureListener;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSidewaysShoveGestureListener" jni-signature="(Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector$OnSidewaysShoveGestureListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.mapbox.android.gestures.SidewaysShoveGestureDetector.OnSidewaysShoveGestureListener" jni-type="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector$OnSidewaysShoveGestureListener;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setStandardGestureListener" jni-signature="(Lcom/mapbox/android/gestures/StandardGestureDetector$StandardOnGestureListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.mapbox.android.gestures.StandardGestureDetector.StandardOnGestureListener" jni-type="Lcom/mapbox/android/gestures/StandardGestureDetector$StandardOnGestureListener;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setStandardScaleGestureListener" jni-signature="(Lcom/mapbox/android/gestures/StandardScaleGestureDetector$StandardOnScaleGestureListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="listener" type="com.mapbox.android.gestures.StandardScaleGestureDetector.StandardOnScaleGestureListener" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector$StandardOnScaleGestureListener;"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_DOUBLE_TAP" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="10" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_DOUBLE_TAP_EVENT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="11" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_DOWN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="9" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_FLING" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="7" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_LONG_PRESS" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_MOVE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="13" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_MULTI_FINGER_TAP" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_QUICK_SCALE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="15" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_ROTATE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_SCALE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_SCROLL" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_SHOVE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_SHOW_PRESS" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_SIDEWAYS_SHOVE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="14" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_SINGLE_TAP_CONFIRMED" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="12" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="GESTURE_TYPE_SINGLE_TAP_UP" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="5" visibility="public" volatile="false"></field>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="AndroidGesturesManager.GestureType" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/AndroidGesturesManager$GestureType;">
+      <implements name="java.lang.annotation.Annotation" name-generic-aware="java.lang.annotation.Annotation" jni-type="Ljava/lang/annotation/Annotation;"></implements>
+    </interface>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BaseGesture" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/BaseGesture;">
+      <typeParameters>
+        <typeParameter name="L" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;"></typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="BaseGesture" jni-signature="(Landroid/content/Context;Lcom/mapbox/android/gestures/AndroidGesturesManager;)V" bridge="false" static="false" type="com.mapbox.android.gestures.BaseGesture" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="gesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;"></parameter>
+      </constructor>
+      <method abstract="true" deprecated="not deprecated" final="false" name="analyzeEvent" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="p0" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="canExecute" jni-signature="(I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="invokedGestureType" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrentEvent" jni-signature="()Landroid/view/MotionEvent;" bridge="false" native="false" return="android.view.MotionEvent" jni-return="Landroid/view/MotionEvent;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getGestureDuration" jni-signature="()J" bridge="false" native="false" return="long" jni-return="J" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPreviousEvent" jni-signature="()Landroid/view/MotionEvent;" bridge="false" native="false" return="android.view.MotionEvent" jni-return="Landroid/view/MotionEvent;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isEnabled" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTouchEvent" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="motionEvent" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="removeListener" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setEnabled" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="enabled" type="boolean" jni-type="Z"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setListener" jni-signature="(Ljava/lang/Object;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="listener" type="L" jni-type="TL;"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="context" jni-signature="Landroid/content/Context;" static="false" transient="false" type="android.content.Context" type-generic-aware="android.content.Context" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="listener" jni-signature="Ljava/lang/Object;" static="false" transient="false" type="java.lang.Object" type-generic-aware="L" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="windowManager" jni-signature="Landroid/view/WindowManager;" static="false" transient="false" type="android.view.WindowManager" type-generic-aware="android.view.WindowManager" visibility="protected" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="com.mapbox.android.gestures.BuildConfig" synthetic="false" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="APPLICATION_ID" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.mapbox.android.gestures&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="FLAVOR" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="VERSION_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="VERSION_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;0.5.1&quot;" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="Constants" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/Constants;">
+      <constructor deprecated="not deprecated" final="false" name="Constants" jni-signature="()V" bridge="false" static="false" type="com.mapbox.android.gestures.Constants" synthetic="false" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="DEFAULT_MULTI_TAP_TIME_THRESHOLD" jni-signature="J" static="true" transient="false" type="long" type-generic-aware="long" value="150" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="DEFAULT_ROTATE_ANGLE_THRESHOLD" jni-signature="F" static="true" transient="false" type="float" type-generic-aware="float" value="15.3" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="DEFAULT_SHOVE_MAX_ANGLE" jni-signature="F" static="true" transient="false" type="float" type-generic-aware="float" value="20" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="MoveDistancesObject" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/MoveDistancesObject;">
+      <constructor deprecated="not deprecated" final="false" name="MoveDistancesObject" jni-signature="(FF)V" bridge="false" static="false" type="com.mapbox.android.gestures.MoveDistancesObject" synthetic="false" visibility="public">
+        <parameter name="initialX" type="float" jni-type="F"></parameter>
+        <parameter name="initialY" type="float" jni-type="F"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addNewPosition" jni-signature="(FF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="x" type="float" jni-type="F"></parameter>
+        <parameter name="y" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrentX" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrentY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDistanceXSinceLast" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDistanceXSinceStart" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDistanceYSinceLast" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDistanceYSinceStart" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInitialX" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInitialY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPreviousX" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPreviousY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.ProgressiveGesture" extends-generic-aware="com.mapbox.android.gestures.ProgressiveGesture&lt;com.mapbox.android.gestures.MoveGestureDetector.OnMoveGestureListener&gt;" jni-extends="Lcom/mapbox/android/gestures/ProgressiveGesture;" final="false" name="MoveGestureDetector" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/MoveGestureDetector;">
+      <constructor deprecated="not deprecated" final="false" name="MoveGestureDetector" jni-signature="(Landroid/content/Context;Lcom/mapbox/android/gestures/AndroidGesturesManager;)V" bridge="false" static="false" type="com.mapbox.android.gestures.MoveGestureDetector" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="gesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLastDistanceX" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLastDistanceY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMoveObject" jni-signature="(I)Lcom/mapbox/android/gestures/MoveDistancesObject;" bridge="false" native="false" return="com.mapbox.android.gestures.MoveDistancesObject" jni-return="Lcom/mapbox/android/gestures/MoveDistancesObject;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="pointerIndex" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMoveThreshold" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="provideHandledTypes" jni-signature="()Ljava/util/Set;" bridge="false" native="false" return="java.util.Set&lt;java.lang.Integer&gt;" jni-return="Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMoveThreshold" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="moveThreshold" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMoveThresholdResource" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="moveThresholdDimen" type="int" jni-type="I"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="MoveGestureDetector.OnMoveGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/MoveGestureDetector$OnMoveGestureListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onMove" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;"></parameter>
+        <parameter name="p1" type="float" jni-type="F"></parameter>
+        <parameter name="p2" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onMoveBegin" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onMoveEnd" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;FF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;"></parameter>
+        <parameter name="p1" type="float" jni-type="F"></parameter>
+        <parameter name="p2" type="float" jni-type="F"></parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="MoveGestureDetector.SimpleOnMoveGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/MoveGestureDetector$SimpleOnMoveGestureListener;">
+      <implements name="com.mapbox.android.gestures.MoveGestureDetector.OnMoveGestureListener" name-generic-aware="com.mapbox.android.gestures.MoveGestureDetector.OnMoveGestureListener" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector$OnMoveGestureListener;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="MoveGestureDetector.SimpleOnMoveGestureListener" jni-signature="()V" bridge="false" static="false" type="com.mapbox.android.gestures.MoveGestureDetector.SimpleOnMoveGestureListener" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMove" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;"></parameter>
+        <parameter name="distanceX" type="float" jni-type="F"></parameter>
+        <parameter name="distanceY" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMoveBegin" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMoveEnd" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;FF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;"></parameter>
+        <parameter name="velocityX" type="float" jni-type="F"></parameter>
+        <parameter name="velocityY" type="float" jni-type="F"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="MultiFingerDistancesObject" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/MultiFingerDistancesObject;">
+      <constructor deprecated="not deprecated" final="false" name="MultiFingerDistancesObject" jni-signature="(FFFF)V" bridge="false" static="false" type="com.mapbox.android.gestures.MultiFingerDistancesObject" synthetic="false" visibility="public">
+        <parameter name="prevFingersDiffX" type="float" jni-type="F"></parameter>
+        <parameter name="prevFingersDiffY" type="float" jni-type="F"></parameter>
+        <parameter name="currFingersDiffX" type="float" jni-type="F"></parameter>
+        <parameter name="currFingersDiffY" type="float" jni-type="F"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrFingersDiffX" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrFingersDiffXY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrFingersDiffY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPrevFingersDiffX" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPrevFingersDiffXY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPrevFingersDiffY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="com.mapbox.android.gestures.BaseGesture" extends-generic-aware="com.mapbox.android.gestures.BaseGesture&lt;L&gt;" jni-extends="Lcom/mapbox/android/gestures/BaseGesture;" final="false" name="MultiFingerGesture" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/MultiFingerGesture;">
+      <typeParameters>
+        <typeParameter name="L" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;"></typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="MultiFingerGesture" jni-signature="(Landroid/content/Context;Lcom/mapbox/android/gestures/AndroidGesturesManager;)V" bridge="false" static="false" type="com.mapbox.android.gestures.MultiFingerGesture" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="gesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="analyzeEvent" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="motionEvent" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="analyzeMovement" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrentSpan" jni-signature="(II)F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="firstPointerIndex" type="int" jni-type="I"></parameter>
+        <parameter name="secondPointerIndex" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrentSpanX" jni-signature="(II)F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="firstPointerIndex" type="int" jni-type="I"></parameter>
+        <parameter name="secondPointerIndex" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrentSpanY" jni-signature="(II)F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="firstPointerIndex" type="int" jni-type="I"></parameter>
+        <parameter name="secondPointerIndex" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getFocalPoint" jni-signature="()Landroid/graphics/PointF;" bridge="false" native="false" return="android.graphics.PointF" jni-return="Landroid/graphics/PointF;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPointersCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPreviousSpan" jni-signature="(II)F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="firstPointerIndex" type="int" jni-type="I"></parameter>
+        <parameter name="secondPointerIndex" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPreviousSpanX" jni-signature="(II)F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="firstPointerIndex" type="int" jni-type="I"></parameter>
+        <parameter name="secondPointerIndex" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPreviousSpanY" jni-signature="(II)F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="firstPointerIndex" type="int" jni-type="I"></parameter>
+        <parameter name="secondPointerIndex" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRequiredPointersCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSpanThreshold" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isSloppyGesture" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="reset" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSpanThreshold" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="spanThreshold" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSpanThresholdResource" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="spanThresholdDimen" type="int" jni-type="I"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.MultiFingerGesture" extends-generic-aware="com.mapbox.android.gestures.MultiFingerGesture&lt;com.mapbox.android.gestures.MultiFingerTapGestureDetector.OnMultiFingerTapGestureListener&gt;" jni-extends="Lcom/mapbox/android/gestures/MultiFingerGesture;" final="false" name="MultiFingerTapGestureDetector" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector;">
+      <constructor deprecated="not deprecated" final="false" name="MultiFingerTapGestureDetector" jni-signature="(Landroid/content/Context;Lcom/mapbox/android/gestures/AndroidGesturesManager;)V" bridge="false" static="false" type="com.mapbox.android.gestures.MultiFingerTapGestureDetector" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="gesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMultiFingerTapMovementThreshold" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMultiFingerTapTimeThreshold" jni-signature="()J" bridge="false" native="false" return="long" jni-return="J" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMultiFingerTapMovementThreshold" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="multiFingerTapMovementThreshold" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMultiFingerTapMovementThresholdResource" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="multiFingerTapMovementThresholdDimen" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMultiFingerTapTimeThreshold" jni-signature="(J)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="multiFingerTapTimeThreshold" type="long" jni-type="J"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="MultiFingerTapGestureDetector.OnMultiFingerTapGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector$OnMultiFingerTapGestureListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onMultiFingerTap" jni-signature="(Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector;I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.MultiFingerTapGestureDetector" jni-type="Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector;"></parameter>
+        <parameter name="p1" type="int" jni-type="I"></parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="PermittedActionsGuard" static="false" visibility="" jni-signature="Lcom/mapbox/android/gestures/PermittedActionsGuard;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="android.util.Pair" extends-generic-aware="android.util.Pair&lt;java.lang.Integer, java.lang.Integer&gt;" jni-extends="Landroid/util/Pair;" final="false" name="PointerDistancePair" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/PointerDistancePair;">
+      <constructor deprecated="not deprecated" final="false" name="PointerDistancePair" jni-signature="(Ljava/lang/Integer;Ljava/lang/Integer;)V" bridge="false" static="false" type="com.mapbox.android.gestures.PointerDistancePair" synthetic="false" visibility="public">
+        <parameter name="first" type="java.lang.Integer" jni-type="Ljava/lang/Integer;"></parameter>
+        <parameter name="second" type="java.lang.Integer" jni-type="Ljava/lang/Integer;"></parameter>
+      </constructor>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="com.mapbox.android.gestures.MultiFingerGesture" extends-generic-aware="com.mapbox.android.gestures.MultiFingerGesture&lt;L&gt;" jni-extends="Lcom/mapbox/android/gestures/MultiFingerGesture;" final="false" name="ProgressiveGesture" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/ProgressiveGesture;">
+      <typeParameters>
+        <typeParameter name="L" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;"></typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="ProgressiveGesture" jni-signature="(Landroid/content/Context;Lcom/mapbox/android/gestures/AndroidGesturesManager;)V" bridge="false" static="false" type="com.mapbox.android.gestures.ProgressiveGesture" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="gesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="gestureStarted" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="gestureStopped" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="interrupt" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isInProgress" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="provideHandledTypes" jni-signature="()Ljava/util/Set;" bridge="false" native="false" return="java.util.Set&lt;java.lang.Integer&gt;" jni-return="Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.ProgressiveGesture" extends-generic-aware="com.mapbox.android.gestures.ProgressiveGesture&lt;com.mapbox.android.gestures.RotateGestureDetector.OnRotateGestureListener&gt;" jni-extends="Lcom/mapbox/android/gestures/ProgressiveGesture;" final="false" name="RotateGestureDetector" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/RotateGestureDetector;">
+      <constructor deprecated="not deprecated" final="false" name="RotateGestureDetector" jni-signature="(Landroid/content/Context;Lcom/mapbox/android/gestures/AndroidGesturesManager;)V" bridge="false" static="false" type="com.mapbox.android.gestures.RotateGestureDetector" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="gesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAngleThreshold" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeltaSinceLast" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeltaSinceStart" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="provideHandledTypes" jni-signature="()Ljava/util/Set;" bridge="false" native="false" return="java.util.Set&lt;java.lang.Integer&gt;" jni-return="Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAngleThreshold" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="angleThreshold" type="float" jni-type="F"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="RotateGestureDetector.OnRotateGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/RotateGestureDetector$OnRotateGestureListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onRotate" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;"></parameter>
+        <parameter name="p1" type="float" jni-type="F"></parameter>
+        <parameter name="p2" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onRotateBegin" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onRotateEnd" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;FFF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;"></parameter>
+        <parameter name="p1" type="float" jni-type="F"></parameter>
+        <parameter name="p2" type="float" jni-type="F"></parameter>
+        <parameter name="p3" type="float" jni-type="F"></parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="RotateGestureDetector.SimpleOnRotateGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/RotateGestureDetector$SimpleOnRotateGestureListener;">
+      <implements name="com.mapbox.android.gestures.RotateGestureDetector.OnRotateGestureListener" name-generic-aware="com.mapbox.android.gestures.RotateGestureDetector.OnRotateGestureListener" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector$OnRotateGestureListener;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="RotateGestureDetector.SimpleOnRotateGestureListener" jni-signature="()V" bridge="false" static="false" type="com.mapbox.android.gestures.RotateGestureDetector.SimpleOnRotateGestureListener" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRotate" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;"></parameter>
+        <parameter name="rotationDegreesSinceLast" type="float" jni-type="F"></parameter>
+        <parameter name="rotationDegreesSinceFirst" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRotateBegin" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRotateEnd" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;FFF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;"></parameter>
+        <parameter name="velocityX" type="float" jni-type="F"></parameter>
+        <parameter name="velocityY" type="float" jni-type="F"></parameter>
+        <parameter name="angularVelocity" type="float" jni-type="F"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.ProgressiveGesture" extends-generic-aware="com.mapbox.android.gestures.ProgressiveGesture&lt;com.mapbox.android.gestures.ShoveGestureDetector.OnShoveGestureListener&gt;" jni-extends="Lcom/mapbox/android/gestures/ProgressiveGesture;" final="false" name="ShoveGestureDetector" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/ShoveGestureDetector;">
+      <constructor deprecated="not deprecated" final="false" name="ShoveGestureDetector" jni-signature="(Landroid/content/Context;Lcom/mapbox/android/gestures/AndroidGesturesManager;)V" bridge="false" static="false" type="com.mapbox.android.gestures.ShoveGestureDetector" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="gesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeltaPixelSinceLast" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeltaPixelsSinceStart" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMaxShoveAngle" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPixelDeltaThreshold" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="provideHandledTypes" jni-signature="()Ljava/util/Set;" bridge="false" native="false" return="java.util.Set&lt;java.lang.Integer&gt;" jni-return="Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMaxShoveAngle" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="maxShoveAngle" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setPixelDeltaThreshold" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="pixelDeltaThreshold" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setPixelDeltaThresholdResource" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="pixelDeltaThresholdDimen" type="int" jni-type="I"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="ShoveGestureDetector.OnShoveGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/ShoveGestureDetector$OnShoveGestureListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onShove" jni-signature="(Lcom/mapbox/android/gestures/ShoveGestureDetector;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.ShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector;"></parameter>
+        <parameter name="p1" type="float" jni-type="F"></parameter>
+        <parameter name="p2" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onShoveBegin" jni-signature="(Lcom/mapbox/android/gestures/ShoveGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.ShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector;"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onShoveEnd" jni-signature="(Lcom/mapbox/android/gestures/ShoveGestureDetector;FF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.ShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector;"></parameter>
+        <parameter name="p1" type="float" jni-type="F"></parameter>
+        <parameter name="p2" type="float" jni-type="F"></parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ShoveGestureDetector.SimpleOnShoveGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/ShoveGestureDetector$SimpleOnShoveGestureListener;">
+      <implements name="com.mapbox.android.gestures.ShoveGestureDetector.OnShoveGestureListener" name-generic-aware="com.mapbox.android.gestures.ShoveGestureDetector.OnShoveGestureListener" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector$OnShoveGestureListener;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="ShoveGestureDetector.SimpleOnShoveGestureListener" jni-signature="()V" bridge="false" static="false" type="com.mapbox.android.gestures.ShoveGestureDetector.SimpleOnShoveGestureListener" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onShove" jni-signature="(Lcom/mapbox/android/gestures/ShoveGestureDetector;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.ShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector;"></parameter>
+        <parameter name="deltaPixelsSinceLast" type="float" jni-type="F"></parameter>
+        <parameter name="deltaPixelsSinceStart" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onShoveBegin" jni-signature="(Lcom/mapbox/android/gestures/ShoveGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.ShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onShoveEnd" jni-signature="(Lcom/mapbox/android/gestures/ShoveGestureDetector;FF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.ShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector;"></parameter>
+        <parameter name="velocityX" type="float" jni-type="F"></parameter>
+        <parameter name="velocityY" type="float" jni-type="F"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.ProgressiveGesture" extends-generic-aware="com.mapbox.android.gestures.ProgressiveGesture&lt;com.mapbox.android.gestures.SidewaysShoveGestureDetector.OnSidewaysShoveGestureListener&gt;" jni-extends="Lcom/mapbox/android/gestures/ProgressiveGesture;" final="false" name="SidewaysShoveGestureDetector" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;">
+      <constructor deprecated="not deprecated" final="false" name="SidewaysShoveGestureDetector" jni-signature="(Landroid/content/Context;Lcom/mapbox/android/gestures/AndroidGesturesManager;)V" bridge="false" static="false" type="com.mapbox.android.gestures.SidewaysShoveGestureDetector" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="gesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeltaPixelSinceLast" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDeltaPixelsSinceStart" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMaxShoveAngle" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPixelDeltaThreshold" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="provideHandledTypes" jni-signature="()Ljava/util/Set;" bridge="false" native="false" return="java.util.Set&lt;java.lang.Integer&gt;" jni-return="Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMaxShoveAngle" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="maxShoveAngle" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setPixelDeltaThreshold" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="pixelDeltaThreshold" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setPixelDeltaThresholdResource" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="pixelDeltaThresholdDimen" type="int" jni-type="I"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="SidewaysShoveGestureDetector.OnSidewaysShoveGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector$OnSidewaysShoveGestureListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSidewaysShove" jni-signature="(Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.SidewaysShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;"></parameter>
+        <parameter name="p1" type="float" jni-type="F"></parameter>
+        <parameter name="p2" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSidewaysShoveBegin" jni-signature="(Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.SidewaysShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSidewaysShoveEnd" jni-signature="(Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;FF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.SidewaysShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;"></parameter>
+        <parameter name="p1" type="float" jni-type="F"></parameter>
+        <parameter name="p2" type="float" jni-type="F"></parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="SidewaysShoveGestureDetector.SimpleOnSidewaysShoveGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector$SimpleOnSidewaysShoveGestureListener;">
+      <implements name="com.mapbox.android.gestures.SidewaysShoveGestureDetector.OnSidewaysShoveGestureListener" name-generic-aware="com.mapbox.android.gestures.SidewaysShoveGestureDetector.OnSidewaysShoveGestureListener" jni-type="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector$OnSidewaysShoveGestureListener;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="SidewaysShoveGestureDetector.SimpleOnSidewaysShoveGestureListener" jni-signature="()V" bridge="false" static="false" type="com.mapbox.android.gestures.SidewaysShoveGestureDetector.SimpleOnSidewaysShoveGestureListener" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSidewaysShove" jni-signature="(Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.SidewaysShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;"></parameter>
+        <parameter name="deltaPixelsSinceLast" type="float" jni-type="F"></parameter>
+        <parameter name="deltaPixelsSinceStart" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSidewaysShoveBegin" jni-signature="(Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.SidewaysShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSidewaysShoveEnd" jni-signature="(Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;FF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.SidewaysShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/SidewaysShoveGestureDetector;"></parameter>
+        <parameter name="velocityX" type="float" jni-type="F"></parameter>
+        <parameter name="velocityY" type="float" jni-type="F"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.BaseGesture" extends-generic-aware="com.mapbox.android.gestures.BaseGesture&lt;com.mapbox.android.gestures.StandardGestureDetector.StandardOnGestureListener&gt;" jni-extends="Lcom/mapbox/android/gestures/BaseGesture;" final="false" name="StandardGestureDetector" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/StandardGestureDetector;">
+      <constructor deprecated="not deprecated" final="false" name="StandardGestureDetector" jni-signature="(Landroid/content/Context;Lcom/mapbox/android/gestures/AndroidGesturesManager;)V" bridge="false" static="false" type="com.mapbox.android.gestures.StandardGestureDetector" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="androidGesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="analyzeEvent" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="motionEvent" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isLongpressEnabled" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setIsLongpressEnabled" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="enabled" type="boolean" jni-type="Z"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="StandardGestureDetector.1" static="false" visibility="" jni-signature="Lcom/mapbox/android/gestures/StandardGestureDetector$1;">
+      <implements name="com.mapbox.android.gestures.StandardGestureDetector.StandardOnGestureListener" name-generic-aware="com.mapbox.android.gestures.StandardGestureDetector.StandardOnGestureListener" jni-type="Lcom/mapbox/android/gestures/StandardGestureDetector$StandardOnGestureListener;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDoubleTap" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDoubleTapEvent" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDown" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onFling" jni-signature="(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e1" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+        <parameter name="e2" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+        <parameter name="velocityX" type="float" jni-type="F"></parameter>
+        <parameter name="velocityY" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onLongPress" jni-signature="(Landroid/view/MotionEvent;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onScroll" jni-signature="(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e1" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+        <parameter name="e2" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+        <parameter name="distanceX" type="float" jni-type="F"></parameter>
+        <parameter name="distanceY" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onShowPress" jni-signature="(Landroid/view/MotionEvent;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSingleTapConfirmed" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSingleTapUp" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="StandardGestureDetector.SimpleStandardOnGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/StandardGestureDetector$SimpleStandardOnGestureListener;">
+      <implements name="com.mapbox.android.gestures.StandardGestureDetector.StandardOnGestureListener" name-generic-aware="com.mapbox.android.gestures.StandardGestureDetector.StandardOnGestureListener" jni-type="Lcom/mapbox/android/gestures/StandardGestureDetector$StandardOnGestureListener;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="StandardGestureDetector.SimpleStandardOnGestureListener" jni-signature="()V" bridge="false" static="false" type="com.mapbox.android.gestures.StandardGestureDetector.SimpleStandardOnGestureListener" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDoubleTap" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDoubleTapEvent" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDown" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onFling" jni-signature="(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e1" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+        <parameter name="e2" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+        <parameter name="velocityX" type="float" jni-type="F"></parameter>
+        <parameter name="velocityY" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onLongPress" jni-signature="(Landroid/view/MotionEvent;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onScroll" jni-signature="(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e1" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+        <parameter name="e2" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+        <parameter name="distanceX" type="float" jni-type="F"></parameter>
+        <parameter name="distanceY" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onShowPress" jni-signature="(Landroid/view/MotionEvent;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSingleTapConfirmed" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSingleTapUp" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="e" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="StandardGestureDetector.StandardOnGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/StandardGestureDetector$StandardOnGestureListener;">
+      <implements name="android.view.GestureDetector.OnDoubleTapListener" name-generic-aware="android.view.GestureDetector.OnDoubleTapListener" jni-type="Landroid/view/GestureDetector$OnDoubleTapListener;"></implements>
+      <implements name="android.view.GestureDetector.OnGestureListener" name-generic-aware="android.view.GestureDetector.OnGestureListener" jni-type="Landroid/view/GestureDetector$OnGestureListener;"></implements>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.ProgressiveGesture" extends-generic-aware="com.mapbox.android.gestures.ProgressiveGesture&lt;com.mapbox.android.gestures.StandardScaleGestureDetector.StandardOnScaleGestureListener&gt;" jni-extends="Lcom/mapbox/android/gestures/ProgressiveGesture;" final="false" name="StandardScaleGestureDetector" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;">
+      <constructor deprecated="not deprecated" final="false" name="StandardScaleGestureDetector" jni-signature="(Landroid/content/Context;Lcom/mapbox/android/gestures/AndroidGesturesManager;)V" bridge="false" static="false" type="com.mapbox.android.gestures.StandardScaleGestureDetector" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="androidGesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrentSpan" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrentSpanX" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCurrentSpanY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPreviousSpan" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPreviousSpanX" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPreviousSpanY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getScaleFactor" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSpanSinceStartThreshold" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStartSpan" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStartSpanX" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStartSpanY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isScalingOut" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="provideHandledTypes" jni-signature="()Ljava/util/Set;" bridge="false" native="false" return="java.util.Set&lt;java.lang.Integer&gt;" jni-return="Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="protected"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSpanSinceStartThreshold" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="spanSinceStartThreshold" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSpanSinceStartThresholdResource" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="spanSinceStartThresholdDimen" type="int" jni-type="I"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.view.GestureDetector.SimpleOnGestureListener" extends-generic-aware="android.view.GestureDetector.SimpleOnGestureListener" jni-extends="Landroid/view/GestureDetector$SimpleOnGestureListener;" final="false" name="StandardScaleGestureDetector.1" static="false" visibility="" jni-signature="Lcom/mapbox/android/gestures/StandardScaleGestureDetector$1;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="StandardScaleGestureDetector.SimpleStandardOnScaleGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/StandardScaleGestureDetector$SimpleStandardOnScaleGestureListener;">
+      <implements name="com.mapbox.android.gestures.StandardScaleGestureDetector.StandardOnScaleGestureListener" name-generic-aware="com.mapbox.android.gestures.StandardScaleGestureDetector.StandardOnScaleGestureListener" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector$StandardOnScaleGestureListener;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="StandardScaleGestureDetector.SimpleStandardOnScaleGestureListener" jni-signature="()V" bridge="false" static="false" type="com.mapbox.android.gestures.StandardScaleGestureDetector.SimpleStandardOnScaleGestureListener" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onScale" jni-signature="(Lcom/mapbox/android/gestures/StandardScaleGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.StandardScaleGestureDetector" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onScaleBegin" jni-signature="(Lcom/mapbox/android/gestures/StandardScaleGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.StandardScaleGestureDetector" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onScaleEnd" jni-signature="(Lcom/mapbox/android/gestures/StandardScaleGestureDetector;FF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.StandardScaleGestureDetector" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;"></parameter>
+        <parameter name="velocityX" type="float" jni-type="F"></parameter>
+        <parameter name="velocityY" type="float" jni-type="F"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="StandardScaleGestureDetector.StandardOnScaleGestureListener" static="true" visibility="public" jni-signature="Lcom/mapbox/android/gestures/StandardScaleGestureDetector$StandardOnScaleGestureListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onScale" jni-signature="(Lcom/mapbox/android/gestures/StandardScaleGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.StandardScaleGestureDetector" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onScaleBegin" jni-signature="(Lcom/mapbox/android/gestures/StandardScaleGestureDetector;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.StandardScaleGestureDetector" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onScaleEnd" jni-signature="(Lcom/mapbox/android/gestures/StandardScaleGestureDetector;FF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.StandardScaleGestureDetector" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;"></parameter>
+        <parameter name="p1" type="float" jni-type="F"></parameter>
+        <parameter name="p2" type="float" jni-type="F"></parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Utils" static="false" visibility="public" jni-signature="Lcom/mapbox/android/gestures/Utils;">
+      <constructor deprecated="not deprecated" final="false" name="Utils" jni-signature="()V" bridge="false" static="false" type="com.mapbox.android.gestures.Utils" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="determineFocalPoint" jni-signature="(Landroid/view/MotionEvent;)Landroid/graphics/PointF;" bridge="false" native="false" return="android.graphics.PointF" jni-return="Landroid/graphics/PointF;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="motionEvent" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="dpToPx" jni-signature="(F)F" bridge="false" native="false" return="float" jni-return="F" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="dp" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRawX" jni-signature="(Landroid/view/MotionEvent;I)F" bridge="false" native="false" return="float" jni-return="F" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="event" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+        <parameter name="pointerIndex" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRawY" jni-signature="(Landroid/view/MotionEvent;I)F" bridge="false" native="false" return="float" jni-return="F" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="event" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;"></parameter>
+        <parameter name="pointerIndex" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="pxToDp" jni-signature="(F)F" bridge="false" native="false" return="float" jni-return="F" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="px" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="pxToMm" jni-signature="(FLandroid/content/Context;)F" bridge="false" native="false" return="float" jni-return="F" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="px" type="float" jni-type="F"></parameter>
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+      </method>
+    </class>
+  </package>
+</api>

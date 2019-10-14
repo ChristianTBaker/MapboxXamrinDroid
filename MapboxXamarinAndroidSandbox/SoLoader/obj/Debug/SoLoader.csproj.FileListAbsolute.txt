@@ -1,0 +1,5 @@
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\SoLoader\bin\Debug\SoLoader.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\SoLoader\bin\Debug\SoLoader.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\SoLoader\obj\Debug\SoLoader.csproj.CoreCompileInputs.cache
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\SoLoader\obj\Debug\SoLoader.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\SoLoader\obj\Debug\SoLoader.pdb

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);ANDROID_1;ANDROID_2;ANDROID_3;ANDROID_4;ANDROID_5;ANDROID_6;ANDROID_7;ANDROID_8;ANDROID_9;ANDROID_10;ANDROID_11;ANDROID_12;ANDROID_13;ANDROID_14;ANDROID_15;ANDROID_16;ANDROID_17;ANDROID_18;ANDROID_19;ANDROID_20;ANDROID_21;ANDROID_22;ANDROID_23;ANDROID_24;ANDROID_25;ANDROID_26;ANDROID_27;ANDROID_28</DefineConstants>
+  </PropertyGroup>
+  <!-- Classes -->
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.AndroidGesturesManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.BaseGesture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.BuildConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.MoveDistancesObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.MoveGestureDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.MultiFingerDistancesObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.MultiFingerGesture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.MultiFingerTapGestureDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.PointerDistancePair.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.ProgressiveGesture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.RotateGestureDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.ShoveGestureDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.SidewaysShoveGestureDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.StandardGestureDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.StandardScaleGestureDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Gestures.Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Java.Interop.__TypeRegistrations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\__NamespaceMapping__.cs" />
+  </ItemGroup>
+  <!-- Enums -->
+  <ItemGroup />
+</Project>

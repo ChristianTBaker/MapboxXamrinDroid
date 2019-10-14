@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);ANDROID_1;ANDROID_2;ANDROID_3;ANDROID_4;ANDROID_5;ANDROID_6;ANDROID_7;ANDROID_8;ANDROID_9;ANDROID_10;ANDROID_11;ANDROID_12;ANDROID_13;ANDROID_14;ANDROID_15;ANDROID_16;ANDROID_17;ANDROID_18;ANDROID_19;ANDROID_20;ANDROID_21;ANDROID_22;ANDROID_23;ANDROID_24;ANDROID_25;ANDROID_26;ANDROID_27;ANDROID_28</DefineConstants>
+  </PropertyGroup>
+  <!-- Classes -->
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.AppUserTurnstile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.Attachment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.AttachmentMetadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.BuildConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.Crash.TokenChangeBroadcastReceiver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.CrashEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.Event.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.FileAttachment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.IAttachmentListener.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.IFullQueueCallback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.IServiceTaskCallback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.ITelemetryListener.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.IVisionBuildEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.Location.LocationCollectionClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.Location.LocationMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.Location.LocationUpdatesBroadcastReceiver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.Location.SessionIdentifier.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.LocationEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.MapboxTelemetry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.MapboxTelemetryConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.Provider.MapboxTelemetryInitProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.SessionInterval.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.TelemetryEnabler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.TelemetryUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.VisionEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.VisionEventFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Android.Telemetry.VisionObjectDetectionEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Java.Interop.__TypeRegistrations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\__NamespaceMapping__.cs" />
+  </ItemGroup>
+  <!-- Enums -->
+  <ItemGroup />
+</Project>

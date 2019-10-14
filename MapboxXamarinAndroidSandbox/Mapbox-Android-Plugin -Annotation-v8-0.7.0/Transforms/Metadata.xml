@@ -6,4 +6,18 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+
+  <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/class[@name='SymbolElementProvider']" name="visibility" >public</attr>
+  <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/class[@name='FillElementProvider']" name="visibility" >public</attr>
+  <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/class[@name='CircleElementProvider']" name="visibility" >public</attr>
+  <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/class[@name='LineElementProvider']" name="visibility" >public</attr>
+  <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/interface[@name='CoreElementProvider']" name="visibility" >public</attr>
+  <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/class[@name='LineElementProvider']" name="visibility" >public</attr>
+  <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/class[@name='AnnotationManager.1']" name="visibility" >public</attr>
+  <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/class[@name='AnnotationManager.1.1']" name="visibility" >public</attr>
+  <!-- <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/class[@name='ConvertUtils']" name="visibility" >public</attr>
+  <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/class[@name='DraggableAnnotationController']" name="visibility" >public</attr>
+  <attr path="/api/package[@name='com.mapbox.mapboxsdk.plugins.annotation']/class[@name='DraggableAnnotationController.1']" name="visibility" >public</attr> -->
+
+
 </metadata>

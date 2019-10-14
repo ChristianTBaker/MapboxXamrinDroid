@@ -115,6 +115,70 @@ namespace Com.Mapbox.Mapboxsdk.Location {
 				}
 			}
 
+			static Delegate cb_locationEngine_Lcom_mapbox_android_core_location_LocationEngine_;
+#pragma warning disable 0169
+			static Delegate GetLocationEngine_Lcom_mapbox_android_core_location_LocationEngine_Handler ()
+			{
+				if (cb_locationEngine_Lcom_mapbox_android_core_location_LocationEngine_ == null)
+					cb_locationEngine_Lcom_mapbox_android_core_location_LocationEngine_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr>) n_LocationEngine_Lcom_mapbox_android_core_location_LocationEngine_);
+				return cb_locationEngine_Lcom_mapbox_android_core_location_LocationEngine_;
+			}
+
+			static IntPtr n_LocationEngine_Lcom_mapbox_android_core_location_LocationEngine_ (IntPtr jnienv, IntPtr native__this, IntPtr native_locationEngine)
+			{
+				global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions.Builder __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions.Builder> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+				global::Com.Mapbox.Android.Core.Location.ILocationEngine locationEngine = (global::Com.Mapbox.Android.Core.Location.ILocationEngine)global::Java.Lang.Object.GetObject<global::Com.Mapbox.Android.Core.Location.ILocationEngine> (native_locationEngine, JniHandleOwnership.DoNotTransfer);
+				IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.LocationEngine (locationEngine));
+				return __ret;
+			}
+#pragma warning restore 0169
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponentActivationOptions.Builder']/method[@name='locationEngine' and count(parameter)=1 and parameter[1][@type='com.mapbox.android.core.location.LocationEngine']]"
+			[Register ("locationEngine", "(Lcom/mapbox/android/core/location/LocationEngine;)Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;", "GetLocationEngine_Lcom_mapbox_android_core_location_LocationEngine_Handler")]
+			public virtual unsafe global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions.Builder LocationEngine (global::Com.Mapbox.Android.Core.Location.ILocationEngine locationEngine)
+			{
+				const string __id = "locationEngine.(Lcom/mapbox/android/core/location/LocationEngine;)Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((locationEngine == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngine).Handle);
+					var __rm = _members.InstanceMethods.InvokeVirtualObjectMethod (__id, this, __args);
+					return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions.Builder> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+
+			static Delegate cb_locationEngineRequest_Lcom_mapbox_android_core_location_LocationEngineRequest_;
+#pragma warning disable 0169
+			static Delegate GetLocationEngineRequest_Lcom_mapbox_android_core_location_LocationEngineRequest_Handler ()
+			{
+				if (cb_locationEngineRequest_Lcom_mapbox_android_core_location_LocationEngineRequest_ == null)
+					cb_locationEngineRequest_Lcom_mapbox_android_core_location_LocationEngineRequest_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr>) n_LocationEngineRequest_Lcom_mapbox_android_core_location_LocationEngineRequest_);
+				return cb_locationEngineRequest_Lcom_mapbox_android_core_location_LocationEngineRequest_;
+			}
+
+			static IntPtr n_LocationEngineRequest_Lcom_mapbox_android_core_location_LocationEngineRequest_ (IntPtr jnienv, IntPtr native__this, IntPtr native_locationEngineRequest)
+			{
+				global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions.Builder __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions.Builder> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+				global::Com.Mapbox.Android.Core.Location.LocationEngineRequest locationEngineRequest = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Android.Core.Location.LocationEngineRequest> (native_locationEngineRequest, JniHandleOwnership.DoNotTransfer);
+				IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.LocationEngineRequest (locationEngineRequest));
+				return __ret;
+			}
+#pragma warning restore 0169
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponentActivationOptions.Builder']/method[@name='locationEngineRequest' and count(parameter)=1 and parameter[1][@type='com.mapbox.android.core.location.LocationEngineRequest']]"
+			[Register ("locationEngineRequest", "(Lcom/mapbox/android/core/location/LocationEngineRequest;)Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;", "GetLocationEngineRequest_Lcom_mapbox_android_core_location_LocationEngineRequest_Handler")]
+			public virtual unsafe global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions.Builder LocationEngineRequest (global::Com.Mapbox.Android.Core.Location.LocationEngineRequest locationEngineRequest)
+			{
+				const string __id = "locationEngineRequest.(Lcom/mapbox/android/core/location/LocationEngineRequest;)Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((locationEngineRequest == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngineRequest).Handle);
+					var __rm = _members.InstanceMethods.InvokeVirtualObjectMethod (__id, this, __args);
+					return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions.Builder> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+
 			static Delegate cb_styleRes_I;
 #pragma warning disable 0169
 			static Delegate GetStyleRes_IHandler ()
@@ -265,6 +329,62 @@ namespace Com.Mapbox.Mapboxsdk.Location {
 			try {
 				var __rm = _members.InstanceMethods.InvokeVirtualObjectMethod (__id, this, null);
 				return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Location.LocationComponentOptions> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+			}
+		}
+
+		static Delegate cb_locationEngine;
+#pragma warning disable 0169
+		static Delegate GetLocationEngineHandler ()
+		{
+			if (cb_locationEngine == null)
+				cb_locationEngine = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_LocationEngine);
+			return cb_locationEngine;
+		}
+
+		static IntPtr n_LocationEngine (IntPtr jnienv, IntPtr native__this)
+		{
+			global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			return JNIEnv.ToLocalJniHandle (__this.LocationEngine ());
+		}
+#pragma warning restore 0169
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponentActivationOptions']/method[@name='locationEngine' and count(parameter)=0]"
+		[Register ("locationEngine", "()Lcom/mapbox/android/core/location/LocationEngine;", "GetLocationEngineHandler")]
+		public virtual unsafe global::Com.Mapbox.Android.Core.Location.ILocationEngine LocationEngine ()
+		{
+			const string __id = "locationEngine.()Lcom/mapbox/android/core/location/LocationEngine;";
+			try {
+				var __rm = _members.InstanceMethods.InvokeVirtualObjectMethod (__id, this, null);
+				return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Android.Core.Location.ILocationEngine> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+			}
+		}
+
+		static Delegate cb_locationEngineRequest;
+#pragma warning disable 0169
+		static Delegate GetLocationEngineRequestHandler ()
+		{
+			if (cb_locationEngineRequest == null)
+				cb_locationEngineRequest = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_LocationEngineRequest);
+			return cb_locationEngineRequest;
+		}
+
+		static IntPtr n_LocationEngineRequest (IntPtr jnienv, IntPtr native__this)
+		{
+			global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Location.LocationComponentActivationOptions> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			return JNIEnv.ToLocalJniHandle (__this.LocationEngineRequest ());
+		}
+#pragma warning restore 0169
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponentActivationOptions']/method[@name='locationEngineRequest' and count(parameter)=0]"
+		[Register ("locationEngineRequest", "()Lcom/mapbox/android/core/location/LocationEngineRequest;", "GetLocationEngineRequestHandler")]
+		public virtual unsafe global::Com.Mapbox.Android.Core.Location.LocationEngineRequest LocationEngineRequest ()
+		{
+			const string __id = "locationEngineRequest.()Lcom/mapbox/android/core/location/LocationEngineRequest;";
+			try {
+				var __rm = _members.InstanceMethods.InvokeVirtualObjectMethod (__id, this, null);
+				return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Android.Core.Location.LocationEngineRequest> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
 			} finally {
 			}
 		}

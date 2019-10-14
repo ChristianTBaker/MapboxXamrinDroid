@@ -316,7 +316,7 @@ namespace Com.Mapbox.Mapboxsdk.Style.Expressions {
 
 		// Metadata.xml XPath constructor reference: path="/api/package[@name='com.mapbox.mapboxsdk.style.expressions']/class[@name='Expression']/constructor[@name='Expression' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='com.mapbox.mapboxsdk.style.expressions.Expression...']]"
 		[Register (".ctor", "(Ljava/lang/String;[Lcom/mapbox/mapboxsdk/style/expressions/Expression;)V", "")]
-		public unsafe Expression (string operator_, params global::Com.Mapbox.Mapboxsdk.Style.Expressions.Expression[] arguments)
+		public unsafe Expression (string _operator, params global::Com.Mapbox.Mapboxsdk.Style.Expressions.Expression[] arguments)
 			: base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
 			const string __id = "(Ljava/lang/String;[Lcom/mapbox/mapboxsdk/style/expressions/Expression;)V";
@@ -324,17 +324,17 @@ namespace Com.Mapbox.Mapboxsdk.Style.Expressions {
 			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
-			IntPtr native_operator = JNIEnv.NewString (operator_);
+			IntPtr native__operator = JNIEnv.NewString (_operator);
 			IntPtr native_arguments = JNIEnv.NewArray (arguments);
 			try {
 				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
-				__args [0] = new JniArgumentValue (native_operator);
+				__args [0] = new JniArgumentValue (native__operator);
 				__args [1] = new JniArgumentValue (native_arguments);
 				var __r = _members.InstanceMethods.StartCreateInstance (__id, ((object) this).GetType (), __args);
 				SetHandle (__r.Handle, JniHandleOwnership.TransferLocalRef);
 				_members.InstanceMethods.FinishCreateInstance (__id, this, __args);
 			} finally {
-				JNIEnv.DeleteLocalRef (native_operator);
+				JNIEnv.DeleteLocalRef (native__operator);
 				if (arguments != null) {
 					JNIEnv.CopyArray (native_arguments, arguments);
 					JNIEnv.DeleteLocalRef (native_arguments);

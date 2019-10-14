@@ -192,6 +192,54 @@ namespace Com.Mapbox.Mapboxsdk.Location {
 			}
 		}
 
+		public unsafe global::Com.Mapbox.Android.Core.Location.ILocationEngine LocationEngine {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='getLocationEngine' and count(parameter)=0]"
+			[Register ("getLocationEngine", "()Lcom/mapbox/android/core/location/LocationEngine;", "GetGetLocationEngineHandler")]
+			get {
+				const string __id = "getLocationEngine.()Lcom/mapbox/android/core/location/LocationEngine;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Android.Core.Location.ILocationEngine> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='setLocationEngine' and count(parameter)=1 and parameter[1][@type='com.mapbox.android.core.location.LocationEngine']]"
+			[Register ("setLocationEngine", "(Lcom/mapbox/android/core/location/LocationEngine;)V", "GetSetLocationEngine_Lcom_mapbox_android_core_location_LocationEngine_Handler")]
+			set {
+				const string __id = "setLocationEngine.(Lcom/mapbox/android/core/location/LocationEngine;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::Com.Mapbox.Android.Core.Location.LocationEngineRequest LocationEngineRequest {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='getLocationEngineRequest' and count(parameter)=0]"
+			[Register ("getLocationEngineRequest", "()Lcom/mapbox/android/core/location/LocationEngineRequest;", "GetGetLocationEngineRequestHandler")]
+			get {
+				const string __id = "getLocationEngineRequest.()Lcom/mapbox/android/core/location/LocationEngineRequest;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Android.Core.Location.LocationEngineRequest> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='setLocationEngineRequest' and count(parameter)=1 and parameter[1][@type='com.mapbox.android.core.location.LocationEngineRequest']]"
+			[Register ("setLocationEngineRequest", "(Lcom/mapbox/android/core/location/LocationEngineRequest;)V", "GetSetLocationEngineRequest_Lcom_mapbox_android_core_location_LocationEngineRequest_Handler")]
+			set {
+				const string __id = "setLocationEngineRequest.(Lcom/mapbox/android/core/location/LocationEngineRequest;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+				} finally {
+				}
+			}
+		}
+
 		public unsafe int RenderMode {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='getRenderMode' and count(parameter)=0]"
 			[Register ("getRenderMode", "()I", "GetGetRenderModeHandler")]
@@ -242,6 +290,144 @@ namespace Com.Mapbox.Mapboxsdk.Location {
 				__args [0] = new JniArgumentValue ((context == null) ? IntPtr.Zero : ((global::Java.Lang.Object) context).Handle);
 				__args [1] = new JniArgumentValue ((style == null) ? IntPtr.Zero : ((global::Java.Lang.Object) style).Handle);
 				__args [2] = new JniArgumentValue (useDefaultLocationEngine);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='activateLocationComponent' and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.mapbox.mapboxsdk.maps.Style'] and parameter[3][@type='boolean'] and parameter[4][@type='com.mapbox.android.core.location.LocationEngineRequest']]"
+		[Obsolete (@"deprecated")]
+		[Register ("activateLocationComponent", "(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;ZLcom/mapbox/android/core/location/LocationEngineRequest;)V", "")]
+		public unsafe void ActivateLocationComponent (global::Android.Content.Context context, global::Com.Mapbox.Mapboxsdk.Maps.Style style, bool useDefaultLocationEngine, global::Com.Mapbox.Android.Core.Location.LocationEngineRequest locationEngineRequest)
+		{
+			const string __id = "activateLocationComponent.(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;ZLcom/mapbox/android/core/location/LocationEngineRequest;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [4];
+				__args [0] = new JniArgumentValue ((context == null) ? IntPtr.Zero : ((global::Java.Lang.Object) context).Handle);
+				__args [1] = new JniArgumentValue ((style == null) ? IntPtr.Zero : ((global::Java.Lang.Object) style).Handle);
+				__args [2] = new JniArgumentValue (useDefaultLocationEngine);
+				__args [3] = new JniArgumentValue ((locationEngineRequest == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngineRequest).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='activateLocationComponent' and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.mapbox.mapboxsdk.maps.Style'] and parameter[3][@type='boolean'] and parameter[4][@type='com.mapbox.android.core.location.LocationEngineRequest'] and parameter[5][@type='com.mapbox.mapboxsdk.location.LocationComponentOptions']]"
+		[Obsolete (@"deprecated")]
+		[Register ("activateLocationComponent", "(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;ZLcom/mapbox/android/core/location/LocationEngineRequest;Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)V", "")]
+		public unsafe void ActivateLocationComponent (global::Android.Content.Context context, global::Com.Mapbox.Mapboxsdk.Maps.Style style, bool useDefaultLocationEngine, global::Com.Mapbox.Android.Core.Location.LocationEngineRequest locationEngineRequest, global::Com.Mapbox.Mapboxsdk.Location.LocationComponentOptions options)
+		{
+			const string __id = "activateLocationComponent.(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;ZLcom/mapbox/android/core/location/LocationEngineRequest;Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [5];
+				__args [0] = new JniArgumentValue ((context == null) ? IntPtr.Zero : ((global::Java.Lang.Object) context).Handle);
+				__args [1] = new JniArgumentValue ((style == null) ? IntPtr.Zero : ((global::Java.Lang.Object) style).Handle);
+				__args [2] = new JniArgumentValue (useDefaultLocationEngine);
+				__args [3] = new JniArgumentValue ((locationEngineRequest == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngineRequest).Handle);
+				__args [4] = new JniArgumentValue ((options == null) ? IntPtr.Zero : ((global::Java.Lang.Object) options).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='activateLocationComponent' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.mapbox.mapboxsdk.maps.Style'] and parameter[3][@type='com.mapbox.android.core.location.LocationEngine']]"
+		[Obsolete (@"deprecated")]
+		[Register ("activateLocationComponent", "(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;)V", "")]
+		public unsafe void ActivateLocationComponent (global::Android.Content.Context context, global::Com.Mapbox.Mapboxsdk.Maps.Style style, global::Com.Mapbox.Android.Core.Location.ILocationEngine locationEngine)
+		{
+			const string __id = "activateLocationComponent.(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [3];
+				__args [0] = new JniArgumentValue ((context == null) ? IntPtr.Zero : ((global::Java.Lang.Object) context).Handle);
+				__args [1] = new JniArgumentValue ((style == null) ? IntPtr.Zero : ((global::Java.Lang.Object) style).Handle);
+				__args [2] = new JniArgumentValue ((locationEngine == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngine).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='activateLocationComponent' and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.mapbox.mapboxsdk.maps.Style'] and parameter[3][@type='com.mapbox.android.core.location.LocationEngine'] and parameter[4][@type='com.mapbox.android.core.location.LocationEngineRequest']]"
+		[Obsolete (@"deprecated")]
+		[Register ("activateLocationComponent", "(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/android/core/location/LocationEngineRequest;)V", "")]
+		public unsafe void ActivateLocationComponent (global::Android.Content.Context context, global::Com.Mapbox.Mapboxsdk.Maps.Style style, global::Com.Mapbox.Android.Core.Location.ILocationEngine locationEngine, global::Com.Mapbox.Android.Core.Location.LocationEngineRequest locationEngineRequest)
+		{
+			const string __id = "activateLocationComponent.(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/android/core/location/LocationEngineRequest;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [4];
+				__args [0] = new JniArgumentValue ((context == null) ? IntPtr.Zero : ((global::Java.Lang.Object) context).Handle);
+				__args [1] = new JniArgumentValue ((style == null) ? IntPtr.Zero : ((global::Java.Lang.Object) style).Handle);
+				__args [2] = new JniArgumentValue ((locationEngine == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngine).Handle);
+				__args [3] = new JniArgumentValue ((locationEngineRequest == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngineRequest).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='activateLocationComponent' and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.mapbox.mapboxsdk.maps.Style'] and parameter[3][@type='com.mapbox.android.core.location.LocationEngine'] and parameter[4][@type='com.mapbox.android.core.location.LocationEngineRequest'] and parameter[5][@type='com.mapbox.mapboxsdk.location.LocationComponentOptions']]"
+		[Obsolete (@"deprecated")]
+		[Register ("activateLocationComponent", "(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/android/core/location/LocationEngineRequest;Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)V", "")]
+		public unsafe void ActivateLocationComponent (global::Android.Content.Context context, global::Com.Mapbox.Mapboxsdk.Maps.Style style, global::Com.Mapbox.Android.Core.Location.ILocationEngine locationEngine, global::Com.Mapbox.Android.Core.Location.LocationEngineRequest locationEngineRequest, global::Com.Mapbox.Mapboxsdk.Location.LocationComponentOptions options)
+		{
+			const string __id = "activateLocationComponent.(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/android/core/location/LocationEngineRequest;Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [5];
+				__args [0] = new JniArgumentValue ((context == null) ? IntPtr.Zero : ((global::Java.Lang.Object) context).Handle);
+				__args [1] = new JniArgumentValue ((style == null) ? IntPtr.Zero : ((global::Java.Lang.Object) style).Handle);
+				__args [2] = new JniArgumentValue ((locationEngine == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngine).Handle);
+				__args [3] = new JniArgumentValue ((locationEngineRequest == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngineRequest).Handle);
+				__args [4] = new JniArgumentValue ((options == null) ? IntPtr.Zero : ((global::Java.Lang.Object) options).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='activateLocationComponent' and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.mapbox.mapboxsdk.maps.Style'] and parameter[3][@type='com.mapbox.android.core.location.LocationEngine'] and parameter[4][@type='com.mapbox.android.core.location.LocationEngineRequest'] and parameter[5][@type='int']]"
+		[Obsolete (@"deprecated")]
+		[Register ("activateLocationComponent", "(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/android/core/location/LocationEngineRequest;I)V", "")]
+		public unsafe void ActivateLocationComponent (global::Android.Content.Context context, global::Com.Mapbox.Mapboxsdk.Maps.Style style, global::Com.Mapbox.Android.Core.Location.ILocationEngine locationEngine, global::Com.Mapbox.Android.Core.Location.LocationEngineRequest locationEngineRequest, int styleRes)
+		{
+			const string __id = "activateLocationComponent.(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/android/core/location/LocationEngineRequest;I)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [5];
+				__args [0] = new JniArgumentValue ((context == null) ? IntPtr.Zero : ((global::Java.Lang.Object) context).Handle);
+				__args [1] = new JniArgumentValue ((style == null) ? IntPtr.Zero : ((global::Java.Lang.Object) style).Handle);
+				__args [2] = new JniArgumentValue ((locationEngine == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngine).Handle);
+				__args [3] = new JniArgumentValue ((locationEngineRequest == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngineRequest).Handle);
+				__args [4] = new JniArgumentValue (styleRes);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='activateLocationComponent' and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.mapbox.mapboxsdk.maps.Style'] and parameter[3][@type='com.mapbox.android.core.location.LocationEngine'] and parameter[4][@type='com.mapbox.mapboxsdk.location.LocationComponentOptions']]"
+		[Obsolete (@"deprecated")]
+		[Register ("activateLocationComponent", "(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)V", "")]
+		public unsafe void ActivateLocationComponent (global::Android.Content.Context context, global::Com.Mapbox.Mapboxsdk.Maps.Style style, global::Com.Mapbox.Android.Core.Location.ILocationEngine locationEngine, global::Com.Mapbox.Mapboxsdk.Location.LocationComponentOptions options)
+		{
+			const string __id = "activateLocationComponent.(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [4];
+				__args [0] = new JniArgumentValue ((context == null) ? IntPtr.Zero : ((global::Java.Lang.Object) context).Handle);
+				__args [1] = new JniArgumentValue ((style == null) ? IntPtr.Zero : ((global::Java.Lang.Object) style).Handle);
+				__args [2] = new JniArgumentValue ((locationEngine == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngine).Handle);
+				__args [3] = new JniArgumentValue ((options == null) ? IntPtr.Zero : ((global::Java.Lang.Object) options).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent']/method[@name='activateLocationComponent' and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.mapbox.mapboxsdk.maps.Style'] and parameter[3][@type='com.mapbox.android.core.location.LocationEngine'] and parameter[4][@type='int']]"
+		[Obsolete (@"deprecated")]
+		[Register ("activateLocationComponent", "(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;I)V", "")]
+		public unsafe void ActivateLocationComponent (global::Android.Content.Context context, global::Com.Mapbox.Mapboxsdk.Maps.Style style, global::Com.Mapbox.Android.Core.Location.ILocationEngine locationEngine, int styleRes)
+		{
+			const string __id = "activateLocationComponent.(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;I)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [4];
+				__args [0] = new JniArgumentValue ((context == null) ? IntPtr.Zero : ((global::Java.Lang.Object) context).Handle);
+				__args [1] = new JniArgumentValue ((style == null) ? IntPtr.Zero : ((global::Java.Lang.Object) style).Handle);
+				__args [2] = new JniArgumentValue ((locationEngine == null) ? IntPtr.Zero : ((global::Java.Lang.Object) locationEngine).Handle);
+				__args [3] = new JniArgumentValue (styleRes);
 				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
 			} finally {
 			}

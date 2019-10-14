@@ -1960,10 +1960,34 @@
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="LocationCameraController.7" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/location/LocationCameraController$7;">
       <implements name="com.mapbox.mapboxsdk.maps.MapboxMap.OnMoveListener" name-generic-aware="com.mapbox.mapboxsdk.maps.MapboxMap.OnMoveListener" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnMoveListener;">
       </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMove" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMoveBegin" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMoveEnd" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;">
+        </parameter>
+      </method>
     </class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="LocationCameraController.8" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/location/LocationCameraController$8;">
       <implements name="com.mapbox.mapboxsdk.maps.MapboxMap.OnRotateListener" name-generic-aware="com.mapbox.mapboxsdk.maps.MapboxMap.OnRotateListener" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnRotateListener;">
       </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRotate" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRotateBegin" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onRotateEnd" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;">
+        </parameter>
+      </method>
     </class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="LocationCameraController.9" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/location/LocationCameraController$9;">
       <implements name="com.mapbox.mapboxsdk.maps.MapboxMap.OnFlingListener" name-generic-aware="com.mapbox.mapboxsdk.maps.MapboxMap.OnFlingListener" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnFlingListener;">
@@ -1971,6 +1995,7 @@
       <method abstract="false" deprecated="not deprecated" final="false" name="onFling" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
     </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.AndroidGesturesManager" extends-generic-aware="com.mapbox.android.gestures.AndroidGesturesManager" jni-extends="Lcom/mapbox/android/gestures/AndroidGesturesManager;" final="false" name="LocationCameraController.LocationGesturesManager" static="false" visibility="private" jni-signature="Lcom/mapbox/mapboxsdk/location/LocationCameraController$LocationGesturesManager;"></class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="LocationComponent" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/location/LocationComponent;">
       <constructor deprecated="not deprecated" final="false" name="LocationComponent" jni-signature="(Lcom/mapbox/mapboxsdk/maps/MapboxMap;Lcom/mapbox/mapboxsdk/maps/Transform;Ljava/util/List;)V" bridge="false" static="false" type="com.mapbox.mapboxsdk.location.LocationComponent" synthetic="false" visibility="public">
         <parameter name="mapboxMap" type="com.mapbox.mapboxsdk.maps.MapboxMap" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap;">
@@ -1992,6 +2017,90 @@
         <parameter name="style" type="com.mapbox.mapboxsdk.maps.Style" jni-type="Lcom/mapbox/mapboxsdk/maps/Style;">
         </parameter>
         <parameter name="useDefaultLocationEngine" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="activateLocationComponent" jni-signature="(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;ZLcom/mapbox/android/core/location/LocationEngineRequest;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="style" type="com.mapbox.mapboxsdk.maps.Style" jni-type="Lcom/mapbox/mapboxsdk/maps/Style;">
+        </parameter>
+        <parameter name="useDefaultLocationEngine" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="locationEngineRequest" type="com.mapbox.android.core.location.LocationEngineRequest" jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="activateLocationComponent" jni-signature="(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;ZLcom/mapbox/android/core/location/LocationEngineRequest;Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="style" type="com.mapbox.mapboxsdk.maps.Style" jni-type="Lcom/mapbox/mapboxsdk/maps/Style;">
+        </parameter>
+        <parameter name="useDefaultLocationEngine" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="locationEngineRequest" type="com.mapbox.android.core.location.LocationEngineRequest" jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;">
+        </parameter>
+        <parameter name="options" type="com.mapbox.mapboxsdk.location.LocationComponentOptions" jni-type="Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="activateLocationComponent" jni-signature="(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="style" type="com.mapbox.mapboxsdk.maps.Style" jni-type="Lcom/mapbox/mapboxsdk/maps/Style;">
+        </parameter>
+        <parameter name="locationEngine" type="com.mapbox.android.core.location.LocationEngine" jni-type="Lcom/mapbox/android/core/location/LocationEngine;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="activateLocationComponent" jni-signature="(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/android/core/location/LocationEngineRequest;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="style" type="com.mapbox.mapboxsdk.maps.Style" jni-type="Lcom/mapbox/mapboxsdk/maps/Style;">
+        </parameter>
+        <parameter name="locationEngine" type="com.mapbox.android.core.location.LocationEngine" jni-type="Lcom/mapbox/android/core/location/LocationEngine;">
+        </parameter>
+        <parameter name="locationEngineRequest" type="com.mapbox.android.core.location.LocationEngineRequest" jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="activateLocationComponent" jni-signature="(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/android/core/location/LocationEngineRequest;Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="style" type="com.mapbox.mapboxsdk.maps.Style" jni-type="Lcom/mapbox/mapboxsdk/maps/Style;">
+        </parameter>
+        <parameter name="locationEngine" type="com.mapbox.android.core.location.LocationEngine" jni-type="Lcom/mapbox/android/core/location/LocationEngine;">
+        </parameter>
+        <parameter name="locationEngineRequest" type="com.mapbox.android.core.location.LocationEngineRequest" jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;">
+        </parameter>
+        <parameter name="options" type="com.mapbox.mapboxsdk.location.LocationComponentOptions" jni-type="Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="activateLocationComponent" jni-signature="(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/android/core/location/LocationEngineRequest;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="style" type="com.mapbox.mapboxsdk.maps.Style" jni-type="Lcom/mapbox/mapboxsdk/maps/Style;">
+        </parameter>
+        <parameter name="locationEngine" type="com.mapbox.android.core.location.LocationEngine" jni-type="Lcom/mapbox/android/core/location/LocationEngine;">
+        </parameter>
+        <parameter name="locationEngineRequest" type="com.mapbox.android.core.location.LocationEngineRequest" jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;">
+        </parameter>
+        <parameter name="styleRes" type="int" jni-type="I">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="activateLocationComponent" jni-signature="(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="style" type="com.mapbox.mapboxsdk.maps.Style" jni-type="Lcom/mapbox/mapboxsdk/maps/Style;">
+        </parameter>
+        <parameter name="locationEngine" type="com.mapbox.android.core.location.LocationEngine" jni-type="Lcom/mapbox/android/core/location/LocationEngine;">
+        </parameter>
+        <parameter name="options" type="com.mapbox.mapboxsdk.location.LocationComponentOptions" jni-type="Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="activateLocationComponent" jni-signature="(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/android/core/location/LocationEngine;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
+        </parameter>
+        <parameter name="style" type="com.mapbox.mapboxsdk.maps.Style" jni-type="Lcom/mapbox/mapboxsdk/maps/Style;">
+        </parameter>
+        <parameter name="locationEngine" type="com.mapbox.android.core.location.LocationEngine" jni-type="Lcom/mapbox/android/core/location/LocationEngine;">
+        </parameter>
+        <parameter name="styleRes" type="int" jni-type="I">
         </parameter>
       </method>
       <method abstract="false" deprecated="deprecated" final="false" name="activateLocationComponent" jni-signature="(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
@@ -2060,6 +2169,10 @@
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="getLocationComponentOptions" jni-signature="()Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.location.LocationComponentOptions" jni-return="Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLocationEngine" jni-signature="()Lcom/mapbox/android/core/location/LocationEngine;" bridge="false" native="false" return="com.mapbox.android.core.location.LocationEngine" jni-return="Lcom/mapbox/android/core/location/LocationEngine;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLocationEngineRequest" jni-signature="()Lcom/mapbox/android/core/location/LocationEngineRequest;" bridge="false" native="false" return="com.mapbox.android.core.location.LocationEngineRequest" jni-return="Lcom/mapbox/android/core/location/LocationEngineRequest;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="getRenderMode" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="isLocationComponentActivated" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
@@ -2126,6 +2239,14 @@
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="setLocationComponentEnabled" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="isEnabled" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setLocationEngine" jni-signature="(Lcom/mapbox/android/core/location/LocationEngine;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="locationEngine" type="com.mapbox.android.core.location.LocationEngine" jni-type="Lcom/mapbox/android/core/location/LocationEngine;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setLocationEngineRequest" jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="locationEngineRequest" type="com.mapbox.android.core.location.LocationEngineRequest" jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;">
         </parameter>
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="setMaxAnimationFps" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
@@ -2263,7 +2384,31 @@
         </parameter>
       </method>
     </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="LocationComponent.CurrentLocationEngineCallback" static="true" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/location/LocationComponent$CurrentLocationEngineCallback;">
+      <implements name="com.mapbox.android.core.location.LocationEngineCallback" name-generic-aware="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;" jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onFailure" jni-signature="(Ljava/lang/Exception;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="exception" type="java.lang.Exception" jni-type="Ljava/lang/Exception;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSuccess" jni-signature="(Lcom/mapbox/android/core/location/LocationEngineResult;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="result" type="com.mapbox.android.core.location.LocationEngineResult" jni-type="Lcom/mapbox/android/core/location/LocationEngineResult;">
+        </parameter>
+      </method>
+    </class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="LocationComponent.InternalLocationEngineProvider" static="true" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/location/LocationComponent$InternalLocationEngineProvider;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="LocationComponent.LastLocationEngineCallback" static="true" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/location/LocationComponent$LastLocationEngineCallback;">
+      <implements name="com.mapbox.android.core.location.LocationEngineCallback" name-generic-aware="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;" jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onFailure" jni-signature="(Ljava/lang/Exception;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="exception" type="java.lang.Exception" jni-type="Ljava/lang/Exception;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSuccess" jni-signature="(Lcom/mapbox/android/core/location/LocationEngineResult;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="result" type="com.mapbox.android.core.location.LocationEngineResult" jni-type="Lcom/mapbox/android/core/location/LocationEngineResult;">
+        </parameter>
+      </method>
+    </class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="LocationComponentActivationOptions" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions;">
       <method abstract="false" deprecated="not deprecated" final="false" name="builder" jni-signature="(Landroid/content/Context;Lcom/mapbox/mapboxsdk/maps/Style;)Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;" bridge="false" native="false" return="com.mapbox.mapboxsdk.location.LocationComponentActivationOptions.Builder" jni-return="Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;" static="true" synchronized="false" synthetic="false" visibility="public">
         <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;">
@@ -2274,6 +2419,10 @@
       <method abstract="false" deprecated="not deprecated" final="false" name="context" jni-signature="()Landroid/content/Context;" bridge="false" native="false" return="android.content.Context" jni-return="Landroid/content/Context;" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="locationComponentOptions" jni-signature="()Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.location.LocationComponentOptions" jni-return="Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="locationEngine" jni-signature="()Lcom/mapbox/android/core/location/LocationEngine;" bridge="false" native="false" return="com.mapbox.android.core.location.LocationEngine" jni-return="Lcom/mapbox/android/core/location/LocationEngine;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="locationEngineRequest" jni-signature="()Lcom/mapbox/android/core/location/LocationEngineRequest;" bridge="false" native="false" return="com.mapbox.android.core.location.LocationEngineRequest" jni-return="Lcom/mapbox/android/core/location/LocationEngineRequest;" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="style" jni-signature="()Lcom/mapbox/mapboxsdk/maps/Style;" bridge="false" native="false" return="com.mapbox.mapboxsdk.maps.Style" jni-return="Lcom/mapbox/mapboxsdk/maps/Style;" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
@@ -2294,6 +2443,14 @@
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="locationComponentOptions" jni-signature="(Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;)Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;" bridge="false" native="false" return="com.mapbox.mapboxsdk.location.LocationComponentActivationOptions.Builder" jni-return="Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="locationComponentOptions" type="com.mapbox.mapboxsdk.location.LocationComponentOptions" jni-type="Lcom/mapbox/mapboxsdk/location/LocationComponentOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="locationEngine" jni-signature="(Lcom/mapbox/android/core/location/LocationEngine;)Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;" bridge="false" native="false" return="com.mapbox.mapboxsdk.location.LocationComponentActivationOptions.Builder" jni-return="Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="locationEngine" type="com.mapbox.android.core.location.LocationEngine" jni-type="Lcom/mapbox/android/core/location/LocationEngine;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="locationEngineRequest" jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;)Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;" bridge="false" native="false" return="com.mapbox.mapboxsdk.location.LocationComponentActivationOptions.Builder" jni-return="Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="locationEngineRequest" type="com.mapbox.android.core.location.LocationEngineRequest" jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;">
         </parameter>
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="styleRes" jni-signature="(I)Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;" bridge="false" native="false" return="com.mapbox.mapboxsdk.location.LocationComponentActivationOptions.Builder" jni-return="Lcom/mapbox/mapboxsdk/location/LocationComponentActivationOptions$Builder;" static="false" synchronized="false" synthetic="false" visibility="public">
@@ -3428,6 +3585,8 @@
       </method>
       <method abstract="false" deprecated="not deprecated" final="true" name="getCameraPosition" jni-signature="()Lcom/mapbox/mapboxsdk/camera/CameraPosition;" bridge="false" native="false" return="com.mapbox.mapboxsdk.camera.CameraPosition" jni-return="Lcom/mapbox/mapboxsdk/camera/CameraPosition;" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getGesturesManager" jni-signature="()Lcom/mapbox/android/gestures/AndroidGesturesManager;" bridge="false" native="false" return="com.mapbox.android.gestures.AndroidGesturesManager" jni-return="Lcom/mapbox/android/gestures/AndroidGesturesManager;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="getHeight" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
       <method abstract="false" deprecated="deprecated" final="false" name="getInfoWindowAdapter" jni-signature="()Lcom/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter;" bridge="false" native="false" return="com.mapbox.mapboxsdk.maps.MapboxMap.InfoWindowAdapter" jni-return="Lcom/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter;" static="false" synchronized="false" synthetic="false" visibility="public">
@@ -3594,6 +3753,14 @@
         <parameter name="duration" type="long" jni-type="J">
         </parameter>
       </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setGesturesManager" jni-signature="(Lcom/mapbox/android/gestures/AndroidGesturesManager;ZZ)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="androidGesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;">
+        </parameter>
+        <parameter name="attachDefaultListeners" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="setDefaultMutuallyExclusives" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
       <method abstract="false" deprecated="deprecated" final="false" name="setInfoWindowAdapter" jni-signature="(Lcom/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="infoWindowAdapter" type="com.mapbox.mapboxsdk.maps.MapboxMap.InfoWindowAdapter" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter;">
         </parameter>
@@ -3758,6 +3925,8 @@
     <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.OnGesturesManagerInteractionListener" static="true" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnGesturesManagerInteractionListener;">
       <method abstract="true" deprecated="not deprecated" final="false" name="cancelAllVelocityAnimations" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getGesturesManager" jni-signature="()Lcom/mapbox/android/gestures/AndroidGesturesManager;" bridge="false" native="false" return="com.mapbox.android.gestures.AndroidGesturesManager" jni-return="Lcom/mapbox/android/gestures/AndroidGesturesManager;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
       <method abstract="true" deprecated="not deprecated" final="false" name="onAddFlingListener" jni-signature="(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnFlingListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="p0" type="com.mapbox.mapboxsdk.maps.MapboxMap.OnFlingListener" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnFlingListener;">
         </parameter>
@@ -3814,6 +3983,14 @@
         <parameter name="p0" type="com.mapbox.mapboxsdk.maps.MapboxMap.OnShoveListener" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnShoveListener;">
         </parameter>
       </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="setGesturesManager" jni-signature="(Lcom/mapbox/android/gestures/AndroidGesturesManager;ZZ)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;">
+        </parameter>
+        <parameter name="p1" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="p2" type="boolean" jni-type="Z">
+        </parameter>
+      </method>
     </interface>
     <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.OnInfoWindowClickListener" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowClickListener;">
       <method abstract="true" deprecated="not deprecated" final="false" name="onInfoWindowClick" jni-signature="(Lcom/mapbox/mapboxsdk/annotations/Marker;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
@@ -3851,7 +4028,20 @@
         </parameter>
       </method>
     </interface>
-    <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.OnMoveListener" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnMoveListener;"></interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.OnMoveListener" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnMoveListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onMove" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onMoveBegin" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onMoveEnd" jni-signature="(Lcom/mapbox/android/gestures/MoveGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.MoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/MoveGestureDetector;">
+        </parameter>
+      </method>
+    </interface>
     <interface abstract="true" deprecated="deprecated" final="false" name="MapboxMap.OnPolygonClickListener" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnPolygonClickListener;">
       <method abstract="true" deprecated="not deprecated" final="false" name="onPolygonClick" jni-signature="(Lcom/mapbox/mapboxsdk/annotations/Polygon;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="p0" type="com.mapbox.mapboxsdk.annotations.Polygon" jni-type="Lcom/mapbox/mapboxsdk/annotations/Polygon;">
@@ -3864,9 +4054,48 @@
         </parameter>
       </method>
     </interface>
-    <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.OnRotateListener" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnRotateListener;"></interface>
-    <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.OnScaleListener" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnScaleListener;"></interface>
-    <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.OnShoveListener" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnShoveListener;"></interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.OnRotateListener" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnRotateListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onRotate" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onRotateBegin" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onRotateEnd" jni-signature="(Lcom/mapbox/android/gestures/RotateGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.RotateGestureDetector" jni-type="Lcom/mapbox/android/gestures/RotateGestureDetector;">
+        </parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.OnScaleListener" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnScaleListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onScale" jni-signature="(Lcom/mapbox/android/gestures/StandardScaleGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.StandardScaleGestureDetector" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onScaleBegin" jni-signature="(Lcom/mapbox/android/gestures/StandardScaleGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.StandardScaleGestureDetector" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onScaleEnd" jni-signature="(Lcom/mapbox/android/gestures/StandardScaleGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.StandardScaleGestureDetector" jni-type="Lcom/mapbox/android/gestures/StandardScaleGestureDetector;">
+        </parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.OnShoveListener" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnShoveListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onShove" jni-signature="(Lcom/mapbox/android/gestures/ShoveGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.ShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onShoveBegin" jni-signature="(Lcom/mapbox/android/gestures/ShoveGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.ShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector;">
+        </parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="onShoveEnd" jni-signature="(Lcom/mapbox/android/gestures/ShoveGestureDetector;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.mapbox.android.gestures.ShoveGestureDetector" jni-type="Lcom/mapbox/android/gestures/ShoveGestureDetector;">
+        </parameter>
+      </method>
+    </interface>
     <interface abstract="true" deprecated="not deprecated" final="false" name="MapboxMap.SnapshotReadyCallback" static="true" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapboxMap$SnapshotReadyCallback;">
       <method abstract="true" deprecated="not deprecated" final="false" name="onSnapshotReady" jni-signature="(Landroid/graphics/Bitmap;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="p0" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;">
@@ -4205,6 +4434,8 @@
       </method>
     </class>
     <class abstract="false" deprecated="not deprecated" extends="android.animation.AnimatorListenerAdapter" extends-generic-aware="android.animation.AnimatorListenerAdapter" jni-extends="Landroid/animation/AnimatorListenerAdapter;" final="false" name="MapGestureDetector.3" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapGestureDetector$3;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.MoveGestureDetector.SimpleOnMoveGestureListener" extends-generic-aware="com.mapbox.android.gestures.MoveGestureDetector.SimpleOnMoveGestureListener" jni-extends="Lcom/mapbox/android/gestures/MoveGestureDetector$SimpleOnMoveGestureListener;" final="true" name="MapGestureDetector.MoveGestureListener" static="false" visibility="private" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapGestureDetector$MoveGestureListener;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.RotateGestureDetector.SimpleOnRotateGestureListener" extends-generic-aware="com.mapbox.android.gestures.RotateGestureDetector.SimpleOnRotateGestureListener" jni-extends="Lcom/mapbox/android/gestures/RotateGestureDetector$SimpleOnRotateGestureListener;" final="true" name="MapGestureDetector.RotateGestureListener" static="false" visibility="private" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapGestureDetector$RotateGestureListener;"></class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="MapGestureDetector.RotateGestureListener.1" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapGestureDetector$RotateGestureListener$1;">
       <implements name="android.animation.ValueAnimator.AnimatorUpdateListener" name-generic-aware="android.animation.ValueAnimator.AnimatorUpdateListener" jni-type="Landroid/animation/ValueAnimator$AnimatorUpdateListener;">
       </implements>
@@ -4214,6 +4445,19 @@
       </method>
     </class>
     <class abstract="false" deprecated="not deprecated" extends="android.animation.AnimatorListenerAdapter" extends-generic-aware="android.animation.AnimatorListenerAdapter" jni-extends="Landroid/animation/AnimatorListenerAdapter;" final="false" name="MapGestureDetector.RotateGestureListener.2" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapGestureDetector$RotateGestureListener$2;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.StandardScaleGestureDetector.SimpleStandardOnScaleGestureListener" extends-generic-aware="com.mapbox.android.gestures.StandardScaleGestureDetector.SimpleStandardOnScaleGestureListener" jni-extends="Lcom/mapbox/android/gestures/StandardScaleGestureDetector$SimpleStandardOnScaleGestureListener;" final="true" name="MapGestureDetector.ScaleGestureListener" static="false" visibility="private" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapGestureDetector$ScaleGestureListener;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.ShoveGestureDetector.SimpleOnShoveGestureListener" extends-generic-aware="com.mapbox.android.gestures.ShoveGestureDetector.SimpleOnShoveGestureListener" jni-extends="Lcom/mapbox/android/gestures/ShoveGestureDetector$SimpleOnShoveGestureListener;" final="true" name="MapGestureDetector.ShoveGestureListener" static="false" visibility="private" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapGestureDetector$ShoveGestureListener;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.android.gestures.StandardGestureDetector.SimpleStandardOnGestureListener" extends-generic-aware="com.mapbox.android.gestures.StandardGestureDetector.SimpleStandardOnGestureListener" jni-extends="Lcom/mapbox/android/gestures/StandardGestureDetector$SimpleStandardOnGestureListener;" final="true" name="MapGestureDetector.StandardGestureListener" static="false" visibility="private" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapGestureDetector$StandardGestureListener;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="MapGestureDetector.TapGestureListener" static="false" visibility="private" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapGestureDetector$TapGestureListener;">
+      <implements name="com.mapbox.android.gestures.MultiFingerTapGestureDetector.OnMultiFingerTapGestureListener" name-generic-aware="com.mapbox.android.gestures.MultiFingerTapGestureDetector.OnMultiFingerTapGestureListener" jni-type="Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector$OnMultiFingerTapGestureListener;">
+      </implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMultiFingerTap" jni-signature="(Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector;I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="detector" type="com.mapbox.android.gestures.MultiFingerTapGestureDetector" jni-type="Lcom/mapbox/android/gestures/MultiFingerTapGestureDetector;">
+        </parameter>
+        <parameter name="pointersCount" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="MapKeyListener" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapKeyListener;"></class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="MapKeyListener.TrackballLongPressTimeOut" static="false" visibility="private" jni-signature="Lcom/mapbox/mapboxsdk/maps/MapKeyListener$TrackballLongPressTimeOut;">
       <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;">
@@ -4468,6 +4712,8 @@
       </implements>
       <method abstract="false" deprecated="not deprecated" final="false" name="cancelAllVelocityAnimations" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getGesturesManager" jni-signature="()Lcom/mapbox/android/gestures/AndroidGesturesManager;" bridge="false" native="false" return="com.mapbox.android.gestures.AndroidGesturesManager" jni-return="Lcom/mapbox/android/gestures/AndroidGesturesManager;" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="onAddFlingListener" jni-signature="(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnFlingListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="listener" type="com.mapbox.mapboxsdk.maps.MapboxMap.OnFlingListener" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnFlingListener;">
         </parameter>
@@ -4522,6 +4768,14 @@
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="onRemoveShoveListener" jni-signature="(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnShoveListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="listener" type="com.mapbox.mapboxsdk.maps.MapboxMap.OnShoveListener" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnShoveListener;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setGesturesManager" jni-signature="(Lcom/mapbox/android/gestures/AndroidGesturesManager;ZZ)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="gesturesManager" type="com.mapbox.android.gestures.AndroidGesturesManager" jni-type="Lcom/mapbox/android/gestures/AndroidGesturesManager;">
+        </parameter>
+        <parameter name="attachDefaultListeners" type="boolean" jni-type="Z">
+        </parameter>
+        <parameter name="setDefaultMutuallyExclusives" type="boolean" jni-type="Z">
         </parameter>
       </method>
     </class>
@@ -6010,6 +6264,26 @@
       <implements name="java.lang.annotation.Annotation" name-generic-aware="java.lang.annotation.Annotation" jni-type="Ljava/lang/annotation/Annotation;">
       </implements>
     </interface>
+    <class abstract="false" deprecated="not deprecated" extends="android.support.v4.app.Fragment" extends-generic-aware="android.support.v4.app.Fragment" jni-extends="Landroid/support/v4/app/Fragment;" final="false" name="SupportMapFragment" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/SupportMapFragment;">
+      <implements name="com.mapbox.mapboxsdk.maps.OnMapReadyCallback" name-generic-aware="com.mapbox.mapboxsdk.maps.OnMapReadyCallback" jni-type="Lcom/mapbox/mapboxsdk/maps/OnMapReadyCallback;">
+      </implements>
+      <constructor deprecated="not deprecated" final="false" name="SupportMapFragment" jni-signature="()V" bridge="false" static="false" type="com.mapbox.mapboxsdk.maps.SupportMapFragment" synthetic="false" visibility="public">
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMapAsync" jni-signature="(Lcom/mapbox/mapboxsdk/maps/OnMapReadyCallback;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="onMapReadyCallback" type="com.mapbox.mapboxsdk.maps.OnMapReadyCallback" jni-type="Lcom/mapbox/mapboxsdk/maps/OnMapReadyCallback;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newInstance" jni-signature="()Lcom/mapbox/mapboxsdk/maps/SupportMapFragment;" bridge="false" native="false" return="com.mapbox.mapboxsdk.maps.SupportMapFragment" jni-return="Lcom/mapbox/mapboxsdk/maps/SupportMapFragment;" static="true" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="newInstance" jni-signature="(Lcom/mapbox/mapboxsdk/maps/MapboxMapOptions;)Lcom/mapbox/mapboxsdk/maps/SupportMapFragment;" bridge="false" native="false" return="com.mapbox.mapboxsdk.maps.SupportMapFragment" jni-return="Lcom/mapbox/mapboxsdk/maps/SupportMapFragment;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="mapboxMapOptions" type="com.mapbox.mapboxsdk.maps.MapboxMapOptions" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMapOptions;">
+        </parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMapReady" jni-signature="(Lcom/mapbox/mapboxsdk/maps/MapboxMap;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="mapboxMap" type="com.mapbox.mapboxsdk.maps.MapboxMap" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap;">
+        </parameter>
+      </method>
+    </class>
     <interface abstract="true" deprecated="not deprecated" final="false" name="TelemetryDefinition" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/maps/TelemetryDefinition;">
       <method abstract="true" deprecated="not deprecated" final="false" name="disableTelemetrySession" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
       </method>
@@ -6631,6 +6905,7 @@
       <field deprecated="not deprecated" final="true" name="TIME_WAIT_IDLE" jni-signature="J" static="true" transient="false" type="long" type-generic-aware="long" value="500" visibility="public" volatile="false">
       </field>
     </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.support.v4.view.ViewPropertyAnimatorListenerAdapter" extends-generic-aware="android.support.v4.view.ViewPropertyAnimatorListenerAdapter" jni-extends="Landroid/support/v4/view/ViewPropertyAnimatorListenerAdapter;" final="false" name="CompassView.1" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/maps/widgets/CompassView$1;"></class>
   </package>
   <package name="com.mapbox.mapboxsdk.module.http" jni-name="com/mapbox/mapboxsdk/module/http">
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="HttpRequestImpl" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/module/http/HttpRequestImpl;">
@@ -6694,7 +6969,39 @@
     </class>
   </package>
   <package name="com.mapbox.mapboxsdk.module.telemetry" jni-name="com/mapbox/mapboxsdk/module/telemetry">
+    <class abstract="true" deprecated="not deprecated" extends="com.mapbox.android.telemetry.Event" extends-generic-aware="com.mapbox.android.telemetry.Event" jni-extends="Lcom/mapbox/android/telemetry/Event;" final="false" name="MapBaseEvent" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/module/telemetry/MapBaseEvent;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" jni-signature="(Landroid/os/Parcel;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="dest" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+        <parameter name="flags" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="MapEventFactory" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/module/telemetry/MapEventFactory;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.mapboxsdk.module.telemetry.MapBaseEvent" extends-generic-aware="com.mapbox.mapboxsdk.module.telemetry.MapBaseEvent" jni-extends="Lcom/mapbox/mapboxsdk/module/telemetry/MapBaseEvent;" final="false" name="MapLoadEvent" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/module/telemetry/MapLoadEvent;"></class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.mapboxsdk.module.telemetry.MapBaseEvent" extends-generic-aware="com.mapbox.mapboxsdk.module.telemetry.MapBaseEvent" jni-extends="Lcom/mapbox/mapboxsdk/module/telemetry/MapBaseEvent;" final="false" name="OfflineDownloadEndEvent" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/module/telemetry/OfflineDownloadEndEvent;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" jni-signature="()I" bridge="true" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="true" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" jni-signature="(Landroid/os/Parcel;I)V" bridge="true" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="true" visibility="public">
+        <parameter name="p0" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+        <parameter name="p1" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.mapboxsdk.module.telemetry.MapBaseEvent" extends-generic-aware="com.mapbox.mapboxsdk.module.telemetry.MapBaseEvent" jni-extends="Lcom/mapbox/mapboxsdk/module/telemetry/MapBaseEvent;" final="false" name="OfflineDownloadStartEvent" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/module/telemetry/OfflineDownloadStartEvent;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" jni-signature="()I" bridge="true" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="true" visibility="public">
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" jni-signature="(Landroid/os/Parcel;I)V" bridge="true" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="true" visibility="public">
+        <parameter name="p0" type="android.os.Parcel" jni-type="Landroid/os/Parcel;">
+        </parameter>
+        <parameter name="p1" type="int" jni-type="I">
+        </parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.mapbox.mapboxsdk.module.telemetry.MapBaseEvent" extends-generic-aware="com.mapbox.mapboxsdk.module.telemetry.MapBaseEvent" jni-extends="Lcom/mapbox/mapboxsdk/module/telemetry/MapBaseEvent;" final="false" name="PerformanceEvent" static="false" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/module/telemetry/PerformanceEvent;"></class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="PerformanceEvent.PerformanceAttribute" static="true" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/module/telemetry/PerformanceEvent$PerformanceAttribute;">
       <typeParameters>
         <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;"></typeParameter>

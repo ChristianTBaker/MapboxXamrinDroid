@@ -1,0 +1,5 @@
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.mapbox.android.core", Managed="Com.Mapbox.Android.Core")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.mapbox.android.core.connectivity", Managed="Com.Mapbox.Android.Core.Connectivity")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.mapbox.android.core.crashreporter", Managed="Com.Mapbox.Android.Core.Crashreporter")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.mapbox.android.core.location", Managed="Com.Mapbox.Android.Core.Location")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.mapbox.android.core.permissions", Managed="Com.Mapbox.Android.Core.Permissions")]

@@ -10,6 +10,28 @@ namespace Com.Mapbox.Mapboxsdk.Annotations {
 	[global::Android.Runtime.Register ("com/mapbox/mapboxsdk/annotations/InfoWindow", DoNotGenerateAcw=true)]
 	public partial class InfoWindow : global::Java.Lang.Object {
 
+
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='InfoWindow']/field[@name='view']"
+		[Register ("view")]
+		protected global::Java.Lang.Ref.WeakReference _view {
+			get {
+				const string __id = "view.Ljava/lang/ref/WeakReference;";
+
+				var __v = _members.InstanceFields.GetObjectValue (__id, this);
+				return global::Java.Lang.Object.GetObject<global::Java.Lang.Ref.WeakReference> (__v.Handle, JniHandleOwnership.TransferLocalRef);
+			}
+			set {
+				const string __id = "view.Ljava/lang/ref/WeakReference;";
+
+				IntPtr native_value = global::Android.Runtime.JNIEnv.ToLocalJniHandle (value);
+				try {
+					_members.InstanceFields.SetValue (__id, this, new JniObjectReference (native_value));
+				} finally {
+					global::Android.Runtime.JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+		}
 		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mapbox/mapboxsdk/annotations/InfoWindow", typeof (InfoWindow));
 		internal static new IntPtr class_ref {
 			get {

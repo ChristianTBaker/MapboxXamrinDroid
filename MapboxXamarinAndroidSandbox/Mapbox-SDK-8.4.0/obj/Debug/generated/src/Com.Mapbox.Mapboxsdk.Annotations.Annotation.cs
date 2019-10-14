@@ -10,6 +10,50 @@ namespace Com.Mapbox.Mapboxsdk.Annotations {
 	[global::Android.Runtime.Register ("com/mapbox/mapboxsdk/annotations/Annotation", DoNotGenerateAcw=true)]
 	public abstract partial class Annotation : global::Java.Lang.Object, global::Java.Lang.IComparable {
 
+
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='Annotation']/field[@name='mapView']"
+		[Register ("mapView")]
+		protected global::Com.Mapbox.Mapboxsdk.Maps.MapView _mapView {
+			get {
+				const string __id = "mapView.Lcom/mapbox/mapboxsdk/maps/MapView;";
+
+				var __v = _members.InstanceFields.GetObjectValue (__id, this);
+				return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapView> (__v.Handle, JniHandleOwnership.TransferLocalRef);
+			}
+			set {
+				const string __id = "mapView.Lcom/mapbox/mapboxsdk/maps/MapView;";
+
+				IntPtr native_value = global::Android.Runtime.JNIEnv.ToLocalJniHandle (value);
+				try {
+					_members.InstanceFields.SetValue (__id, this, new JniObjectReference (native_value));
+				} finally {
+					global::Android.Runtime.JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+		}
+
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='Annotation']/field[@name='mapboxMap']"
+		[Register ("mapboxMap")]
+		protected global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap _mapboxMap {
+			get {
+				const string __id = "mapboxMap.Lcom/mapbox/mapboxsdk/maps/MapboxMap;";
+
+				var __v = _members.InstanceFields.GetObjectValue (__id, this);
+				return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap> (__v.Handle, JniHandleOwnership.TransferLocalRef);
+			}
+			set {
+				const string __id = "mapboxMap.Lcom/mapbox/mapboxsdk/maps/MapboxMap;";
+
+				IntPtr native_value = global::Android.Runtime.JNIEnv.ToLocalJniHandle (value);
+				try {
+					_members.InstanceFields.SetValue (__id, this, new JniObjectReference (native_value));
+				} finally {
+					global::Android.Runtime.JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+		}
 		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mapbox/mapboxsdk/annotations/Annotation", typeof (Annotation));
 		internal static new IntPtr class_ref {
 			get {

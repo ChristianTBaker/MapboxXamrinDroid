@@ -1,0 +1,5 @@
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxGestures\bin\Debug\MapboxGestures.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxGestures\bin\Debug\MapboxGestures.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxGestures\obj\Debug\MapboxGestures.csproj.CoreCompileInputs.cache
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxGestures\obj\Debug\MapboxGestures.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxGestures\obj\Debug\MapboxGestures.pdb

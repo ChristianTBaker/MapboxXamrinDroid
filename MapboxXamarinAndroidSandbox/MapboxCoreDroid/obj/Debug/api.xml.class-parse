@@ -1,0 +1,2774 @@
+<api
+  api-source="class-parse">
+  <package
+    name="com.mapbox.android.core"
+    jni-name="com/mapbox/android/core">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Lcom/mapbox/android/core/BuildConfig;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="APPLICATION_ID"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.mapbox.android.core&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;release&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        value="false"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="FLAVOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;1.3.0&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="FileUtils"
+      jni-signature="Lcom/mapbox/android/core/FileUtils;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="deleteFile"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/File;)V">
+        <parameter
+          name="file"
+          type="java.io.File"
+          jni-type="Ljava/io/File;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="deleteFirst"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([Ljava/io/File;Ljava/util/Comparator;I)V">
+        <parameter
+          name="files"
+          type="java.io.File[]"
+          jni-type="[Ljava/io/File;" />
+        <parameter
+          name="sortedBy"
+          type="java.util.Comparator&lt;java.io.File&gt;"
+          jni-type="Ljava/util/Comparator&lt;Ljava/io/File;&gt;;" />
+        <parameter
+          name="numFiles"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getFile"
+        native="false"
+        return="java.io.File"
+        jni-return="Ljava/io/File;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="fileName"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="listAllFiles"
+        native="false"
+        return="java.io.File[]"
+        jni-return="[Ljava/io/File;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/File;)[Ljava/io/File;">
+        <parameter
+          name="directory"
+          type="java.io.File"
+          jni-type="Ljava/io/File;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="readFromFile"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/File;)Ljava/lang/String;">
+        <parameter
+          name="file"
+          type="java.io.File"
+          jni-type="Ljava/io/File;" />
+        <exception
+          name="java/io/FileNotFoundException"
+          type="java.io.FileNotFoundException"
+          type-generic-aware="java.io.FileNotFoundException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="writeToFile"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/File;Ljava/lang/String;)V">
+        <parameter
+          name="file"
+          type="java.io.File"
+          jni-type="Ljava/io/File;" />
+        <parameter
+          name="content"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="FileUtils.LastModifiedComparator"
+      jni-signature="Lcom/mapbox/android/core/FileUtils$LastModifiedComparator;"
+      static="true"
+      visibility="public">
+      <implements
+        name="java.util.Comparator"
+        name-generic-aware="java.util.Comparator&lt;java.io.File&gt;"
+        jni-type="Ljava/util/Comparator&lt;Ljava/io/File;&gt;;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FileUtils.LastModifiedComparator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="compare"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/File;Ljava/io/File;)I">
+        <parameter
+          name="o1"
+          type="java.io.File"
+          jni-type="Ljava/io/File;" />
+        <parameter
+          name="o2"
+          type="java.io.File"
+          jni-type="Ljava/io/File;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="compare"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Ljava/lang/Object;Ljava/lang/Object;)I">
+        <parameter
+          name="p0"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+        <parameter
+          name="p1"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.mapbox.android.core.connectivity"
+    jni-name="com/mapbox/android/core/connectivity">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="ConnectivityListener"
+      jni-signature="Lcom/mapbox/android/core/connectivity/ConnectivityListener;"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onConnectivityChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/content/BroadcastReceiver;"
+      extends="android.content.BroadcastReceiver"
+      extends-generic-aware="android.content.BroadcastReceiver"
+      final="false"
+      name="ConnectivityReceiver"
+      jni-signature="Lcom/mapbox/android/core/connectivity/ConnectivityReceiver;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ConnectivityReceiver"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addConnectivityListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/connectivity/ConnectivityListener;)V">
+        <parameter
+          name="listener"
+          type="com.mapbox.android.core.connectivity.ConnectivityListener"
+          jni-type="Lcom/mapbox/android/core/connectivity/ConnectivityListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getConnectedFlag"
+        native="false"
+        return="java.lang.Boolean"
+        jni-return="Ljava/lang/Boolean;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/Boolean;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isConnected"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isConnected"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)Z">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onReceive"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/content/Intent;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="intent"
+          type="android.content.Intent"
+          jni-type="Landroid/content/Intent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeConnectivityListener"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/connectivity/ConnectivityListener;)Z">
+        <parameter
+          name="listener"
+          type="com.mapbox.android.core.connectivity.ConnectivityListener"
+          jni-type="Lcom/mapbox/android/core/connectivity/ConnectivityListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeConnectivityUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestConnectivityUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setConnectedFlag"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Boolean;)V">
+        <parameter
+          name="connectedFlag"
+          type="java.lang.Boolean"
+          jni-type="Ljava/lang/Boolean;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.mapbox.android.core.crashreporter"
+    jni-name="com/mapbox/android/core/crashreporter">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="CrashReport"
+      jni-signature="Lcom/mapbox/android/core/crashreporter/CrashReport;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getDateString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="put"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="true"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="key"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="value"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toJson"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="CrashReportBuilder"
+      jni-signature="Lcom/mapbox/android/core/crashreporter/CrashReportBuilder;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="fromJson"
+        native="false"
+        return="com.mapbox.android.core.crashreporter.CrashReport"
+        jni-return="Lcom/mapbox/android/core/crashreporter/CrashReport;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/mapbox/android/core/crashreporter/CrashReport;">
+        <parameter
+          name="json"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/IllegalArgumentException"
+          type="java.lang.IllegalArgumentException"
+          type-generic-aware="java.lang.IllegalArgumentException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="MapboxUncaughtExceptionHanlder"
+      jni-signature="Lcom/mapbox/android/core/crashreporter/MapboxUncaughtExceptionHanlder;"
+      static="false"
+      visibility="public">
+      <implements
+        name="java.lang.Thread.UncaughtExceptionHandler"
+        name-generic-aware="java.lang.Thread.UncaughtExceptionHandler"
+        jni-type="Ljava/lang/Thread$UncaughtExceptionHandler;" />
+      <implements
+        name="android.content.SharedPreferences.OnSharedPreferenceChangeListener"
+        name-generic-aware="android.content.SharedPreferences.OnSharedPreferenceChangeListener"
+        jni-type="Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="install"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="mapboxPackage"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="version"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSharedPreferenceChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/SharedPreferences;Ljava/lang/String;)V">
+        <parameter
+          name="sharedPreferences"
+          type="android.content.SharedPreferences"
+          jni-type="Landroid/content/SharedPreferences;" />
+        <parameter
+          name="key"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="uncaughtException"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Thread;Ljava/lang/Throwable;)V">
+        <parameter
+          name="thread"
+          type="java.lang.Thread"
+          jni-type="Ljava/lang/Thread;" />
+        <parameter
+          name="throwable"
+          type="java.lang.Throwable"
+          jni-type="Ljava/lang/Throwable;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="MAPBOX_CRASH_REPORTER_PREFERENCES"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;MapboxCrashReporterPrefs&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="MAPBOX_PREF_ENABLE_CRASH_REPORTER"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;mapbox.crash.enable&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+  </package>
+  <package
+    name="com.mapbox.android.core.location"
+    jni-name="com/mapbox/android/core/location">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AndroidLocationEngineImpl"
+      jni-signature="Lcom/mapbox/android/core/location/AndroidLocationEngineImpl;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.core.location.LocationEngineImpl"
+        name-generic-aware="com.mapbox.android.core.location.LocationEngineImpl&lt;android.location.LocationListener&gt;"
+        jni-type="Lcom/mapbox/android/core/location/LocationEngineImpl&lt;Landroid/location/LocationListener;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createListener"
+        native="false"
+        return="android.location.LocationListener"
+        jni-return="Landroid/location/LocationListener;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)Landroid/location/LocationListener;">
+        <parameter
+          name="callback"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createListener"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineCallback"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastLocation"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)V">
+        <parameter
+          name="callback"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/PendingIntent;)V">
+        <parameter
+          name="pendingIntent"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/location/LocationListener;)V">
+        <parameter
+          name="listener"
+          type="android.location.LocationListener"
+          jni-type="Landroid/location/LocationListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Ljava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Landroid/app/PendingIntent;)V">
+        <parameter
+          name="request"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="pendingIntent"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Landroid/location/LocationListener;Landroid/os/Looper;)V">
+        <parameter
+          name="request"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="listener"
+          type="android.location.LocationListener"
+          jni-type="Landroid/location/LocationListener;" />
+        <parameter
+          name="looper"
+          type="android.os.Looper"
+          jni-type="Landroid/os/Looper;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Ljava/lang/Object;Landroid/os/Looper;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="p1"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+        <parameter
+          name="p2"
+          type="android.os.Looper"
+          jni-type="Landroid/os/Looper;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="AndroidLocationEngineImpl.AndroidLocationEngineCallbackTransport"
+      jni-signature="Lcom/mapbox/android/core/location/AndroidLocationEngineImpl$AndroidLocationEngineCallbackTransport;"
+      static="true"
+      visibility="">
+      <implements
+        name="android.location.LocationListener"
+        name-generic-aware="android.location.LocationListener"
+        jni-type="Landroid/location/LocationListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onLocationChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/location/Location;)V">
+        <parameter
+          name="location"
+          type="android.location.Location"
+          jni-type="Landroid/location/Location;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onProviderDisabled"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="s"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onProviderEnabled"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="s"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onStatusChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;ILandroid/os/Bundle;)V">
+        <parameter
+          name="s"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="i"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="bundle"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="GoogleLocationEngineImpl"
+      jni-signature="Lcom/mapbox/android/core/location/GoogleLocationEngineImpl;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.mapbox.android.core.location.LocationEngineImpl"
+        name-generic-aware="com.mapbox.android.core.location.LocationEngineImpl&lt;com.google.android.gms.location.LocationCallback&gt;"
+        jni-type="Lcom/mapbox/android/core/location/LocationEngineImpl&lt;Lcom/google/android/gms/location/LocationCallback;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createListener"
+        native="false"
+        return="com.google.android.gms.location.LocationCallback"
+        jni-return="Lcom/google/android/gms/location/LocationCallback;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)Lcom/google/android/gms/location/LocationCallback;">
+        <parameter
+          name="callback"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createListener"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineCallback"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastLocation"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)V">
+        <parameter
+          name="callback"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/PendingIntent;)V">
+        <parameter
+          name="pendingIntent"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/google/android/gms/location/LocationCallback;)V">
+        <parameter
+          name="listener"
+          type="com.google.android.gms.location.LocationCallback"
+          jni-type="Lcom/google/android/gms/location/LocationCallback;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Ljava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Landroid/app/PendingIntent;)V">
+        <parameter
+          name="request"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="pendingIntent"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Lcom/google/android/gms/location/LocationCallback;Landroid/os/Looper;)V">
+        <parameter
+          name="request"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="listener"
+          type="com.google.android.gms.location.LocationCallback"
+          jni-type="Lcom/google/android/gms/location/LocationCallback;" />
+        <parameter
+          name="looper"
+          type="android.os.Looper"
+          jni-type="Landroid/os/Looper;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Ljava/lang/Object;Landroid/os/Looper;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="p1"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+        <parameter
+          name="p2"
+          type="android.os.Looper"
+          jni-type="Landroid/os/Looper;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="GoogleLocationEngineImpl.GoogleLastLocationEngineCallbackTransport"
+      jni-signature="Lcom/mapbox/android/core/location/GoogleLocationEngineImpl$GoogleLastLocationEngineCallbackTransport;"
+      static="true"
+      visibility="">
+      <implements
+        name="com.google.android.gms.tasks.OnSuccessListener"
+        name-generic-aware="com.google.android.gms.tasks.OnSuccessListener&lt;android.location.Location&gt;"
+        jni-type="Lcom/google/android/gms/tasks/OnSuccessListener&lt;Landroid/location/Location;&gt;;" />
+      <implements
+        name="com.google.android.gms.tasks.OnFailureListener"
+        name-generic-aware="com.google.android.gms.tasks.OnFailureListener"
+        jni-type="Lcom/google/android/gms/tasks/OnFailureListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onFailure"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Exception;)V">
+        <parameter
+          name="e"
+          type="java.lang.Exception"
+          jni-type="Ljava/lang/Exception;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSuccess"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/location/Location;)V">
+        <parameter
+          name="location"
+          type="android.location.Location"
+          jni-type="Landroid/location/Location;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSuccess"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Ljava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/google/android/gms/location/LocationCallback;"
+      extends="com.google.android.gms.location.LocationCallback"
+      extends-generic-aware="com.google.android.gms.location.LocationCallback"
+      final="true"
+      name="GoogleLocationEngineImpl.GoogleLocationEngineCallbackTransport"
+      jni-signature="Lcom/mapbox/android/core/location/GoogleLocationEngineImpl$GoogleLocationEngineCallbackTransport;"
+      static="true"
+      visibility="private">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onLocationResult"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/google/android/gms/location/LocationResult;)V">
+        <parameter
+          name="locationResult"
+          type="com.google.android.gms.location.LocationResult"
+          jni-type="Lcom/google/android/gms/location/LocationResult;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="LocationEngine"
+      jni-signature="Lcom/mapbox/android/core/location/LocationEngine;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastLocation"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/PendingIntent;)V">
+        <parameter
+          name="p0"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Landroid/app/PendingIntent;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="p1"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Lcom/mapbox/android/core/location/LocationEngineCallback;Landroid/os/Looper;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="p1"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+        <parameter
+          name="p2"
+          type="android.os.Looper"
+          jni-type="Landroid/os/Looper;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="LocationEngineCallback"
+      jni-signature="Lcom/mapbox/android/core/location/LocationEngineCallback;"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onFailure"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Exception;)V">
+        <parameter
+          name="p0"
+          type="java.lang.Exception"
+          jni-type="Ljava/lang/Exception;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onSuccess"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="T"
+          jni-type="TT;" />
+      </method>
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="LocationEngineImpl"
+      jni-signature="Lcom/mapbox/android/core/location/LocationEngineImpl;"
+      static="false"
+      visibility="">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="createListener"
+        native="false"
+        return="T"
+        jni-return="TT;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastLocation"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/PendingIntent;)V">
+        <parameter
+          name="p0"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="T"
+          jni-type="TT;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Landroid/app/PendingIntent;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="p1"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Ljava/lang/Object;Landroid/os/Looper;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="p1"
+          type="T"
+          jni-type="TT;" />
+        <parameter
+          name="p2"
+          type="android.os.Looper"
+          jni-type="Landroid/os/Looper;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="LocationEngineProvider"
+      jni-signature="Lcom/mapbox/android/core/location/LocationEngineProvider;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getBestLocationEngine"
+        native="false"
+        return="com.mapbox.android.core.location.LocationEngine"
+        jni-return="Lcom/mapbox/android/core/location/LocationEngine;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)Lcom/mapbox/android/core/location/LocationEngine;">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="deprecated"
+        final="false"
+        name="getBestLocationEngine"
+        native="false"
+        return="com.mapbox.android.core.location.LocationEngine"
+        jni-return="Lcom/mapbox/android/core/location/LocationEngine;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Z)Lcom/mapbox/android/core/location/LocationEngine;">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="background"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="LocationEngineProxy"
+      jni-signature="Lcom/mapbox/android/core/location/LocationEngineProxy;"
+      static="false"
+      visibility="">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <implements
+        name="com.mapbox.android.core.location.LocationEngine"
+        name-generic-aware="com.mapbox.android.core.location.LocationEngine"
+        jni-type="Lcom/mapbox/android/core/location/LocationEngine;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastLocation"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)V">
+        <parameter
+          name="callback"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/PendingIntent;)V">
+        <parameter
+          name="pendingIntent"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)V">
+        <parameter
+          name="callback"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Landroid/app/PendingIntent;)V">
+        <parameter
+          name="request"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="pendingIntent"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Lcom/mapbox/android/core/location/LocationEngineCallback;Landroid/os/Looper;)V">
+        <parameter
+          name="request"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="callback"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+        <parameter
+          name="looper"
+          type="android.os.Looper"
+          jni-type="Landroid/os/Looper;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="LocationEngineRequest"
+      jni-signature="Lcom/mapbox/android/core/location/LocationEngineRequest;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getDisplacemnt"
+        native="false"
+        return="float"
+        jni-return="F"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()F" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getFastestInterval"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getInterval"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getMaxWaitTime"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getPriority"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="PRIORITY_BALANCED_POWER_ACCURACY"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="PRIORITY_HIGH_ACCURACY"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="0"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="PRIORITY_LOW_POWER"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="2"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="PRIORITY_NO_POWER"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="3"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="LocationEngineRequest.1"
+      jni-signature="Lcom/mapbox/android/core/location/LocationEngineRequest$1;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="LocationEngineRequest.Builder"
+      jni-signature="Lcom/mapbox/android/core/location/LocationEngineRequest$Builder;"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LocationEngineRequest.Builder"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(J)V">
+        <parameter
+          name="interval"
+          type="long"
+          jni-type="J" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="build"
+        native="false"
+        return="com.mapbox.android.core.location.LocationEngineRequest"
+        jni-return="Lcom/mapbox/android/core/location/LocationEngineRequest;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setDisplacement"
+        native="false"
+        return="com.mapbox.android.core.location.LocationEngineRequest.Builder"
+        jni-return="Lcom/mapbox/android/core/location/LocationEngineRequest$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(F)Lcom/mapbox/android/core/location/LocationEngineRequest$Builder;">
+        <parameter
+          name="displacement"
+          type="float"
+          jni-type="F" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setFastestInterval"
+        native="false"
+        return="com.mapbox.android.core.location.LocationEngineRequest.Builder"
+        jni-return="Lcom/mapbox/android/core/location/LocationEngineRequest$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(J)Lcom/mapbox/android/core/location/LocationEngineRequest$Builder;">
+        <parameter
+          name="interval"
+          type="long"
+          jni-type="J" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setMaxWaitTime"
+        native="false"
+        return="com.mapbox.android.core.location.LocationEngineRequest.Builder"
+        jni-return="Lcom/mapbox/android/core/location/LocationEngineRequest$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(J)Lcom/mapbox/android/core/location/LocationEngineRequest$Builder;">
+        <parameter
+          name="maxWaitTime"
+          type="long"
+          jni-type="J" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setPriority"
+        native="false"
+        return="com.mapbox.android.core.location.LocationEngineRequest.Builder"
+        jni-return="Lcom/mapbox/android/core/location/LocationEngineRequest$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/mapbox/android/core/location/LocationEngineRequest$Builder;">
+        <parameter
+          name="priority"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="LocationEngineResult"
+      jni-signature="Lcom/mapbox/android/core/location/LocationEngineResult;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="create"
+        native="false"
+        return="com.mapbox.android.core.location.LocationEngineResult"
+        jni-return="Lcom/mapbox/android/core/location/LocationEngineResult;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/location/Location;)Lcom/mapbox/android/core/location/LocationEngineResult;">
+        <parameter
+          name="location"
+          type="android.location.Location"
+          jni-type="Landroid/location/Location;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="create"
+        native="false"
+        return="com.mapbox.android.core.location.LocationEngineResult"
+        jni-return="Lcom/mapbox/android/core/location/LocationEngineResult;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;)Lcom/mapbox/android/core/location/LocationEngineResult;">
+        <parameter
+          name="locations"
+          type="java.util.List&lt;android.location.Location&gt;"
+          jni-type="Ljava/util/List&lt;Landroid/location/Location;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="extractResult"
+        native="false"
+        return="com.mapbox.android.core.location.LocationEngineResult"
+        jni-return="Lcom/mapbox/android/core/location/LocationEngineResult;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Intent;)Lcom/mapbox/android/core/location/LocationEngineResult;">
+        <parameter
+          name="intent"
+          type="android.content.Intent"
+          jni-type="Landroid/content/Intent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastLocation"
+        native="false"
+        return="android.location.Location"
+        jni-return="Landroid/location/Location;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/location/Location;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLocations"
+        native="false"
+        return="java.util.List&lt;android.location.Location&gt;"
+        jni-return="Ljava/util/List&lt;Landroid/location/Location;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mapbox/android/core/location/AndroidLocationEngineImpl;"
+      extends="com.mapbox.android.core.location.AndroidLocationEngineImpl"
+      extends-generic-aware="com.mapbox.android.core.location.AndroidLocationEngineImpl"
+      final="false"
+      name="MapboxFusedLocationEngineImpl"
+      jni-signature="Lcom/mapbox/android/core/location/MapboxFusedLocationEngineImpl;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createListener"
+        native="false"
+        return="android.location.LocationListener"
+        jni-return="Landroid/location/LocationListener;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)Landroid/location/LocationListener;">
+        <parameter
+          name="callback"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createListener"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineCallback"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastLocation"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineCallback;)V">
+        <parameter
+          name="callback"
+          type="com.mapbox.android.core.location.LocationEngineCallback&lt;com.mapbox.android.core.location.LocationEngineResult&gt;"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineCallback&lt;Lcom/mapbox/android/core/location/LocationEngineResult;&gt;;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Landroid/app/PendingIntent;)V">
+        <parameter
+          name="request"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="pendingIntent"
+          type="android.app.PendingIntent"
+          jni-type="Landroid/app/PendingIntent;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Landroid/location/LocationListener;Landroid/os/Looper;)V">
+        <parameter
+          name="request"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="listener"
+          type="android.location.LocationListener"
+          jni-type="Landroid/location/LocationListener;" />
+        <parameter
+          name="looper"
+          type="android.os.Looper"
+          jni-type="Landroid/os/Looper;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationUpdates"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Lcom/mapbox/android/core/location/LocationEngineRequest;Ljava/lang/Object;Landroid/os/Looper;)V">
+        <parameter
+          name="p0"
+          type="com.mapbox.android.core.location.LocationEngineRequest"
+          jni-type="Lcom/mapbox/android/core/location/LocationEngineRequest;" />
+        <parameter
+          name="p1"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+        <parameter
+          name="p2"
+          type="android.os.Looper"
+          jni-type="Landroid/os/Looper;" />
+        <exception
+          name="java/lang/SecurityException"
+          type="java.lang.SecurityException"
+          type-generic-aware="java.lang.SecurityException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="MapboxFusedLocationEngineImpl.MapboxLocationEngineCallbackTransport"
+      jni-signature="Lcom/mapbox/android/core/location/MapboxFusedLocationEngineImpl$MapboxLocationEngineCallbackTransport;"
+      static="true"
+      visibility="private">
+      <implements
+        name="android.location.LocationListener"
+        name-generic-aware="android.location.LocationListener"
+        jni-type="Landroid/location/LocationListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onLocationChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/location/Location;)V">
+        <parameter
+          name="location"
+          type="android.location.Location"
+          jni-type="Landroid/location/Location;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onProviderDisabled"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="provider"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onProviderEnabled"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="provider"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onStatusChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;ILandroid/os/Bundle;)V">
+        <parameter
+          name="provider"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="status"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="extras"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="Utils"
+      jni-signature="Lcom/mapbox/android/core/location/Utils;"
+      static="false"
+      visibility="" />
+  </package>
+  <package
+    name="com.mapbox.android.core.permissions"
+    jni-name="com/mapbox/android/core/permissions">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="PermissionsListener"
+      jni-signature="Lcom/mapbox/android/core/permissions/PermissionsListener;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onExplanationNeeded"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;)V">
+        <parameter
+          name="p0"
+          type="java.util.List&lt;java.lang.String&gt;"
+          jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onPermissionResult"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="PermissionsManager"
+      jni-signature="Lcom/mapbox/android/core/permissions/PermissionsManager;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="PermissionsManager"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/permissions/PermissionsListener;)V">
+        <parameter
+          name="listener"
+          type="com.mapbox.android.core.permissions.PermissionsListener"
+          jni-type="Lcom/mapbox/android/core/permissions/PermissionsListener;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="areLocationPermissionsGranted"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)Z">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="areRuntimePermissionsRequired"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getListener"
+        native="false"
+        return="com.mapbox.android.core.permissions.PermissionsListener"
+        jni-return="Lcom/mapbox/android/core/permissions/PermissionsListener;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/mapbox/android/core/permissions/PermissionsListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onRequestPermissionsResult"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I[Ljava/lang/String;[I)V">
+        <parameter
+          name="requestCode"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="permissions"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+        <parameter
+          name="grantResults"
+          type="int[]"
+          jni-type="[I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestLocationPermissions"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)V">
+        <parameter
+          name="activity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mapbox/android/core/permissions/PermissionsListener;)V">
+        <parameter
+          name="listener"
+          type="com.mapbox.android.core.permissions.PermissionsListener"
+          jni-type="Lcom/mapbox/android/core/permissions/PermissionsListener;" />
+      </method>
+    </class>
+  </package>
+</api>

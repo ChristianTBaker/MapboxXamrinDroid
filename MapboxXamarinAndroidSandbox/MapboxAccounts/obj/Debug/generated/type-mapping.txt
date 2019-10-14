@@ -1,0 +1,10 @@
+com/mapbox/android/accounts/v1/MapboxAccounts = Com.Mapbox.Android.Accounts.V1.MapboxAccounts
+  <init>()V = .ctor()
+  SKU_ID_MAPS_MAUS = SkuIdMapsMaus
+  SKU_ID_NAVIGATION_MAUS = SkuIdNavigationMaus
+  SKU_ID_NAVIGATION_TRIPS = SkuIdNavigationTrips
+  getNow()J = Now
+  obtainEndUserId()Ljava/lang/String; = ObtainEndUserId()
+  obtainMapsSkuUserToken(Ljava/lang/String;)Ljava/lang/String; = ObtainMapsSkuUserToken(string)
+  obtainNavigationSkuSessionToken()Ljava/lang/String; = ObtainNavigationSkuSessionToken()
+  obtainNavigationSkuUserToken(Ljava/lang/String;)Ljava/lang/String; = ObtainNavigationSkuUserToken(string)

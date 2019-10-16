@@ -1,0 +1,43 @@
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Mapbox-Android-Plugin -Annotation-v8-0.7.0.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Mapbox-Android-Plugin -Annotation-v8-0.7.0.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Arch.Core.Common.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Arch.Core.Runtime.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Arch.Lifecycle.Common.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Arch.Lifecycle.LiveData.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Arch.Lifecycle.LiveData.Core.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Arch.Lifecycle.Runtime.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Arch.Lifecycle.ViewModel.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.Annotations.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.AsyncLayoutInflater.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.Collections.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.Compat.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.CoordinaterLayout.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.Core.UI.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.Core.Utils.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.CursorAdapter.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.CustomView.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.DocumentFile.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.DrawerLayout.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.Fragment.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.Interpolator.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.Loader.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.LocalBroadcastManager.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.Print.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.SlidingPaneLayout.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.SwipeRefreshLayout.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.VersionedParcelable.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xamarin.Android.Support.ViewPager.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Xbindings.ReLinker.Droid.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Mapbox-SDK-8.4.0.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\MapboxGestures.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\MapboxTelemetry.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\MapboxCoreDroid.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\Mapbox-SDK-8.4.0.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\MapboxGestures.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\MapboxTelemetry.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\bin\Debug\MapboxCoreDroid.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\obj\Debug\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csprojAssemblyReference.cache
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\obj\Debug\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj.CoreCompileInputs.cache
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\obj\Debug\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj.CopyComplete
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\obj\Debug\Mapbox-Android-Plugin -Annotation-v8-0.7.0.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-Android-Plugin -Annotation-v8-0.7.0\obj\Debug\Mapbox-Android-Plugin -Annotation-v8-0.7.0.pdb

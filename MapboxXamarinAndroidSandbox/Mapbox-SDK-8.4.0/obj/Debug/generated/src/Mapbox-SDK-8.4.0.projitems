@@ -6,11 +6,17 @@
   <!-- Classes -->
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.Annotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.BaseMarkerOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.BasePointCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.BubbleLayout.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.Icon.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.IconFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.InfoWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.Marker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.MarkerOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.Polygon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.PolygonOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.Polyline.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Annotations.PolylineOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Attribution.Attribution.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Attribution.AttributionLayout.cs" />
@@ -145,6 +151,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Utils.BitmapUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Utils.ColorUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Utils.Compare.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Utils.FileUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Utils.FontUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Utils.MapFragmentUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Utils.MathUtils.cs" />

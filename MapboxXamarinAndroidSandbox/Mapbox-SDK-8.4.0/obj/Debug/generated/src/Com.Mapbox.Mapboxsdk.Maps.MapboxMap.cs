@@ -125,6 +125,100 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 		}
 
 
+		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.InfoWindowAdapter']"
+		[ObsoleteAttribute (@"This class is obsoleted in this android platform")]
+		[Register ("com/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter", "", "Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IInfoWindowAdapterInvoker")]
+		public partial interface IInfoWindowAdapter : IJavaObject {
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.InfoWindowAdapter']/method[@name='getInfoWindow' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Marker']]"
+			[Register ("getInfoWindow", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)Landroid/view/View;", "GetGetInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_Handler:Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IInfoWindowAdapterInvoker, Mapbox-SDK-8.4.0")]
+			global::Android.Views.View GetInfoWindow (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0);
+
+		}
+
+		[global::Android.Runtime.Register ("com/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter", DoNotGenerateAcw=true)]
+		internal class IInfoWindowAdapterInvoker : global::Java.Lang.Object, IInfoWindowAdapter {
+
+			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter", typeof (IInfoWindowAdapterInvoker));
+
+			static IntPtr java_class_ref {
+				get { return _members.JniPeerType.PeerReference.Handle; }
+			}
+
+			public override global::Java.Interop.JniPeerMembers JniPeerMembers {
+				get { return _members; }
+			}
+
+			protected override IntPtr ThresholdClass {
+				get { return class_ref; }
+			}
+
+			protected override global::System.Type ThresholdType {
+				get { return _members.ManagedPeerType; }
+			}
+
+			IntPtr class_ref;
+
+			public static IInfoWindowAdapter GetObject (IntPtr handle, JniHandleOwnership transfer)
+			{
+				return global::Java.Lang.Object.GetObject<IInfoWindowAdapter> (handle, transfer);
+			}
+
+			static IntPtr Validate (IntPtr handle)
+			{
+				if (!JNIEnv.IsInstanceOf (handle, java_class_ref))
+					throw new InvalidCastException (string.Format ("Unable to convert instance of type '{0}' to type '{1}'.",
+								JNIEnv.GetClassNameFromInstance (handle), "com.mapbox.mapboxsdk.maps.MapboxMap.InfoWindowAdapter"));
+				return handle;
+			}
+
+			protected override void Dispose (bool disposing)
+			{
+				if (this.class_ref != IntPtr.Zero)
+					JNIEnv.DeleteGlobalRef (this.class_ref);
+				this.class_ref = IntPtr.Zero;
+				base.Dispose (disposing);
+			}
+
+			public IInfoWindowAdapterInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
+			{
+				IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
+				this.class_ref = JNIEnv.NewGlobalRef (local_ref);
+				JNIEnv.DeleteLocalRef (local_ref);
+			}
+
+			static Delegate cb_getInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+#pragma warning disable 0169
+			static Delegate GetGetInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_Handler ()
+			{
+				if (cb_getInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_ == null)
+					cb_getInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr>) n_GetInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_);
+				return cb_getInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+			}
+
+			static IntPtr n_GetInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+			{
+				global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IInfoWindowAdapter __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IInfoWindowAdapter> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+				global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0 = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Marker> (native_p0, JniHandleOwnership.DoNotTransfer);
+				IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.GetInfoWindow (p0));
+				return __ret;
+			}
+#pragma warning restore 0169
+
+			IntPtr id_getInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+			public unsafe global::Android.Views.View GetInfoWindow (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				if (id_getInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_ == IntPtr.Zero)
+					id_getInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_ = JNIEnv.GetMethodID (class_ref, "getInfoWindow", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)Landroid/view/View;");
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue ((p0 == null) ? IntPtr.Zero : ((global::Java.Lang.Object) p0).Handle);
+				global::Android.Views.View __ret = global::Java.Lang.Object.GetObject<global::Android.Views.View> (JNIEnv.CallObjectMethod (((global::Java.Lang.Object) this).Handle, id_getInfoWindow_Lcom_mapbox_mapboxsdk_annotations_Marker_, __args), JniHandleOwnership.TransferLocalRef);
+				return __ret;
+			}
+
+		}
+
+
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnCameraIdleListener']"
 		[Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnCameraIdleListener", "", "Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnCameraIdleListenerInvoker")]
 		public partial interface IOnCameraIdleListener : IJavaObject {
@@ -1176,6 +1270,426 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 		}
 
 
+		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnInfoWindowClickListener']"
+		[Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowClickListener", "", "Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnInfoWindowClickListenerInvoker")]
+		public partial interface IOnInfoWindowClickListener : IJavaObject {
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnInfoWindowClickListener']/method[@name='onInfoWindowClick' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Marker']]"
+			[Register ("onInfoWindowClick", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)Z", "GetOnInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_Handler:Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnInfoWindowClickListenerInvoker, Mapbox-SDK-8.4.0")]
+			bool OnInfoWindowClick (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0);
+
+		}
+
+		[global::Android.Runtime.Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowClickListener", DoNotGenerateAcw=true)]
+		internal class IOnInfoWindowClickListenerInvoker : global::Java.Lang.Object, IOnInfoWindowClickListener {
+
+			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowClickListener", typeof (IOnInfoWindowClickListenerInvoker));
+
+			static IntPtr java_class_ref {
+				get { return _members.JniPeerType.PeerReference.Handle; }
+			}
+
+			public override global::Java.Interop.JniPeerMembers JniPeerMembers {
+				get { return _members; }
+			}
+
+			protected override IntPtr ThresholdClass {
+				get { return class_ref; }
+			}
+
+			protected override global::System.Type ThresholdType {
+				get { return _members.ManagedPeerType; }
+			}
+
+			IntPtr class_ref;
+
+			public static IOnInfoWindowClickListener GetObject (IntPtr handle, JniHandleOwnership transfer)
+			{
+				return global::Java.Lang.Object.GetObject<IOnInfoWindowClickListener> (handle, transfer);
+			}
+
+			static IntPtr Validate (IntPtr handle)
+			{
+				if (!JNIEnv.IsInstanceOf (handle, java_class_ref))
+					throw new InvalidCastException (string.Format ("Unable to convert instance of type '{0}' to type '{1}'.",
+								JNIEnv.GetClassNameFromInstance (handle), "com.mapbox.mapboxsdk.maps.MapboxMap.OnInfoWindowClickListener"));
+				return handle;
+			}
+
+			protected override void Dispose (bool disposing)
+			{
+				if (this.class_ref != IntPtr.Zero)
+					JNIEnv.DeleteGlobalRef (this.class_ref);
+				this.class_ref = IntPtr.Zero;
+				base.Dispose (disposing);
+			}
+
+			public IOnInfoWindowClickListenerInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
+			{
+				IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
+				this.class_ref = JNIEnv.NewGlobalRef (local_ref);
+				JNIEnv.DeleteLocalRef (local_ref);
+			}
+
+			static Delegate cb_onInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+#pragma warning disable 0169
+			static Delegate GetOnInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_Handler ()
+			{
+				if (cb_onInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ == null)
+					cb_onInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, bool>) n_OnInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_);
+				return cb_onInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+			}
+
+			static bool n_OnInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+			{
+				global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListener __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListener> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+				global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0 = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Marker> (native_p0, JniHandleOwnership.DoNotTransfer);
+				bool __ret = __this.OnInfoWindowClick (p0);
+				return __ret;
+			}
+#pragma warning restore 0169
+
+			IntPtr id_onInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+			public unsafe bool OnInfoWindowClick (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				if (id_onInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ == IntPtr.Zero)
+					id_onInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ = JNIEnv.GetMethodID (class_ref, "onInfoWindowClick", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)Z");
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue ((p0 == null) ? IntPtr.Zero : ((global::Java.Lang.Object) p0).Handle);
+				bool __ret = JNIEnv.CallBooleanMethod (((global::Java.Lang.Object) this).Handle, id_onInfoWindowClick_Lcom_mapbox_mapboxsdk_annotations_Marker_, __args);
+				return __ret;
+			}
+
+		}
+
+		// event args for com.mapbox.mapboxsdk.maps.MapboxMap.OnInfoWindowClickListener.onInfoWindowClick
+		public partial class InfoWindowClickEventArgs : global::System.EventArgs {
+
+			public InfoWindowClickEventArgs (bool handled, global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				this.handled = handled;
+				this.p0 = p0;
+			}
+
+			bool handled;
+			public bool Handled {
+				get { return handled; }
+				set { handled = value; }
+			}
+
+			global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0;
+			public global::Com.Mapbox.Mapboxsdk.Annotations.Marker P0 {
+				get { return p0; }
+			}
+		}
+
+		[global::Android.Runtime.Register ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnInfoWindowClickListenerImplementor")]
+		internal sealed partial class IOnInfoWindowClickListenerImplementor : global::Java.Lang.Object, IOnInfoWindowClickListener {
+
+			object sender;
+
+			public IOnInfoWindowClickListenerImplementor (object sender)
+				: base (
+					global::Android.Runtime.JNIEnv.StartCreateInstance ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnInfoWindowClickListenerImplementor", "()V"),
+					JniHandleOwnership.TransferLocalRef)
+			{
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
+				this.sender = sender;
+			}
+
+#pragma warning disable 0649
+			public EventHandler<InfoWindowClickEventArgs> Handler;
+#pragma warning restore 0649
+
+			public bool OnInfoWindowClick (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				var __h = Handler;
+				if (__h == null)
+					return false;
+				var __e = new InfoWindowClickEventArgs (true, p0);
+				__h (sender, __e);
+				return __e.Handled;
+			}
+
+			internal static bool __IsEmpty (IOnInfoWindowClickListenerImplementor value)
+			{
+				return value.Handler == null;
+			}
+		}
+
+
+		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnInfoWindowCloseListener']"
+		[Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowCloseListener", "", "Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnInfoWindowCloseListenerInvoker")]
+		public partial interface IOnInfoWindowCloseListener : IJavaObject {
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnInfoWindowCloseListener']/method[@name='onInfoWindowClose' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Marker']]"
+			[Register ("onInfoWindowClose", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)V", "GetOnInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_Handler:Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnInfoWindowCloseListenerInvoker, Mapbox-SDK-8.4.0")]
+			void OnInfoWindowClose (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0);
+
+		}
+
+		[global::Android.Runtime.Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowCloseListener", DoNotGenerateAcw=true)]
+		internal class IOnInfoWindowCloseListenerInvoker : global::Java.Lang.Object, IOnInfoWindowCloseListener {
+
+			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowCloseListener", typeof (IOnInfoWindowCloseListenerInvoker));
+
+			static IntPtr java_class_ref {
+				get { return _members.JniPeerType.PeerReference.Handle; }
+			}
+
+			public override global::Java.Interop.JniPeerMembers JniPeerMembers {
+				get { return _members; }
+			}
+
+			protected override IntPtr ThresholdClass {
+				get { return class_ref; }
+			}
+
+			protected override global::System.Type ThresholdType {
+				get { return _members.ManagedPeerType; }
+			}
+
+			IntPtr class_ref;
+
+			public static IOnInfoWindowCloseListener GetObject (IntPtr handle, JniHandleOwnership transfer)
+			{
+				return global::Java.Lang.Object.GetObject<IOnInfoWindowCloseListener> (handle, transfer);
+			}
+
+			static IntPtr Validate (IntPtr handle)
+			{
+				if (!JNIEnv.IsInstanceOf (handle, java_class_ref))
+					throw new InvalidCastException (string.Format ("Unable to convert instance of type '{0}' to type '{1}'.",
+								JNIEnv.GetClassNameFromInstance (handle), "com.mapbox.mapboxsdk.maps.MapboxMap.OnInfoWindowCloseListener"));
+				return handle;
+			}
+
+			protected override void Dispose (bool disposing)
+			{
+				if (this.class_ref != IntPtr.Zero)
+					JNIEnv.DeleteGlobalRef (this.class_ref);
+				this.class_ref = IntPtr.Zero;
+				base.Dispose (disposing);
+			}
+
+			public IOnInfoWindowCloseListenerInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
+			{
+				IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
+				this.class_ref = JNIEnv.NewGlobalRef (local_ref);
+				JNIEnv.DeleteLocalRef (local_ref);
+			}
+
+			static Delegate cb_onInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+#pragma warning disable 0169
+			static Delegate GetOnInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_Handler ()
+			{
+				if (cb_onInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_ == null)
+					cb_onInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_OnInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_);
+				return cb_onInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+			}
+
+			static void n_OnInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+			{
+				global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListener __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListener> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+				global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0 = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Marker> (native_p0, JniHandleOwnership.DoNotTransfer);
+				__this.OnInfoWindowClose (p0);
+			}
+#pragma warning restore 0169
+
+			IntPtr id_onInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+			public unsafe void OnInfoWindowClose (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				if (id_onInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_ == IntPtr.Zero)
+					id_onInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_ = JNIEnv.GetMethodID (class_ref, "onInfoWindowClose", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)V");
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue ((p0 == null) ? IntPtr.Zero : ((global::Java.Lang.Object) p0).Handle);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInfoWindowClose_Lcom_mapbox_mapboxsdk_annotations_Marker_, __args);
+			}
+
+		}
+
+		// event args for com.mapbox.mapboxsdk.maps.MapboxMap.OnInfoWindowCloseListener.onInfoWindowClose
+		public partial class InfoWindowCloseEventArgs : global::System.EventArgs {
+
+			public InfoWindowCloseEventArgs (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				this.p0 = p0;
+			}
+
+			global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0;
+			public global::Com.Mapbox.Mapboxsdk.Annotations.Marker P0 {
+				get { return p0; }
+			}
+		}
+
+		[global::Android.Runtime.Register ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnInfoWindowCloseListenerImplementor")]
+		internal sealed partial class IOnInfoWindowCloseListenerImplementor : global::Java.Lang.Object, IOnInfoWindowCloseListener {
+
+			object sender;
+
+			public IOnInfoWindowCloseListenerImplementor (object sender)
+				: base (
+					global::Android.Runtime.JNIEnv.StartCreateInstance ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnInfoWindowCloseListenerImplementor", "()V"),
+					JniHandleOwnership.TransferLocalRef)
+			{
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
+				this.sender = sender;
+			}
+
+#pragma warning disable 0649
+			public EventHandler<InfoWindowCloseEventArgs> Handler;
+#pragma warning restore 0649
+
+			public void OnInfoWindowClose (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				var __h = Handler;
+				if (__h != null)
+					__h (sender, new InfoWindowCloseEventArgs (p0));
+			}
+
+			internal static bool __IsEmpty (IOnInfoWindowCloseListenerImplementor value)
+			{
+				return value.Handler == null;
+			}
+		}
+
+
+		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnInfoWindowLongClickListener']"
+		[Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowLongClickListener", "", "Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnInfoWindowLongClickListenerInvoker")]
+		public partial interface IOnInfoWindowLongClickListener : IJavaObject {
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnInfoWindowLongClickListener']/method[@name='onInfoWindowLongClick' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Marker']]"
+			[Register ("onInfoWindowLongClick", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)V", "GetOnInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_Handler:Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnInfoWindowLongClickListenerInvoker, Mapbox-SDK-8.4.0")]
+			void OnInfoWindowLongClick (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0);
+
+		}
+
+		[global::Android.Runtime.Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowLongClickListener", DoNotGenerateAcw=true)]
+		internal class IOnInfoWindowLongClickListenerInvoker : global::Java.Lang.Object, IOnInfoWindowLongClickListener {
+
+			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowLongClickListener", typeof (IOnInfoWindowLongClickListenerInvoker));
+
+			static IntPtr java_class_ref {
+				get { return _members.JniPeerType.PeerReference.Handle; }
+			}
+
+			public override global::Java.Interop.JniPeerMembers JniPeerMembers {
+				get { return _members; }
+			}
+
+			protected override IntPtr ThresholdClass {
+				get { return class_ref; }
+			}
+
+			protected override global::System.Type ThresholdType {
+				get { return _members.ManagedPeerType; }
+			}
+
+			IntPtr class_ref;
+
+			public static IOnInfoWindowLongClickListener GetObject (IntPtr handle, JniHandleOwnership transfer)
+			{
+				return global::Java.Lang.Object.GetObject<IOnInfoWindowLongClickListener> (handle, transfer);
+			}
+
+			static IntPtr Validate (IntPtr handle)
+			{
+				if (!JNIEnv.IsInstanceOf (handle, java_class_ref))
+					throw new InvalidCastException (string.Format ("Unable to convert instance of type '{0}' to type '{1}'.",
+								JNIEnv.GetClassNameFromInstance (handle), "com.mapbox.mapboxsdk.maps.MapboxMap.OnInfoWindowLongClickListener"));
+				return handle;
+			}
+
+			protected override void Dispose (bool disposing)
+			{
+				if (this.class_ref != IntPtr.Zero)
+					JNIEnv.DeleteGlobalRef (this.class_ref);
+				this.class_ref = IntPtr.Zero;
+				base.Dispose (disposing);
+			}
+
+			public IOnInfoWindowLongClickListenerInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
+			{
+				IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
+				this.class_ref = JNIEnv.NewGlobalRef (local_ref);
+				JNIEnv.DeleteLocalRef (local_ref);
+			}
+
+			static Delegate cb_onInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+#pragma warning disable 0169
+			static Delegate GetOnInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_Handler ()
+			{
+				if (cb_onInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ == null)
+					cb_onInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_OnInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_);
+				return cb_onInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+			}
+
+			static void n_OnInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+			{
+				global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListener __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListener> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+				global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0 = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Marker> (native_p0, JniHandleOwnership.DoNotTransfer);
+				__this.OnInfoWindowLongClick (p0);
+			}
+#pragma warning restore 0169
+
+			IntPtr id_onInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+			public unsafe void OnInfoWindowLongClick (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				if (id_onInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ == IntPtr.Zero)
+					id_onInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ = JNIEnv.GetMethodID (class_ref, "onInfoWindowLongClick", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)V");
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue ((p0 == null) ? IntPtr.Zero : ((global::Java.Lang.Object) p0).Handle);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onInfoWindowLongClick_Lcom_mapbox_mapboxsdk_annotations_Marker_, __args);
+			}
+
+		}
+
+		// event args for com.mapbox.mapboxsdk.maps.MapboxMap.OnInfoWindowLongClickListener.onInfoWindowLongClick
+		public partial class InfoWindowLongClickEventArgs : global::System.EventArgs {
+
+			public InfoWindowLongClickEventArgs (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				this.p0 = p0;
+			}
+
+			global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0;
+			public global::Com.Mapbox.Mapboxsdk.Annotations.Marker P0 {
+				get { return p0; }
+			}
+		}
+
+		[global::Android.Runtime.Register ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnInfoWindowLongClickListenerImplementor")]
+		internal sealed partial class IOnInfoWindowLongClickListenerImplementor : global::Java.Lang.Object, IOnInfoWindowLongClickListener {
+
+			object sender;
+
+			public IOnInfoWindowLongClickListenerImplementor (object sender)
+				: base (
+					global::Android.Runtime.JNIEnv.StartCreateInstance ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnInfoWindowLongClickListenerImplementor", "()V"),
+					JniHandleOwnership.TransferLocalRef)
+			{
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
+				this.sender = sender;
+			}
+
+#pragma warning disable 0649
+			public EventHandler<InfoWindowLongClickEventArgs> Handler;
+#pragma warning restore 0649
+
+			public void OnInfoWindowLongClick (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				var __h = Handler;
+				if (__h != null)
+					__h (sender, new InfoWindowLongClickEventArgs (p0));
+			}
+
+			internal static bool __IsEmpty (IOnInfoWindowLongClickListenerImplementor value)
+			{
+				return value.Handler == null;
+			}
+		}
+
+
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnMapClickListener']"
 		[Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnMapClickListener", "", "Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnMapClickListenerInvoker")]
 		public partial interface IOnMapClickListener : IJavaObject {
@@ -1472,6 +1986,429 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 		}
 
 
+		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnMarkerClickListener']"
+		[ObsoleteAttribute (@"This class is obsoleted in this android platform")]
+		[Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnMarkerClickListener", "", "Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnMarkerClickListenerInvoker")]
+		public partial interface IOnMarkerClickListener : IJavaObject {
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnMarkerClickListener']/method[@name='onMarkerClick' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Marker']]"
+			[Register ("onMarkerClick", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)Z", "GetOnMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_Handler:Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnMarkerClickListenerInvoker, Mapbox-SDK-8.4.0")]
+			bool OnMarkerClick (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0);
+
+		}
+
+		[global::Android.Runtime.Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnMarkerClickListener", DoNotGenerateAcw=true)]
+		internal class IOnMarkerClickListenerInvoker : global::Java.Lang.Object, IOnMarkerClickListener {
+
+			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mapbox/mapboxsdk/maps/MapboxMap$OnMarkerClickListener", typeof (IOnMarkerClickListenerInvoker));
+
+			static IntPtr java_class_ref {
+				get { return _members.JniPeerType.PeerReference.Handle; }
+			}
+
+			public override global::Java.Interop.JniPeerMembers JniPeerMembers {
+				get { return _members; }
+			}
+
+			protected override IntPtr ThresholdClass {
+				get { return class_ref; }
+			}
+
+			protected override global::System.Type ThresholdType {
+				get { return _members.ManagedPeerType; }
+			}
+
+			IntPtr class_ref;
+
+			public static IOnMarkerClickListener GetObject (IntPtr handle, JniHandleOwnership transfer)
+			{
+				return global::Java.Lang.Object.GetObject<IOnMarkerClickListener> (handle, transfer);
+			}
+
+			static IntPtr Validate (IntPtr handle)
+			{
+				if (!JNIEnv.IsInstanceOf (handle, java_class_ref))
+					throw new InvalidCastException (string.Format ("Unable to convert instance of type '{0}' to type '{1}'.",
+								JNIEnv.GetClassNameFromInstance (handle), "com.mapbox.mapboxsdk.maps.MapboxMap.OnMarkerClickListener"));
+				return handle;
+			}
+
+			protected override void Dispose (bool disposing)
+			{
+				if (this.class_ref != IntPtr.Zero)
+					JNIEnv.DeleteGlobalRef (this.class_ref);
+				this.class_ref = IntPtr.Zero;
+				base.Dispose (disposing);
+			}
+
+			public IOnMarkerClickListenerInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
+			{
+				IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
+				this.class_ref = JNIEnv.NewGlobalRef (local_ref);
+				JNIEnv.DeleteLocalRef (local_ref);
+			}
+
+			static Delegate cb_onMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+#pragma warning disable 0169
+			static Delegate GetOnMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_Handler ()
+			{
+				if (cb_onMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ == null)
+					cb_onMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, bool>) n_OnMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_);
+				return cb_onMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+			}
+
+			static bool n_OnMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+			{
+				global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListener __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListener> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+				global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0 = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Marker> (native_p0, JniHandleOwnership.DoNotTransfer);
+				bool __ret = __this.OnMarkerClick (p0);
+				return __ret;
+			}
+#pragma warning restore 0169
+
+			IntPtr id_onMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_;
+			public unsafe bool OnMarkerClick (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				if (id_onMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ == IntPtr.Zero)
+					id_onMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_ = JNIEnv.GetMethodID (class_ref, "onMarkerClick", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)Z");
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue ((p0 == null) ? IntPtr.Zero : ((global::Java.Lang.Object) p0).Handle);
+				bool __ret = JNIEnv.CallBooleanMethod (((global::Java.Lang.Object) this).Handle, id_onMarkerClick_Lcom_mapbox_mapboxsdk_annotations_Marker_, __args);
+				return __ret;
+			}
+
+		}
+
+		// event args for com.mapbox.mapboxsdk.maps.MapboxMap.OnMarkerClickListener.onMarkerClick
+		public partial class MarkerClickEventArgs : global::System.EventArgs {
+
+			public MarkerClickEventArgs (bool handled, global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				this.handled = handled;
+				this.p0 = p0;
+			}
+
+			bool handled;
+			public bool Handled {
+				get { return handled; }
+				set { handled = value; }
+			}
+
+			global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0;
+			public global::Com.Mapbox.Mapboxsdk.Annotations.Marker P0 {
+				get { return p0; }
+			}
+		}
+
+		[global::Android.Runtime.Register ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnMarkerClickListenerImplementor")]
+		internal sealed partial class IOnMarkerClickListenerImplementor : global::Java.Lang.Object, IOnMarkerClickListener {
+
+			object sender;
+
+			public IOnMarkerClickListenerImplementor (object sender)
+				: base (
+					global::Android.Runtime.JNIEnv.StartCreateInstance ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnMarkerClickListenerImplementor", "()V"),
+					JniHandleOwnership.TransferLocalRef)
+			{
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
+				this.sender = sender;
+			}
+
+#pragma warning disable 0649
+			public EventHandler<MarkerClickEventArgs> Handler;
+#pragma warning restore 0649
+
+			public bool OnMarkerClick (global::Com.Mapbox.Mapboxsdk.Annotations.Marker p0)
+			{
+				var __h = Handler;
+				if (__h == null)
+					return false;
+				var __e = new MarkerClickEventArgs (true, p0);
+				__h (sender, __e);
+				return __e.Handled;
+			}
+
+			internal static bool __IsEmpty (IOnMarkerClickListenerImplementor value)
+			{
+				return value.Handler == null;
+			}
+		}
+
+
+		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnPolygonClickListener']"
+		[ObsoleteAttribute (@"This class is obsoleted in this android platform")]
+		[Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnPolygonClickListener", "", "Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnPolygonClickListenerInvoker")]
+		public partial interface IOnPolygonClickListener : IJavaObject {
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnPolygonClickListener']/method[@name='onPolygonClick' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Polygon']]"
+			[Register ("onPolygonClick", "(Lcom/mapbox/mapboxsdk/annotations/Polygon;)V", "GetOnPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_Handler:Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnPolygonClickListenerInvoker, Mapbox-SDK-8.4.0")]
+			void OnPolygonClick (global::Com.Mapbox.Mapboxsdk.Annotations.Polygon p0);
+
+		}
+
+		[global::Android.Runtime.Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnPolygonClickListener", DoNotGenerateAcw=true)]
+		internal class IOnPolygonClickListenerInvoker : global::Java.Lang.Object, IOnPolygonClickListener {
+
+			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mapbox/mapboxsdk/maps/MapboxMap$OnPolygonClickListener", typeof (IOnPolygonClickListenerInvoker));
+
+			static IntPtr java_class_ref {
+				get { return _members.JniPeerType.PeerReference.Handle; }
+			}
+
+			public override global::Java.Interop.JniPeerMembers JniPeerMembers {
+				get { return _members; }
+			}
+
+			protected override IntPtr ThresholdClass {
+				get { return class_ref; }
+			}
+
+			protected override global::System.Type ThresholdType {
+				get { return _members.ManagedPeerType; }
+			}
+
+			IntPtr class_ref;
+
+			public static IOnPolygonClickListener GetObject (IntPtr handle, JniHandleOwnership transfer)
+			{
+				return global::Java.Lang.Object.GetObject<IOnPolygonClickListener> (handle, transfer);
+			}
+
+			static IntPtr Validate (IntPtr handle)
+			{
+				if (!JNIEnv.IsInstanceOf (handle, java_class_ref))
+					throw new InvalidCastException (string.Format ("Unable to convert instance of type '{0}' to type '{1}'.",
+								JNIEnv.GetClassNameFromInstance (handle), "com.mapbox.mapboxsdk.maps.MapboxMap.OnPolygonClickListener"));
+				return handle;
+			}
+
+			protected override void Dispose (bool disposing)
+			{
+				if (this.class_ref != IntPtr.Zero)
+					JNIEnv.DeleteGlobalRef (this.class_ref);
+				this.class_ref = IntPtr.Zero;
+				base.Dispose (disposing);
+			}
+
+			public IOnPolygonClickListenerInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
+			{
+				IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
+				this.class_ref = JNIEnv.NewGlobalRef (local_ref);
+				JNIEnv.DeleteLocalRef (local_ref);
+			}
+
+			static Delegate cb_onPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_;
+#pragma warning disable 0169
+			static Delegate GetOnPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_Handler ()
+			{
+				if (cb_onPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_ == null)
+					cb_onPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_OnPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_);
+				return cb_onPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_;
+			}
+
+			static void n_OnPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+			{
+				global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListener __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListener> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+				global::Com.Mapbox.Mapboxsdk.Annotations.Polygon p0 = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Polygon> (native_p0, JniHandleOwnership.DoNotTransfer);
+				__this.OnPolygonClick (p0);
+			}
+#pragma warning restore 0169
+
+			IntPtr id_onPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_;
+			public unsafe void OnPolygonClick (global::Com.Mapbox.Mapboxsdk.Annotations.Polygon p0)
+			{
+				if (id_onPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_ == IntPtr.Zero)
+					id_onPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_ = JNIEnv.GetMethodID (class_ref, "onPolygonClick", "(Lcom/mapbox/mapboxsdk/annotations/Polygon;)V");
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue ((p0 == null) ? IntPtr.Zero : ((global::Java.Lang.Object) p0).Handle);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onPolygonClick_Lcom_mapbox_mapboxsdk_annotations_Polygon_, __args);
+			}
+
+		}
+
+		// event args for com.mapbox.mapboxsdk.maps.MapboxMap.OnPolygonClickListener.onPolygonClick
+		public partial class PolygonClickEventArgs : global::System.EventArgs {
+
+			public PolygonClickEventArgs (global::Com.Mapbox.Mapboxsdk.Annotations.Polygon p0)
+			{
+				this.p0 = p0;
+			}
+
+			global::Com.Mapbox.Mapboxsdk.Annotations.Polygon p0;
+			public global::Com.Mapbox.Mapboxsdk.Annotations.Polygon P0 {
+				get { return p0; }
+			}
+		}
+
+		[global::Android.Runtime.Register ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnPolygonClickListenerImplementor")]
+		internal sealed partial class IOnPolygonClickListenerImplementor : global::Java.Lang.Object, IOnPolygonClickListener {
+
+			object sender;
+
+			public IOnPolygonClickListenerImplementor (object sender)
+				: base (
+					global::Android.Runtime.JNIEnv.StartCreateInstance ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnPolygonClickListenerImplementor", "()V"),
+					JniHandleOwnership.TransferLocalRef)
+			{
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
+				this.sender = sender;
+			}
+
+#pragma warning disable 0649
+			public EventHandler<PolygonClickEventArgs> Handler;
+#pragma warning restore 0649
+
+			public void OnPolygonClick (global::Com.Mapbox.Mapboxsdk.Annotations.Polygon p0)
+			{
+				var __h = Handler;
+				if (__h != null)
+					__h (sender, new PolygonClickEventArgs (p0));
+			}
+
+			internal static bool __IsEmpty (IOnPolygonClickListenerImplementor value)
+			{
+				return value.Handler == null;
+			}
+		}
+
+
+		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnPolylineClickListener']"
+		[ObsoleteAttribute (@"This class is obsoleted in this android platform")]
+		[Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnPolylineClickListener", "", "Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnPolylineClickListenerInvoker")]
+		public partial interface IOnPolylineClickListener : IJavaObject {
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnPolylineClickListener']/method[@name='onPolylineClick' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Polyline']]"
+			[Register ("onPolylineClick", "(Lcom/mapbox/mapboxsdk/annotations/Polyline;)V", "GetOnPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_Handler:Com.Mapbox.Mapboxsdk.Maps.MapboxMap/IOnPolylineClickListenerInvoker, Mapbox-SDK-8.4.0")]
+			void OnPolylineClick (global::Com.Mapbox.Mapboxsdk.Annotations.Polyline p0);
+
+		}
+
+		[global::Android.Runtime.Register ("com/mapbox/mapboxsdk/maps/MapboxMap$OnPolylineClickListener", DoNotGenerateAcw=true)]
+		internal class IOnPolylineClickListenerInvoker : global::Java.Lang.Object, IOnPolylineClickListener {
+
+			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mapbox/mapboxsdk/maps/MapboxMap$OnPolylineClickListener", typeof (IOnPolylineClickListenerInvoker));
+
+			static IntPtr java_class_ref {
+				get { return _members.JniPeerType.PeerReference.Handle; }
+			}
+
+			public override global::Java.Interop.JniPeerMembers JniPeerMembers {
+				get { return _members; }
+			}
+
+			protected override IntPtr ThresholdClass {
+				get { return class_ref; }
+			}
+
+			protected override global::System.Type ThresholdType {
+				get { return _members.ManagedPeerType; }
+			}
+
+			IntPtr class_ref;
+
+			public static IOnPolylineClickListener GetObject (IntPtr handle, JniHandleOwnership transfer)
+			{
+				return global::Java.Lang.Object.GetObject<IOnPolylineClickListener> (handle, transfer);
+			}
+
+			static IntPtr Validate (IntPtr handle)
+			{
+				if (!JNIEnv.IsInstanceOf (handle, java_class_ref))
+					throw new InvalidCastException (string.Format ("Unable to convert instance of type '{0}' to type '{1}'.",
+								JNIEnv.GetClassNameFromInstance (handle), "com.mapbox.mapboxsdk.maps.MapboxMap.OnPolylineClickListener"));
+				return handle;
+			}
+
+			protected override void Dispose (bool disposing)
+			{
+				if (this.class_ref != IntPtr.Zero)
+					JNIEnv.DeleteGlobalRef (this.class_ref);
+				this.class_ref = IntPtr.Zero;
+				base.Dispose (disposing);
+			}
+
+			public IOnPolylineClickListenerInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
+			{
+				IntPtr local_ref = JNIEnv.GetObjectClass (((global::Java.Lang.Object) this).Handle);
+				this.class_ref = JNIEnv.NewGlobalRef (local_ref);
+				JNIEnv.DeleteLocalRef (local_ref);
+			}
+
+			static Delegate cb_onPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_;
+#pragma warning disable 0169
+			static Delegate GetOnPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_Handler ()
+			{
+				if (cb_onPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_ == null)
+					cb_onPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_OnPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_);
+				return cb_onPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_;
+			}
+
+			static void n_OnPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+			{
+				global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListener __this = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListener> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+				global::Com.Mapbox.Mapboxsdk.Annotations.Polyline p0 = global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Polyline> (native_p0, JniHandleOwnership.DoNotTransfer);
+				__this.OnPolylineClick (p0);
+			}
+#pragma warning restore 0169
+
+			IntPtr id_onPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_;
+			public unsafe void OnPolylineClick (global::Com.Mapbox.Mapboxsdk.Annotations.Polyline p0)
+			{
+				if (id_onPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_ == IntPtr.Zero)
+					id_onPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_ = JNIEnv.GetMethodID (class_ref, "onPolylineClick", "(Lcom/mapbox/mapboxsdk/annotations/Polyline;)V");
+				JValue* __args = stackalloc JValue [1];
+				__args [0] = new JValue ((p0 == null) ? IntPtr.Zero : ((global::Java.Lang.Object) p0).Handle);
+				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onPolylineClick_Lcom_mapbox_mapboxsdk_annotations_Polyline_, __args);
+			}
+
+		}
+
+		// event args for com.mapbox.mapboxsdk.maps.MapboxMap.OnPolylineClickListener.onPolylineClick
+		public partial class PolylineClickEventArgs : global::System.EventArgs {
+
+			public PolylineClickEventArgs (global::Com.Mapbox.Mapboxsdk.Annotations.Polyline p0)
+			{
+				this.p0 = p0;
+			}
+
+			global::Com.Mapbox.Mapboxsdk.Annotations.Polyline p0;
+			public global::Com.Mapbox.Mapboxsdk.Annotations.Polyline P0 {
+				get { return p0; }
+			}
+		}
+
+		[global::Android.Runtime.Register ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnPolylineClickListenerImplementor")]
+		internal sealed partial class IOnPolylineClickListenerImplementor : global::Java.Lang.Object, IOnPolylineClickListener {
+
+			object sender;
+
+			public IOnPolylineClickListenerImplementor (object sender)
+				: base (
+					global::Android.Runtime.JNIEnv.StartCreateInstance ("mono/com/mapbox/mapboxsdk/maps/MapboxMap_OnPolylineClickListenerImplementor", "()V"),
+					JniHandleOwnership.TransferLocalRef)
+			{
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (((global::Java.Lang.Object) this).Handle, "()V");
+				this.sender = sender;
+			}
+
+#pragma warning disable 0649
+			public EventHandler<PolylineClickEventArgs> Handler;
+#pragma warning restore 0649
+
+			public void OnPolylineClick (global::Com.Mapbox.Mapboxsdk.Annotations.Polyline p0)
+			{
+				var __h = Handler;
+				if (__h != null)
+					__h (sender, new PolylineClickEventArgs (p0));
+			}
+
+			internal static bool __IsEmpty (IOnPolylineClickListenerImplementor value)
+			{
+				return value.Handler == null;
+			}
+		}
+
+
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.SnapshotReadyCallback']"
 		[Register ("com/mapbox/mapboxsdk/maps/MapboxMap$SnapshotReadyCallback", "", "Com.Mapbox.Mapboxsdk.Maps.MapboxMap/ISnapshotReadyCallbackInvoker")]
 		public partial interface ISnapshotReadyCallback : IJavaObject {
@@ -1697,6 +2634,31 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 			}
 		}
 
+		[Obsolete (@"deprecated")]
+		public unsafe global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IInfoWindowAdapter InfoWindowAdapter {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='getInfoWindowAdapter' and count(parameter)=0]"
+			[Register ("getInfoWindowAdapter", "()Lcom/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter;", "GetGetInfoWindowAdapterHandler")]
+			get {
+				const string __id = "getInfoWindowAdapter.()Lcom/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IInfoWindowAdapter> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setInfoWindowAdapter' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.InfoWindowAdapter']]"
+			[Register ("setInfoWindowAdapter", "(Lcom/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter;)V", "GetSetInfoWindowAdapter_Lcom_mapbox_mapboxsdk_maps_MapboxMap_InfoWindowAdapter_Handler")]
+			set {
+				const string __id = "setInfoWindowAdapter.(Lcom/mapbox/mapboxsdk/maps/MapboxMap$InfoWindowAdapter;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+				} finally {
+				}
+			}
+		}
+
 		public unsafe global::Com.Mapbox.Mapboxsdk.Location.LocationComponent LocationComponent {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='getLocationComponent' and count(parameter)=0]"
 			[Register ("getLocationComponent", "()Lcom/mapbox/mapboxsdk/location/LocationComponent;", "GetGetLocationComponentHandler")]
@@ -1705,6 +2667,20 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 				try {
 					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
 					return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Location.LocationComponent> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+		}
+
+		[Obsolete (@"deprecated")]
+		public unsafe global::System.Collections.Generic.IList<global::Com.Mapbox.Mapboxsdk.Annotations.Marker> Markers {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='getMarkers' and count(parameter)=0]"
+			[Register ("getMarkers", "()Ljava/util/List;", "GetGetMarkersHandler")]
+			get {
+				const string __id = "getMarkers.()Ljava/util/List;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+					return global::Android.Runtime.JavaList<global::Com.Mapbox.Mapboxsdk.Annotations.Marker>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -1731,6 +2707,106 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 				try {
 					var __rm = _members.InstanceMethods.InvokeAbstractDoubleMethod (__id, this, null);
 					return __rm;
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListener OnInfoWindowClickListener {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='getOnInfoWindowClickListener' and count(parameter)=0]"
+			[Register ("getOnInfoWindowClickListener", "()Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowClickListener;", "GetGetOnInfoWindowClickListenerHandler")]
+			get {
+				const string __id = "getOnInfoWindowClickListener.()Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowClickListener;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListener> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnInfoWindowClickListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnInfoWindowClickListener']]"
+			[Register ("setOnInfoWindowClickListener", "(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowClickListener;)V", "GetSetOnInfoWindowClickListener_Lcom_mapbox_mapboxsdk_maps_MapboxMap_OnInfoWindowClickListener_Handler")]
+			set {
+				const string __id = "setOnInfoWindowClickListener.(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowClickListener;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListener OnInfoWindowCloseListener {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='getOnInfoWindowCloseListener' and count(parameter)=0]"
+			[Register ("getOnInfoWindowCloseListener", "()Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowCloseListener;", "GetGetOnInfoWindowCloseListenerHandler")]
+			get {
+				const string __id = "getOnInfoWindowCloseListener.()Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowCloseListener;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListener> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnInfoWindowCloseListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnInfoWindowCloseListener']]"
+			[Register ("setOnInfoWindowCloseListener", "(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowCloseListener;)V", "GetSetOnInfoWindowCloseListener_Lcom_mapbox_mapboxsdk_maps_MapboxMap_OnInfoWindowCloseListener_Handler")]
+			set {
+				const string __id = "setOnInfoWindowCloseListener.(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowCloseListener;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+				} finally {
+				}
+			}
+		}
+
+		public unsafe global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListener OnInfoWindowLongClickListener {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='getOnInfoWindowLongClickListener' and count(parameter)=0]"
+			[Register ("getOnInfoWindowLongClickListener", "()Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowLongClickListener;", "GetGetOnInfoWindowLongClickListenerHandler")]
+			get {
+				const string __id = "getOnInfoWindowLongClickListener.()Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowLongClickListener;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+					return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListener> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnInfoWindowLongClickListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnInfoWindowLongClickListener']]"
+			[Register ("setOnInfoWindowLongClickListener", "(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowLongClickListener;)V", "GetSetOnInfoWindowLongClickListener_Lcom_mapbox_mapboxsdk_maps_MapboxMap_OnInfoWindowLongClickListener_Handler")]
+			set {
+				const string __id = "setOnInfoWindowLongClickListener.(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnInfoWindowLongClickListener;)V";
+				try {
+					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+					__args [0] = new JniArgumentValue ((value == null) ? IntPtr.Zero : ((global::Java.Lang.Object) value).Handle);
+					_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+				} finally {
+				}
+			}
+		}
+
+		[Obsolete (@"deprecated")]
+		public unsafe global::System.Collections.Generic.IList<global::Com.Mapbox.Mapboxsdk.Annotations.Polygon> Polygons {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='getPolygons' and count(parameter)=0]"
+			[Register ("getPolygons", "()Ljava/util/List;", "GetGetPolygonsHandler")]
+			get {
+				const string __id = "getPolygons.()Ljava/util/List;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+					return global::Android.Runtime.JavaList<global::Com.Mapbox.Mapboxsdk.Annotations.Polygon>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+		}
+
+		[Obsolete (@"deprecated")]
+		public unsafe global::System.Collections.Generic.IList<global::Com.Mapbox.Mapboxsdk.Annotations.Polyline> Polylines {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='getPolylines' and count(parameter)=0]"
+			[Register ("getPolylines", "()Ljava/util/List;", "GetGetPolylinesHandler")]
+			get {
+				const string __id = "getPolylines.()Ljava/util/List;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+					return global::Android.Runtime.JavaList<global::Com.Mapbox.Mapboxsdk.Annotations.Polyline>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
 				} finally {
 				}
 			}
@@ -1773,6 +2849,20 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 			}
 		}
 
+		[Obsolete (@"deprecated")]
+		public unsafe global::System.Collections.Generic.IList<global::Com.Mapbox.Mapboxsdk.Annotations.Marker> SelectedMarkers {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='getSelectedMarkers' and count(parameter)=0]"
+			[Register ("getSelectedMarkers", "()Ljava/util/List;", "GetGetSelectedMarkersHandler")]
+			get {
+				const string __id = "getSelectedMarkers.()Ljava/util/List;";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, null);
+					return global::Android.Runtime.JavaList<global::Com.Mapbox.Mapboxsdk.Annotations.Marker>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+		}
+
 		public unsafe global::Com.Mapbox.Mapboxsdk.Maps.Style Style {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='getStyle' and count(parameter)=0]"
 			[Register ("getStyle", "()Lcom/mapbox/mapboxsdk/maps/Style;", "GetGetStyleHandler")]
@@ -1809,6 +2899,53 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 					return __rm;
 				} finally {
 				}
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='addMarker' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.BaseMarkerOptions']]"
+		[Obsolete (@"deprecated")]
+		[Register ("addMarker", "(Lcom/mapbox/mapboxsdk/annotations/BaseMarkerOptions;)Lcom/mapbox/mapboxsdk/annotations/Marker;", "")]
+		public unsafe global::Com.Mapbox.Mapboxsdk.Annotations.Marker AddMarker (global::Com.Mapbox.Mapboxsdk.Annotations.BaseMarkerOptions markerOptions)
+		{
+			const string __id = "addMarker.(Lcom/mapbox/mapboxsdk/annotations/BaseMarkerOptions;)Lcom/mapbox/mapboxsdk/annotations/Marker;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((markerOptions == null) ? IntPtr.Zero : ((global::Java.Lang.Object) markerOptions).Handle);
+				var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Marker> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='addMarker' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.MarkerOptions']]"
+		[Obsolete (@"deprecated")]
+		[Register ("addMarker", "(Lcom/mapbox/mapboxsdk/annotations/MarkerOptions;)Lcom/mapbox/mapboxsdk/annotations/Marker;", "")]
+		public unsafe global::Com.Mapbox.Mapboxsdk.Annotations.Marker AddMarker (global::Com.Mapbox.Mapboxsdk.Annotations.MarkerOptions markerOptions)
+		{
+			const string __id = "addMarker.(Lcom/mapbox/mapboxsdk/annotations/MarkerOptions;)Lcom/mapbox/mapboxsdk/annotations/Marker;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((markerOptions == null) ? IntPtr.Zero : ((global::Java.Lang.Object) markerOptions).Handle);
+				var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Marker> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='addMarkers' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;? extends com.mapbox.mapboxsdk.annotations.BaseMarkerOptions&gt;']]"
+		[Obsolete (@"deprecated")]
+		[Register ("addMarkers", "(Ljava/util/List;)Ljava/util/List;", "")]
+		public unsafe global::System.Collections.Generic.IList<global::Com.Mapbox.Mapboxsdk.Annotations.Marker> AddMarkers (global::System.Collections.Generic.IList<global::Com.Mapbox.Mapboxsdk.Annotations.BaseMarkerOptions> markerOptionsList)
+		{
+			const string __id = "addMarkers.(Ljava/util/List;)Ljava/util/List;";
+			IntPtr native_markerOptionsList = global::Android.Runtime.JavaList<global::Com.Mapbox.Mapboxsdk.Annotations.BaseMarkerOptions>.ToLocalJniHandle (markerOptionsList);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue (native_markerOptionsList);
+				var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, __args);
+				return global::Android.Runtime.JavaList<global::Com.Mapbox.Mapboxsdk.Annotations.Marker>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_markerOptionsList);
 			}
 		}
 
@@ -1900,6 +3037,70 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 				__args [0] = new JniArgumentValue ((listener == null) ? IntPtr.Zero : ((global::Java.Lang.Object) listener).Handle);
 				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
 			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='addPolygon' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.PolygonOptions']]"
+		[Obsolete (@"deprecated")]
+		[Register ("addPolygon", "(Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;)Lcom/mapbox/mapboxsdk/annotations/Polygon;", "")]
+		public unsafe global::Com.Mapbox.Mapboxsdk.Annotations.Polygon AddPolygon (global::Com.Mapbox.Mapboxsdk.Annotations.PolygonOptions polygonOptions)
+		{
+			const string __id = "addPolygon.(Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;)Lcom/mapbox/mapboxsdk/annotations/Polygon;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((polygonOptions == null) ? IntPtr.Zero : ((global::Java.Lang.Object) polygonOptions).Handle);
+				var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Polygon> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='addPolygons' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.mapbox.mapboxsdk.annotations.PolygonOptions&gt;']]"
+		[Obsolete (@"deprecated")]
+		[Register ("addPolygons", "(Ljava/util/List;)Ljava/util/List;", "")]
+		public unsafe global::System.Collections.Generic.IList<global::Com.Mapbox.Mapboxsdk.Annotations.Polygon> AddPolygons (global::System.Collections.Generic.IList<global::Com.Mapbox.Mapboxsdk.Annotations.PolygonOptions> polygonOptionsList)
+		{
+			const string __id = "addPolygons.(Ljava/util/List;)Ljava/util/List;";
+			IntPtr native_polygonOptionsList = global::Android.Runtime.JavaList<global::Com.Mapbox.Mapboxsdk.Annotations.PolygonOptions>.ToLocalJniHandle (polygonOptionsList);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue (native_polygonOptionsList);
+				var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, __args);
+				return global::Android.Runtime.JavaList<global::Com.Mapbox.Mapboxsdk.Annotations.Polygon>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_polygonOptionsList);
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='addPolyline' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.PolylineOptions']]"
+		[Obsolete (@"deprecated")]
+		[Register ("addPolyline", "(Lcom/mapbox/mapboxsdk/annotations/PolylineOptions;)Lcom/mapbox/mapboxsdk/annotations/Polyline;", "")]
+		public unsafe global::Com.Mapbox.Mapboxsdk.Annotations.Polyline AddPolyline (global::Com.Mapbox.Mapboxsdk.Annotations.PolylineOptions polylineOptions)
+		{
+			const string __id = "addPolyline.(Lcom/mapbox/mapboxsdk/annotations/PolylineOptions;)Lcom/mapbox/mapboxsdk/annotations/Polyline;";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((polylineOptions == null) ? IntPtr.Zero : ((global::Java.Lang.Object) polylineOptions).Handle);
+				var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, __args);
+				return global::Java.Lang.Object.GetObject<global::Com.Mapbox.Mapboxsdk.Annotations.Polyline> (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='addPolylines' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.mapbox.mapboxsdk.annotations.PolylineOptions&gt;']]"
+		[Obsolete (@"deprecated")]
+		[Register ("addPolylines", "(Ljava/util/List;)Ljava/util/List;", "")]
+		public unsafe global::System.Collections.Generic.IList<global::Com.Mapbox.Mapboxsdk.Annotations.Polyline> AddPolylines (global::System.Collections.Generic.IList<global::Com.Mapbox.Mapboxsdk.Annotations.PolylineOptions> polylineOptionsList)
+		{
+			const string __id = "addPolylines.(Ljava/util/List;)Ljava/util/List;";
+			IntPtr native_polylineOptionsList = global::Android.Runtime.JavaList<global::Com.Mapbox.Mapboxsdk.Annotations.PolylineOptions>.ToLocalJniHandle (polylineOptionsList);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue (native_polylineOptionsList);
+				var __rm = _members.InstanceMethods.InvokeAbstractObjectMethod (__id, this, __args);
+				return global::Android.Runtime.JavaList<global::Com.Mapbox.Mapboxsdk.Annotations.Polyline>.FromJniHandle (__rm.Handle, JniHandleOwnership.TransferLocalRef);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_polylineOptionsList);
 			}
 		}
 
@@ -2000,6 +3201,20 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 			const string __id = "cycleDebugOptions.()V";
 			try {
 				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, null);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='deselectMarker' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Marker']]"
+		[Obsolete (@"deprecated")]
+		[Register ("deselectMarker", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)V", "")]
+		public unsafe void DeselectMarker (global::Com.Mapbox.Mapboxsdk.Annotations.Marker marker)
+		{
+			const string __id = "deselectMarker.(Lcom/mapbox/mapboxsdk/annotations/Marker;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((marker == null) ? IntPtr.Zero : ((global::Java.Lang.Object) marker).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
 			} finally {
 			}
 		}
@@ -2299,6 +3514,20 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 			}
 		}
 
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='removeMarker' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Marker']]"
+		[Obsolete (@"deprecated")]
+		[Register ("removeMarker", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)V", "")]
+		public unsafe void RemoveMarker (global::Com.Mapbox.Mapboxsdk.Annotations.Marker marker)
+		{
+			const string __id = "removeMarker.(Lcom/mapbox/mapboxsdk/annotations/Marker;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((marker == null) ? IntPtr.Zero : ((global::Java.Lang.Object) marker).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='removeOnCameraIdleListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnCameraIdleListener']]"
 		[Register ("removeOnCameraIdleListener", "(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnCameraIdleListener;)V", "")]
 		public unsafe void RemoveOnCameraIdleListener (global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnCameraIdleListener listener)
@@ -2390,6 +3619,34 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 			}
 		}
 
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='removePolygon' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Polygon']]"
+		[Obsolete (@"deprecated")]
+		[Register ("removePolygon", "(Lcom/mapbox/mapboxsdk/annotations/Polygon;)V", "")]
+		public unsafe void RemovePolygon (global::Com.Mapbox.Mapboxsdk.Annotations.Polygon polygon)
+		{
+			const string __id = "removePolygon.(Lcom/mapbox/mapboxsdk/annotations/Polygon;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((polygon == null) ? IntPtr.Zero : ((global::Java.Lang.Object) polygon).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='removePolyline' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Polyline']]"
+		[Obsolete (@"deprecated")]
+		[Register ("removePolyline", "(Lcom/mapbox/mapboxsdk/annotations/Polyline;)V", "")]
+		public unsafe void RemovePolyline (global::Com.Mapbox.Mapboxsdk.Annotations.Polyline polyline)
+		{
+			const string __id = "removePolyline.(Lcom/mapbox/mapboxsdk/annotations/Polyline;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((polyline == null) ? IntPtr.Zero : ((global::Java.Lang.Object) polyline).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='resetNorth' and count(parameter)=0]"
 		[Register ("resetNorth", "()V", "")]
 		public unsafe void ResetNorth ()
@@ -2425,6 +3682,20 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 				__args [0] = new JniArgumentValue (x);
 				__args [1] = new JniArgumentValue (y);
 				__args [2] = new JniArgumentValue (duration);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='selectMarker' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Marker']]"
+		[Obsolete (@"deprecated")]
+		[Register ("selectMarker", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)V", "")]
+		public unsafe void SelectMarker (global::Com.Mapbox.Mapboxsdk.Annotations.Marker marker)
+		{
+			const string __id = "selectMarker.(Lcom/mapbox/mapboxsdk/annotations/Marker;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((marker == null) ? IntPtr.Zero : ((global::Java.Lang.Object) marker).Handle);
 				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
 			} finally {
 			}
@@ -2540,6 +3811,48 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 			}
 		}
 
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnMarkerClickListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnMarkerClickListener']]"
+		[Obsolete (@"deprecated")]
+		[Register ("setOnMarkerClickListener", "(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnMarkerClickListener;)V", "")]
+		public unsafe void SetOnMarkerClickListener (global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListener listener)
+		{
+			const string __id = "setOnMarkerClickListener.(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnMarkerClickListener;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((listener == null) ? IntPtr.Zero : ((global::Java.Lang.Object) listener).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnPolygonClickListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnPolygonClickListener']]"
+		[Obsolete (@"deprecated")]
+		[Register ("setOnPolygonClickListener", "(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnPolygonClickListener;)V", "")]
+		public unsafe void SetOnPolygonClickListener (global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListener listener)
+		{
+			const string __id = "setOnPolygonClickListener.(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnPolygonClickListener;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((listener == null) ? IntPtr.Zero : ((global::Java.Lang.Object) listener).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnPolylineClickListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnPolylineClickListener']]"
+		[Obsolete (@"deprecated")]
+		[Register ("setOnPolylineClickListener", "(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnPolylineClickListener;)V", "")]
+		public unsafe void SetOnPolylineClickListener (global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListener listener)
+		{
+			const string __id = "setOnPolylineClickListener.(Lcom/mapbox/mapboxsdk/maps/MapboxMap$OnPolylineClickListener;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((listener == null) ? IntPtr.Zero : ((global::Java.Lang.Object) listener).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setPadding' and count(parameter)=4 and parameter[1][@type='int'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int']]"
 		[Obsolete (@"deprecated")]
 		[Register ("setPadding", "(IIII)V", "")]
@@ -2623,6 +3936,48 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 			try {
 				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
 				__args [0] = new JniArgumentValue ((@callback == null) ? IntPtr.Zero : ((global::Java.Lang.Object) @callback).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='updateMarker' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Marker']]"
+		[Obsolete (@"deprecated")]
+		[Register ("updateMarker", "(Lcom/mapbox/mapboxsdk/annotations/Marker;)V", "")]
+		public unsafe void UpdateMarker (global::Com.Mapbox.Mapboxsdk.Annotations.Marker updatedMarker)
+		{
+			const string __id = "updateMarker.(Lcom/mapbox/mapboxsdk/annotations/Marker;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((updatedMarker == null) ? IntPtr.Zero : ((global::Java.Lang.Object) updatedMarker).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='updatePolygon' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Polygon']]"
+		[Obsolete (@"deprecated")]
+		[Register ("updatePolygon", "(Lcom/mapbox/mapboxsdk/annotations/Polygon;)V", "")]
+		public unsafe void UpdatePolygon (global::Com.Mapbox.Mapboxsdk.Annotations.Polygon polygon)
+		{
+			const string __id = "updatePolygon.(Lcom/mapbox/mapboxsdk/annotations/Polygon;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((polygon == null) ? IntPtr.Zero : ((global::Java.Lang.Object) polygon).Handle);
+				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='updatePolyline' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.annotations.Polyline']]"
+		[Obsolete (@"deprecated")]
+		[Register ("updatePolyline", "(Lcom/mapbox/mapboxsdk/annotations/Polyline;)V", "")]
+		public unsafe void UpdatePolyline (global::Com.Mapbox.Mapboxsdk.Annotations.Polyline polyline)
+		{
+			const string __id = "updatePolyline.(Lcom/mapbox/mapboxsdk/annotations/Polyline;)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue ((polyline == null) ? IntPtr.Zero : ((global::Java.Lang.Object) polyline).Handle);
 				_members.InstanceMethods.InvokeAbstractVoidMethod (__id, this, __args);
 			} finally {
 			}
@@ -2826,6 +4181,156 @@ namespace Com.Mapbox.Mapboxsdk.Maps {
 		global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnFpsChangedListenerImplementor __CreateIOnFpsChangedListenerImplementor ()
 		{
 			return new global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnFpsChangedListenerImplementor (this);
+		}
+#endregion
+#region "Event implementation for Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListener"
+		public event EventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.MarkerClickEventArgs> MarkerClick {
+			add {
+				global::Java.Interop.EventHelper.AddEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListenerImplementor>(
+						ref weak_implementor_SetOnMarkerClickListener,
+						__CreateIOnMarkerClickListenerImplementor,
+						SetOnMarkerClickListener,
+						__h => __h.Handler += value);
+			}
+			remove {
+				global::Java.Interop.EventHelper.RemoveEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListenerImplementor>(
+						ref weak_implementor_SetOnMarkerClickListener,
+						global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListenerImplementor.__IsEmpty,
+						__v => SetOnMarkerClickListener (null),
+						__h => __h.Handler -= value);
+			}
+		}
+
+		WeakReference weak_implementor_SetOnMarkerClickListener;
+
+		global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListenerImplementor __CreateIOnMarkerClickListenerImplementor ()
+		{
+			return new global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnMarkerClickListenerImplementor (this);
+		}
+#endregion
+#region "Event implementation for Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListener"
+		public event EventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.PolygonClickEventArgs> PolygonClick {
+			add {
+				global::Java.Interop.EventHelper.AddEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListenerImplementor>(
+						ref weak_implementor_SetOnPolygonClickListener,
+						__CreateIOnPolygonClickListenerImplementor,
+						SetOnPolygonClickListener,
+						__h => __h.Handler += value);
+			}
+			remove {
+				global::Java.Interop.EventHelper.RemoveEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListenerImplementor>(
+						ref weak_implementor_SetOnPolygonClickListener,
+						global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListenerImplementor.__IsEmpty,
+						__v => SetOnPolygonClickListener (null),
+						__h => __h.Handler -= value);
+			}
+		}
+
+		WeakReference weak_implementor_SetOnPolygonClickListener;
+
+		global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListenerImplementor __CreateIOnPolygonClickListenerImplementor ()
+		{
+			return new global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolygonClickListenerImplementor (this);
+		}
+#endregion
+#region "Event implementation for Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListener"
+		public event EventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.PolylineClickEventArgs> PolylineClick {
+			add {
+				global::Java.Interop.EventHelper.AddEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListenerImplementor>(
+						ref weak_implementor_SetOnPolylineClickListener,
+						__CreateIOnPolylineClickListenerImplementor,
+						SetOnPolylineClickListener,
+						__h => __h.Handler += value);
+			}
+			remove {
+				global::Java.Interop.EventHelper.RemoveEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListenerImplementor>(
+						ref weak_implementor_SetOnPolylineClickListener,
+						global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListenerImplementor.__IsEmpty,
+						__v => SetOnPolylineClickListener (null),
+						__h => __h.Handler -= value);
+			}
+		}
+
+		WeakReference weak_implementor_SetOnPolylineClickListener;
+
+		global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListenerImplementor __CreateIOnPolylineClickListenerImplementor ()
+		{
+			return new global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnPolylineClickListenerImplementor (this);
+		}
+#endregion
+#region "Event implementation for Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListener"
+		public event EventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.InfoWindowClickEventArgs> InfoWindowClick {
+			add {
+				global::Java.Interop.EventHelper.AddEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListenerImplementor>(
+						ref weak_implementor___SetOnInfoWindowClickListener,
+						__CreateIOnInfoWindowClickListenerImplementor,
+						__v => OnInfoWindowClickListener = __v,
+						__h => __h.Handler += value);
+			}
+			remove {
+				global::Java.Interop.EventHelper.RemoveEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListenerImplementor>(
+						ref weak_implementor___SetOnInfoWindowClickListener,
+						global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListenerImplementor.__IsEmpty,
+						__v => OnInfoWindowClickListener = null,
+						__h => __h.Handler -= value);
+			}
+		}
+
+		WeakReference weak_implementor___SetOnInfoWindowClickListener;
+
+		global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListenerImplementor __CreateIOnInfoWindowClickListenerImplementor ()
+		{
+			return new global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowClickListenerImplementor (this);
+		}
+#endregion
+#region "Event implementation for Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListener"
+		public event EventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.InfoWindowCloseEventArgs> InfoWindowClose {
+			add {
+				global::Java.Interop.EventHelper.AddEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListenerImplementor>(
+						ref weak_implementor___SetOnInfoWindowCloseListener,
+						__CreateIOnInfoWindowCloseListenerImplementor,
+						__v => OnInfoWindowCloseListener = __v,
+						__h => __h.Handler += value);
+			}
+			remove {
+				global::Java.Interop.EventHelper.RemoveEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListenerImplementor>(
+						ref weak_implementor___SetOnInfoWindowCloseListener,
+						global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListenerImplementor.__IsEmpty,
+						__v => OnInfoWindowCloseListener = null,
+						__h => __h.Handler -= value);
+			}
+		}
+
+		WeakReference weak_implementor___SetOnInfoWindowCloseListener;
+
+		global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListenerImplementor __CreateIOnInfoWindowCloseListenerImplementor ()
+		{
+			return new global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowCloseListenerImplementor (this);
+		}
+#endregion
+#region "Event implementation for Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListener"
+		public event EventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.InfoWindowLongClickEventArgs> InfoWindowLongClick {
+			add {
+				global::Java.Interop.EventHelper.AddEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListenerImplementor>(
+						ref weak_implementor___SetOnInfoWindowLongClickListener,
+						__CreateIOnInfoWindowLongClickListenerImplementor,
+						__v => OnInfoWindowLongClickListener = __v,
+						__h => __h.Handler += value);
+			}
+			remove {
+				global::Java.Interop.EventHelper.RemoveEventHandler<global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListener, global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListenerImplementor>(
+						ref weak_implementor___SetOnInfoWindowLongClickListener,
+						global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListenerImplementor.__IsEmpty,
+						__v => OnInfoWindowLongClickListener = null,
+						__h => __h.Handler -= value);
+			}
+		}
+
+		WeakReference weak_implementor___SetOnInfoWindowLongClickListener;
+
+		global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListenerImplementor __CreateIOnInfoWindowLongClickListenerImplementor ()
+		{
+			return new global::Com.Mapbox.Mapboxsdk.Maps.MapboxMap.IOnInfoWindowLongClickListenerImplementor (this);
 		}
 #endregion
 	}

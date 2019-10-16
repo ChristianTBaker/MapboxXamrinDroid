@@ -47,6 +47,7 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
+    <LibraryProjectZip Include="Jars\mapbox-android-plugin-annotation-v8-0.7.0.aar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
@@ -58,9 +59,10 @@
       <Project>{53c8001e-a0e1-4fa5-a00d-bfd84ac1e111}</Project>
       <Name>Mapbox-SDK-8.4.0</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <InputJar Include="Jars\mapbox-android-plugin-annotation-v8.jar" />
+    <ProjectReference Include="..\MapboxGestures\MapboxGestures.csproj">
+      <Project>{99502899-4135-40c1-8702-263c61e22fdd}</Project>
+      <Name>MapboxGestures</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\mapbox-sdk-geojson-4.9.0.jar" />

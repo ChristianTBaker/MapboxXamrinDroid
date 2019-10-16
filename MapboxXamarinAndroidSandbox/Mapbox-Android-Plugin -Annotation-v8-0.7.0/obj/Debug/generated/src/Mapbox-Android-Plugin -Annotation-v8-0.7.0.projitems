@@ -5,6 +5,7 @@
   </PropertyGroup>
   <!-- Classes -->
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Plugins.Annotation.AnnotationManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Plugins.Annotation.BuildConfig.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationClickListener.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)\Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListener.cs" />

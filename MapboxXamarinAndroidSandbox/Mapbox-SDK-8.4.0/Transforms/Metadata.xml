@@ -79,12 +79,12 @@
   <attr path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnMapClickListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnMapClickListener']]" name="eventName">MapClick2</attr>
   <attr path="/api/package[@name='com.mapbox.mapboxsdk.maps']/class[@name='MapboxMap']/method[@name='setOnMapLongClickListener' and count(parameter)=1 and parameter[1][@type='com.mapbox.mapboxsdk.maps.MapboxMap.OnMapLongClickListener']]" name="eventName">MapLongClick2</attr>
 
-  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='Marker']" />
+  <!-- <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='Marker']" />
   <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='MarkerOptions']" />
   <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='Polygon']" />
   <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='Polyline']" />
   <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.annotations']/class[@name='PolygonOptions']" />
-  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.utils']/class[@name='FileUtils']" />
+  <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.utils']/class[@name='FileUtils']" /> -->
 
 
   <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnGesturesManagerInteractionListener']" />
@@ -94,4 +94,6 @@
   <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.maps']/interface[@name='MapboxMap.OnShoveListener']" />
   <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent.CurrentLocationEngineCallback']" />
   <remove-node path="/api/package[@name='com.mapbox.mapboxsdk.location']/class[@name='LocationComponent.LastLocationEngineCallback']" />
+
+
 </metadata>

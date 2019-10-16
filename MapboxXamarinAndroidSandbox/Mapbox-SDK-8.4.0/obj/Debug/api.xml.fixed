@@ -275,6 +275,59 @@
       <implements name="android.view.ViewTreeObserver.OnGlobalLayoutListener" name-generic-aware="android.view.ViewTreeObserver.OnGlobalLayoutListener" jni-type="Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;"></implements>
       <method abstract="false" deprecated="not deprecated" final="false" name="onGlobalLayout" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
     </class>
+    <class abstract="false" deprecated="deprecated" extends="com.mapbox.mapboxsdk.annotations.Annotation" extends-generic-aware="com.mapbox.mapboxsdk.annotations.Annotation" jni-extends="Lcom/mapbox/mapboxsdk/annotations/Annotation;" final="false" name="Marker" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/annotations/Marker;">
+      <constructor deprecated="not deprecated" final="false" name="Marker" jni-signature="(Lcom/mapbox/mapboxsdk/annotations/BaseMarkerOptions;)V" bridge="false" static="false" type="com.mapbox.mapboxsdk.annotations.Marker" synthetic="false" visibility="public">
+        <parameter name="baseMarkerOptions" type="com.mapbox.mapboxsdk.annotations.BaseMarkerOptions" jni-type="Lcom/mapbox/mapboxsdk/annotations/BaseMarkerOptions;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getIcon" jni-signature="()Lcom/mapbox/mapboxsdk/annotations/Icon;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.Icon" jni-return="Lcom/mapbox/mapboxsdk/annotations/Icon;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getInfoWindow" jni-signature="()Lcom/mapbox/mapboxsdk/annotations/InfoWindow;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.InfoWindow" jni-return="Lcom/mapbox/mapboxsdk/annotations/InfoWindow;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPosition" jni-signature="()Lcom/mapbox/mapboxsdk/geometry/LatLng;" bridge="false" native="false" return="com.mapbox.mapboxsdk.geometry.LatLng" jni-return="Lcom/mapbox/mapboxsdk/geometry/LatLng;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSnippet" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getTitle" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="hideInfoWindow" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isInfoWindowShown" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setIcon" jni-signature="(Lcom/mapbox/mapboxsdk/annotations/Icon;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="icon" type="com.mapbox.mapboxsdk.annotations.Icon" jni-type="Lcom/mapbox/mapboxsdk/annotations/Icon;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setPosition" jni-signature="(Lcom/mapbox/mapboxsdk/geometry/LatLng;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="com.mapbox.mapboxsdk.geometry.LatLng" jni-type="Lcom/mapbox/mapboxsdk/geometry/LatLng;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setRightOffsetPixels" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="rightOffsetPixels" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSnippet" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="snippet" type="java.lang.String" jni-type="Ljava/lang/String;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTitle" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="title" type="java.lang.String" jni-type="Ljava/lang/String;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setTopOffsetPixels" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="topOffsetPixels" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="showInfoWindow" jni-signature="(Lcom/mapbox/mapboxsdk/maps/MapboxMap;Lcom/mapbox/mapboxsdk/maps/MapView;)Lcom/mapbox/mapboxsdk/annotations/InfoWindow;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.InfoWindow" jni-return="Lcom/mapbox/mapboxsdk/annotations/InfoWindow;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="mapboxMap" type="com.mapbox.mapboxsdk.maps.MapboxMap" jni-type="Lcom/mapbox/mapboxsdk/maps/MapboxMap;"></parameter>
+        <parameter name="mapView" type="com.mapbox.mapboxsdk.maps.MapView" jni-type="Lcom/mapbox/mapboxsdk/maps/MapView;"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="deprecated" extends="com.mapbox.mapboxsdk.annotations.BaseMarkerOptions" extends-generic-aware="com.mapbox.mapboxsdk.annotations.BaseMarkerOptions&lt;com.mapbox.mapboxsdk.annotations.Marker, com.mapbox.mapboxsdk.annotations.MarkerOptions&gt;" jni-extends="Lcom/mapbox/mapboxsdk/annotations/BaseMarkerOptions;" final="true" name="MarkerOptions" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/annotations/MarkerOptions;">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable" jni-type="Landroid/os/Parcelable;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="MarkerOptions" jni-signature="()V" bridge="false" static="false" type="com.mapbox.mapboxsdk.annotations.MarkerOptions" synthetic="false" visibility="public"></constructor>
+      <constructor deprecated="not deprecated" final="false" name="MarkerOptions" jni-signature="(Landroid/os/Parcel;)V" bridge="false" static="false" type="com.mapbox.mapboxsdk.annotations.MarkerOptions" synthetic="false" visibility="protected">
+        <parameter name="in" type="android.os.Parcel" jni-type="Landroid/os/Parcel;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getIcon" jni-signature="()Lcom/mapbox/mapboxsdk/annotations/Icon;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.Icon" jni-return="Lcom/mapbox/mapboxsdk/annotations/Icon;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getMarker" jni-signature="()Lcom/mapbox/mapboxsdk/annotations/Marker;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.Marker" jni-return="Lcom/mapbox/mapboxsdk/annotations/Marker;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPosition" jni-signature="()Lcom/mapbox/mapboxsdk/geometry/LatLng;" bridge="false" native="false" return="com.mapbox.mapboxsdk.geometry.LatLng" jni-return="Lcom/mapbox/mapboxsdk/geometry/LatLng;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSnippet" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getThis" jni-signature="()Lcom/mapbox/mapboxsdk/annotations/MarkerOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.MarkerOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/MarkerOptions;" static="false" synchronized="false" synthetic="false" visibility="public" managedName="ThisMarkerOptions"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getTitle" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" jni-signature="(Landroid/os/Parcel;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="out" type="android.os.Parcel" jni-type="Landroid/os/Parcel;"></parameter>
+        <parameter name="flags" type="int" jni-type="I"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" jni-signature="Landroid/os/Parcelable$Creator;" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.mapboxsdk.annotations.MarkerOptions&gt;" visibility="public" volatile="false"></field>
+    </class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="MarkerOptions.1" static="true" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/annotations/MarkerOptions$1;">
       <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.mapboxsdk.annotations.MarkerOptions&gt;" jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/mapbox/mapboxsdk/annotations/MarkerOptions;&gt;;"></implements>
       <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" jni-signature="(Landroid/os/Parcel;)Lcom/mapbox/mapboxsdk/annotations/MarkerOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.MarkerOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/MarkerOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
@@ -284,6 +337,60 @@
         <parameter name="size" type="int" jni-type="I"></parameter>
       </method>
     </class>
+    <class abstract="false" deprecated="deprecated" extends="com.mapbox.mapboxsdk.annotations.BasePointCollection" extends-generic-aware="com.mapbox.mapboxsdk.annotations.BasePointCollection" jni-extends="Lcom/mapbox/mapboxsdk/annotations/BasePointCollection;" final="true" name="Polygon" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/annotations/Polygon;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getFillColor" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getHoles" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;java.util.List&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;&gt;" jni-return="Ljava/util/List&lt;Ljava/util/List&lt;Lcom/mapbox/mapboxsdk/geometry/LatLng;&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStrokeColor" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setFillColor" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="color" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setHoles" jni-signature="(Ljava/util/List;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="holes" type="java.util.List&lt;? extends java.util.List&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;&gt;" jni-type="Ljava/util/List&lt;+Ljava/util/List&lt;Lcom/mapbox/mapboxsdk/geometry/LatLng;&gt;;&gt;;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setStrokeColor" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="color" type="int" jni-type="I"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="PolygonOptions" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;">
+      <implements name="android.os.Parcelable" name-generic-aware="android.os.Parcelable" jni-type="Landroid/os/Parcelable;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="PolygonOptions" jni-signature="()V" bridge="false" static="false" type="com.mapbox.mapboxsdk.annotations.PolygonOptions" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="add" jni-signature="(Lcom/mapbox/mapboxsdk/geometry/LatLng;)Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.PolygonOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="point" type="com.mapbox.mapboxsdk.geometry.LatLng" jni-type="Lcom/mapbox/mapboxsdk/geometry/LatLng;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="add" jni-signature="([Lcom/mapbox/mapboxsdk/geometry/LatLng;)Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.PolygonOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="points" type="com.mapbox.mapboxsdk.geometry.LatLng..." jni-type="[Lcom/mapbox/mapboxsdk/geometry/LatLng;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addAll" jni-signature="(Ljava/lang/Iterable;)Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.PolygonOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="points" type="java.lang.Iterable&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;" jni-type="Ljava/lang/Iterable&lt;Lcom/mapbox/mapboxsdk/geometry/LatLng;&gt;;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addAllHoles" jni-signature="(Ljava/lang/Iterable;)Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.PolygonOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="holes" type="java.lang.Iterable&lt;java.util.List&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;&gt;" jni-type="Ljava/lang/Iterable&lt;Ljava/util/List&lt;Lcom/mapbox/mapboxsdk/geometry/LatLng;&gt;;&gt;;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="addHole" jni-signature="(Ljava/util/List;)Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.PolygonOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="hole" type="java.util.List&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;" jni-type="Ljava/util/List&lt;Lcom/mapbox/mapboxsdk/geometry/LatLng;&gt;;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="alpha" jni-signature="(F)Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.PolygonOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="alpha" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="describeContents" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="fillColor" jni-signature="(I)Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.PolygonOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="color" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAlpha" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getFillColor" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getHoles" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;java.util.List&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;&gt;" jni-return="Ljava/util/List&lt;Ljava/util/List&lt;Lcom/mapbox/mapboxsdk/geometry/LatLng;&gt;;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPoints" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;com.mapbox.mapboxsdk.geometry.LatLng&gt;" jni-return="Ljava/util/List&lt;Lcom/mapbox/mapboxsdk/geometry/LatLng;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getPolygon" jni-signature="()Lcom/mapbox/mapboxsdk/annotations/Polygon;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.Polygon" jni-return="Lcom/mapbox/mapboxsdk/annotations/Polygon;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getStrokeColor" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="strokeColor" jni-signature="(I)Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.PolygonOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="color" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" jni-signature="(Landroid/os/Parcel;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="out" type="android.os.Parcel" jni-type="Landroid/os/Parcel;"></parameter>
+        <parameter name="flags" type="int" jni-type="I"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="true" name="CREATOR" jni-signature="Landroid/os/Parcelable$Creator;" static="true" transient="false" type="android.os.Parcelable.Creator" type-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.mapboxsdk.annotations.PolygonOptions&gt;" visibility="public" volatile="false"></field>
+    </class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="PolygonOptions.1" static="true" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions$1;">
       <implements name="android.os.Parcelable.Creator" name-generic-aware="android.os.Parcelable.Creator&lt;com.mapbox.mapboxsdk.annotations.PolygonOptions&gt;" jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;&gt;;"></implements>
       <method abstract="false" deprecated="not deprecated" final="false" name="createFromParcel" jni-signature="(Landroid/os/Parcel;)Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.PolygonOptions" jni-return="Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
@@ -291,6 +398,16 @@
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="newArray" jni-signature="(I)[Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" bridge="false" native="false" return="com.mapbox.mapboxsdk.annotations.PolygonOptions[]" jni-return="[Lcom/mapbox/mapboxsdk/annotations/PolygonOptions;" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="size" type="int" jni-type="I"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="deprecated" extends="com.mapbox.mapboxsdk.annotations.BasePointCollection" extends-generic-aware="com.mapbox.mapboxsdk.annotations.BasePointCollection" jni-extends="Lcom/mapbox/mapboxsdk/annotations/BasePointCollection;" final="true" name="Polyline" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/annotations/Polyline;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getColor" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getWidth" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setColor" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="color" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setWidth" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="width" type="float" jni-type="F"></parameter>
       </method>
     </class>
     <class abstract="false" deprecated="deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="PolylineOptions" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/annotations/PolylineOptions;">
@@ -8227,6 +8344,12 @@
       <method abstract="false" deprecated="not deprecated" final="false" name="compare" jni-signature="(II)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
         <parameter name="x" type="int" jni-type="I"></parameter>
         <parameter name="y" type="int" jni-type="I"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="FileUtils" static="false" visibility="public" jni-signature="Lcom/mapbox/mapboxsdk/utils/FileUtils;">
+      <constructor deprecated="not deprecated" final="false" name="FileUtils" jni-signature="()V" bridge="false" static="false" type="com.mapbox.mapboxsdk.utils.FileUtils" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="deleteFile" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="path" type="java.lang.String" jni-type="Ljava/lang/String;"></parameter>
       </method>
     </class>
     <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="FileUtils.1" static="true" visibility="" jni-signature="Lcom/mapbox/mapboxsdk/utils/FileUtils$1;">

@@ -1,6 +1,9 @@
 ﻿using System;
 using System.IO.MemoryMappedFiles;
+using System.Linq.Expressions;
 using Android.App;
+using Android.Graphics;
+using Android.Graphics.Drawables;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.Design.Widget;
@@ -14,13 +17,16 @@ using Com.Mapbox.Mapboxsdk.Maps;
 using Com.Mapbox.Mapboxsdk.Geometry;
 using Com.Mapbox.Mapboxsdk.Utils;
 using Com.Mapbox.Mapboxsdk.Style.Sources;
+using Com.Mapbox.Mapboxsdk.Annotations;
+using Com.Mapbox.Mapboxsdk.Plugins.Annotation;
 using Java.Security;
+using Java.Util;
 
 namespace MapboxAndroidSandbox
 {
 
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity, IOnMapReadyCallback
+    public class MainActivity : AppCompatActivity, IOnMapReadyCallback, Style.IOnStyleLoaded
     {
 
         public static string MARKER = "marker";
@@ -40,12 +46,49 @@ namespace MapboxAndroidSandbox
                 this
                 );
 
+        }
+
+        //Implements the IOnMapReadyCallback interface
+        public void OnMapReady(MapboxMap p0)
+        {
+            // This will refer to OnStyleLoaded
+            p0.SetStyle(Style.MapboxStreets, this);
+            var title1 = "Chicago";
+            var lat1 = 41.897627;
+            var lng1 = -87.643526;
+            var title2 = "St.Louis";
+            var lat2 = 38.742291;
+            var lng2 = -90.064928;
+            var latLng1 = new LatLng(lat1, lng1);
+            var latLng2 = new LatLng(lat2, lng2);
+            var points = new ArrayList();
+            points.Add(latLng1);
+            points.Add(latLng2);
+            points.Add(latLng1);
+
+            var polyline = new PolylineOptions();
+            polyline.AddAll(points);
+            polyline.InvokeWidth(2);
+            polyline.InvokeColor(Color.Blue);
+            p0.AddPolyline(polyline);
+
+            var marker1 = new MarkerOptions();
+            var marker2 = new MarkerOptions();
+            marker1.SetPosition(latLng1);
+            marker1.SetTitle(title1);
+            marker2.SetPosition(latLng2);
+            marker2.SetTitle(title2);
+            p0.AddMarker(marker1);
+            p0.AddMarker(marker2);
 
         }
 
-        public void OnMapReady(MapboxMap p0)
+
+        //implements the IOnStyleLoaded Interface
+        public void OnStyleLoaded(Style p0)
         {
-            p0.SetStyle(Style.MapboxStreets);
+            //place style changes (annotations) here
+
         }
 
 

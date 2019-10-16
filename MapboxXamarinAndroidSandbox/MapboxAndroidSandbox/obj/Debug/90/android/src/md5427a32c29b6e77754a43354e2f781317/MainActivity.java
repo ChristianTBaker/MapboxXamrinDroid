@@ -5,7 +5,8 @@ public class MainActivity
 	extends android.support.v7.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer,
-		com.mapbox.mapboxsdk.maps.OnMapReadyCallback
+		com.mapbox.mapboxsdk.maps.OnMapReadyCallback,
+		com.mapbox.mapboxsdk.maps.Style.OnStyleLoaded
 {
 /** @hide */
 	public static final String __md_methods;
@@ -16,6 +17,7 @@ public class MainActivity
 			"n_onRequestPermissionsResult:(I[Ljava/lang/String;[I)V:GetOnRequestPermissionsResult_IarrayLjava_lang_String_arrayIHandler\n" +
 			"n_onStart:()V:GetOnStartHandler\n" +
 			"n_onMapReady:(Lcom/mapbox/mapboxsdk/maps/MapboxMap;)V:GetOnMapReady_Lcom_mapbox_mapboxsdk_maps_MapboxMap_Handler:Com.Mapbox.Mapboxsdk.Maps.IOnMapReadyCallbackInvoker, Mapbox-SDK-8.4.0\n" +
+			"n_onStyleLoaded:(Lcom/mapbox/mapboxsdk/maps/Style;)V:GetOnStyleLoaded_Lcom_mapbox_mapboxsdk_maps_Style_Handler:Com.Mapbox.Mapboxsdk.Maps.Style/IOnStyleLoadedInvoker, Mapbox-SDK-8.4.0\n" +
 			"";
 		mono.android.Runtime.register ("MapboxAndroidSandbox.MainActivity, MapboxAndroidSandbox", MainActivity.class, __md_methods);
 	}
@@ -67,6 +69,14 @@ public class MainActivity
 	}
 
 	private native void n_onMapReady (com.mapbox.mapboxsdk.maps.MapboxMap p0);
+
+
+	public void onStyleLoaded (com.mapbox.mapboxsdk.maps.Style p0)
+	{
+		n_onStyleLoaded (p0);
+	}
+
+	private native void n_onStyleLoaded (com.mapbox.mapboxsdk.maps.Style p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

@@ -4,14 +4,14 @@
     "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\MapboxAndroidSandbox\\MapboxAndroidSandbox.csproj": {}
   },
   "projects": {
-    "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj": {
+    "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Annotation-Plugin-v8\\Mapbox-Android-Annotation-Plugin-v8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj",
-        "projectName": "Mapbox-Android-Plugin -Annotation-v8-0.7.0",
-        "projectPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj",
+        "projectUniqueName": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Annotation-Plugin-v8\\Mapbox-Android-Annotation-Plugin-v8.csproj",
+        "projectName": "Mapbox-Android-Annotation-Plugin-v8",
+        "projectPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Annotation-Plugin-v8\\Mapbox-Android-Annotation-Plugin-v8.csproj",
         "packagesPath": "C:\\Users\\cbaker2\\.nuget\\packages\\",
-        "outputPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\obj\\",
+        "outputPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Annotation-Plugin-v8\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,16 +34,20 @@
             "projectReferences": {
               "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-SDK-8.4.0\\Mapbox-SDK-8.4.0.csproj": {
                 "projectPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-SDK-8.4.0\\Mapbox-SDK-8.4.0.csproj"
-              },
-              "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\MapboxGestures\\MapboxGestures.csproj": {
-                "projectPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\MapboxGestures\\MapboxGestures.csproj"
               }
             }
           }
         }
       },
       "frameworks": {
-        "monoandroid90": {}
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Android.Support.v7.AppCompat": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            }
+          }
+        }
       },
       "runtimes": {
         "win": {
@@ -205,8 +209,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj": {
-                "projectPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Plugin -Annotation-v8-0.7.0\\Mapbox-Android-Plugin -Annotation-v8-0.7.0.csproj"
+              "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Annotation-Plugin-v8\\Mapbox-Android-Annotation-Plugin-v8.csproj": {
+                "projectPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-Android-Annotation-Plugin-v8\\Mapbox-Android-Annotation-Plugin-v8.csproj"
               },
               "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-SDK-8.4.0\\Mapbox-SDK-8.4.0.csproj": {
                 "projectPath": "D:\\TestingPersonalBindings\\MapboxXamrinDroid\\MapboxXamarinAndroidSandbox\\Mapbox-SDK-8.4.0\\Mapbox-SDK-8.4.0.csproj"

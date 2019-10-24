@@ -38,7 +38,6 @@ D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-SDK-8.4.0\bin\Debug\MapboxTelemetry.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-SDK-8.4.0\obj\Debug\Mapbox-SDK-8.4.0.csprojAssemblyReference.cache
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-SDK-8.4.0\obj\Debug\_VerifyXamarinAndroidSupportVersions.stamp
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-SDK-8.4.0\obj\Debug\Mapbox-SDK-8.4.0.csproj.CoreCompileInputs.cache
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-SDK-8.4.0\obj\Debug\Mapbox-SDK-8.4.0.csproj.CopyComplete
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-SDK-8.4.0\obj\Debug\Mapbox-SDK-8.4.0.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\Mapbox-SDK-8.4.0\obj\Debug\Mapbox-SDK-8.4.0.pdb

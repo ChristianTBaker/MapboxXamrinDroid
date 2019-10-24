@@ -1,13 +1,13 @@
 MapboxAndroidSandbox.MainActivity, MapboxAndroidSandbox;md5427a32c29b6e77754a43354e2f781317.MainActivity
 MapboxAndroidSandbox.MainActivity;md5427a32c29b6e77754a43354e2f781317.MainActivity
 mapboxandroidsandbox.MainActivity;md5427a32c29b6e77754a43354e2f781317.MainActivity
-Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationClickListenerImplementor, Mapbox-Android-Plugin -Annotation-v8-0.7.0;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationClickListenerImplementor
+Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationClickListenerImplementor, Mapbox-Android-Annotation-Plugin-v8;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationClickListenerImplementor
 Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationClickListenerImplementor;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationClickListenerImplementor
 mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationClickListenerImplementor;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationClickListenerImplementor
-Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerImplementor, Mapbox-Android-Plugin -Annotation-v8-0.7.0;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationDragListenerImplementor
+Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerImplementor, Mapbox-Android-Annotation-Plugin-v8;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationDragListenerImplementor
 Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerImplementor;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationDragListenerImplementor
 mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationDragListenerImplementor;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationDragListenerImplementor
-Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationLongClickListenerImplementor, Mapbox-Android-Plugin -Annotation-v8-0.7.0;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationLongClickListenerImplementor
+Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationLongClickListenerImplementor, Mapbox-Android-Annotation-Plugin-v8;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationLongClickListenerImplementor
 Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationLongClickListenerImplementor;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationLongClickListenerImplementor
 mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationLongClickListenerImplementor;mono.com.mapbox.mapboxsdk.plugins.annotation.OnAnnotationLongClickListenerImplementor
 Com.Mapbox.Mapboxsdk.Net.IConnectivityListenerImplementor, Mapbox-SDK-8.4.0;mono.com.mapbox.mapboxsdk.net.ConnectivityListenerImplementor

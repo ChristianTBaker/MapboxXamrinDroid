@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
-    <SelectedDevice>pixel</SelectedDevice>
+    <SelectedDevice>Motorola moto g%287%29</SelectedDevice>
     <DefaultDevice>pixel</DefaultDevice>
   </PropertyGroup>
 </Project>

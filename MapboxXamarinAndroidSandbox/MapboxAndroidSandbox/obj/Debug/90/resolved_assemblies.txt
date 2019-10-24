@@ -1,6 +1,6 @@
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\MapboxAndroidSandbox.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Java.Interop.dll
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Mapbox-Android-Plugin -Annotation-v8-0.7.0.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Mapbox-Android-Annotation-Plugin-v8.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Mapbox-SDK-8.4.0.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\MapboxAccounts.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\MapboxCoreDroid.dll

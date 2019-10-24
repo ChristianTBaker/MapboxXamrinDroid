@@ -11,9 +11,9 @@ public class OnAnnotationClickListenerImplementor
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onAnnotationClick:(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V:GetOnAnnotationClick_Lcom_mapbox_mapboxsdk_plugins_annotation_Annotation_Handler:Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationClickListenerInvoker, Mapbox-Android-Plugin -Annotation-v8-0.7.0\n" +
+			"n_onAnnotationClick:(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V:GetOnAnnotationClick_Lcom_mapbox_mapboxsdk_plugins_annotation_Annotation_Handler:Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationClickListenerInvoker, Mapbox-Android-Annotation-Plugin-v8\n" +
 			"";
-		mono.android.Runtime.register ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationClickListenerImplementor, Mapbox-Android-Plugin -Annotation-v8-0.7.0", OnAnnotationClickListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationClickListenerImplementor, Mapbox-Android-Annotation-Plugin-v8", OnAnnotationClickListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class OnAnnotationClickListenerImplementor
 	{
 		super ();
 		if (getClass () == OnAnnotationClickListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationClickListenerImplementor, Mapbox-Android-Plugin -Annotation-v8-0.7.0", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationClickListenerImplementor, Mapbox-Android-Annotation-Plugin-v8", "", this, new java.lang.Object[] {  });
 	}
 
 

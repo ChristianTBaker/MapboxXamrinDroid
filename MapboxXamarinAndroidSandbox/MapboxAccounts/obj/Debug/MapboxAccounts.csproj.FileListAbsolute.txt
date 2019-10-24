@@ -1,5 +1,5 @@
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAccounts\bin\Debug\MapboxAccounts.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAccounts\bin\Debug\MapboxAccounts.pdb
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAccounts\obj\Debug\MapboxAccounts.csproj.CoreCompileInputs.cache
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAccounts\obj\Debug\MapboxAccounts.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAccounts\obj\Debug\MapboxAccounts.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAccounts\obj\Debug\MapboxAccounts.csprojAssemblyReference.cache

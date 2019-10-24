@@ -1,5 +1,5 @@
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxTelemetry\bin\Debug\MapboxTelemetry.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxTelemetry\bin\Debug\MapboxTelemetry.pdb
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxTelemetry\obj\Debug\MapboxTelemetry.csproj.CoreCompileInputs.cache
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxTelemetry\obj\Debug\MapboxTelemetry.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxTelemetry\obj\Debug\MapboxTelemetry.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxTelemetry\obj\Debug\MapboxTelemetry.csprojAssemblyReference.cache

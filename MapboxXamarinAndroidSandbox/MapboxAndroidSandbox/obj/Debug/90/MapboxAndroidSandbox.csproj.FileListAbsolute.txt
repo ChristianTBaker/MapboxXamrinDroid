@@ -2,14 +2,14 @@ D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxA
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\MapboxAndroidSandbox.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\com.companyname.mapboxandroidsandbox.apk
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\com.companyname.mapboxandroidsandbox-Signed.apk
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\Mapbox-Android-Plugin -Annotation-v8-0.7.0.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\Mapbox-Android-Annotation-Plugin-v8.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\Mapbox-SDK-8.4.0.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\MapboxAccounts.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\MapboxCoreDroid.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\MapboxGestures.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\MapboxTelemetry.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\SoLoader.dll
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\Mapbox-Android-Plugin -Annotation-v8-0.7.0.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\Mapbox-Android-Annotation-Plugin-v8.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\Mapbox-SDK-8.4.0.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\MapboxAccounts.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\bin\Debug\MapboxCoreDroid.pdb
@@ -49,7 +49,6 @@ D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxA
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\flata\compiled.flata
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\R.txt
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\R.cs.flag
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\MapboxAndroidSandbox.csproj.CoreCompileInputs.cache
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\MapboxAndroidSandbox.csproj.CopyComplete
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\MapboxAndroidSandbox.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\MapboxAndroidSandbox.pdb
@@ -83,7 +82,7 @@ D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxA
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\resolvedassemblies.hash
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\MapboxAndroidSandbox.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\Java.Interop.dll
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\Mapbox-Android-Plugin -Annotation-v8-0.7.0.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\Mapbox-Android-Annotation-Plugin-v8.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\Mapbox-SDK-8.4.0.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\MapboxAccounts.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\MapboxCoreDroid.dll
@@ -142,7 +141,7 @@ D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxA
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\Mono.Security.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\System.ComponentModel.Composition.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\MapboxAndroidSandbox.pdb
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\Mapbox-Android-Plugin -Annotation-v8-0.7.0.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\Mapbox-Android-Annotation-Plugin-v8.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\Mapbox-SDK-8.4.0.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\MapboxAccounts.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\MapboxCoreDroid.pdb
@@ -153,8 +152,8 @@ D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxA
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\linksrc\Xamarin.Essentials.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\link.flag
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Java.Interop.dll
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Mapbox-Android-Plugin -Annotation-v8-0.7.0.dll
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Mapbox-Android-Plugin -Annotation-v8-0.7.0.pdb
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Mapbox-Android-Annotation-Plugin-v8.dll
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Mapbox-Android-Annotation-Plugin-v8.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Mapbox-SDK-8.4.0.dll
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\Mapbox-SDK-8.4.0.pdb
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\assets\MapboxAccounts.dll
@@ -319,15 +318,15 @@ D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxA
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\support\v4\view\ViewPropertyAnimatorListenerImplementor.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\support\v4\view\ViewPropertyAnimatorUpdateListenerImplementor.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\support\v4\os\CancellationSignal_OnCancelListenerImplementor.java
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\v7\widget\Toolbar_NavigationOnClickEventDispatcher.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\support\v4\content\Loader_OnLoadCanceledListenerImplementor.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\support\v4\content\Loader_OnLoadCompleteListenerImplementor.java
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\v7\recyclerview\R.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\support\v4\app\FragmentManager_OnBackStackChangedListenerImplementor.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\support\v4\app\SharedElementCallback_OnSharedElementsReadyListenerImplementor.java
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\v7\widget\Toolbar_NavigationOnClickEventDispatcher.java
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\v7\recyclerview\R.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\v7\cardview\R.java
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\v7\appcompat\R.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\support\v13\view\inputmethod\InputConnectionCompat_OnCommitContentListenerImplementor.java
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\v7\appcompat\R.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\support\v13\view\DragStartHelper_OnDragStartListenerImplementor.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\v7\app\AlertDialog_IDialogInterfaceOnCancelListenerImplementor.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\v7\app\AlertDialog_IDialogInterfaceOnClickListenerImplementor.java
@@ -343,15 +342,14 @@ D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxA
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\design\widget\Snackbar_SnackbarActionClickImplementor.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\support\design\chip\ChipGroup_OnCheckedChangeListenerImplementor.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\design\R.java
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\com\mapbox\mapboxsdk\R.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\customtabs\CustomTabsClient_CustomTabsCallbackImpl.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\customtabs\R.java
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\com\mapbox\mapboxsdk\R.java
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\com\mapbox\android\gestures\R.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\coordinatorlayout\R.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\android\app\ApplicationRegistration.java
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\com\mapbox\android\gestures\R.java
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\xamarin\essentials\fileProvider.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\android\support\compat\R.java
-D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\MonoPackageManager_Resources.java
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\xamarin\essentials\fileProvider.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\md5d630c3d3bfb5f5558520331566132d97\AccelerometerListener.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\md5d630c3d3bfb5f5558520331566132d97\ActivityLifecycleContextListener.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\md5d630c3d3bfb5f5558520331566132d97\BarometerListener.java
@@ -367,6 +365,7 @@ D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxA
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\md5d630c3d3bfb5f5558520331566132d97\TextToSpeechImplementation.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\md5dcb6eccdc824e0677ffae8ccdde42930\CustomTabsServiceConnectionImpl.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\md5dcb6eccdc824e0677ffae8ccdde42930\KeepAliveService.java
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\mono\MonoPackageManager_Resources.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\md5427a32c29b6e77754a43354e2f781317\MainActivity.java
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\bin\packaged_resources
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\src\com\companyname\mapboxandroidsandbox\R.java
@@ -382,3 +381,11 @@ D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxA
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\typemap.jm.arm64-v8a.s
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\typemap.jm.armeabi-v7a.s
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\typemap.jm.x86.s
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\typemap.jm.x86_64.s
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\typemap.mj.arm64-v8a.s
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\typemap.mj.armeabi-v7a.s
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\typemap.mj.x86.s
+D:\TestingPersonalBindings\MapboxXamrinDroid\MapboxXamarinAndroidSandbox\MapboxAndroidSandbox\obj\Debug\90\android\typemap.mj.x86_64.s

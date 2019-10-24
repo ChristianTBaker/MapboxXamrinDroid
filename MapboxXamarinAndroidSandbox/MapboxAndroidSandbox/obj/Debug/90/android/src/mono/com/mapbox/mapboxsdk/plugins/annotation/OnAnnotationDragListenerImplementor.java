@@ -11,11 +11,11 @@ public class OnAnnotationDragListenerImplementor
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onAnnotationDrag:(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V:GetOnAnnotationDrag_Lcom_mapbox_mapboxsdk_plugins_annotation_Annotation_Handler:Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerInvoker, Mapbox-Android-Plugin -Annotation-v8-0.7.0\n" +
-			"n_onAnnotationDragFinished:(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V:GetOnAnnotationDragFinished_Lcom_mapbox_mapboxsdk_plugins_annotation_Annotation_Handler:Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerInvoker, Mapbox-Android-Plugin -Annotation-v8-0.7.0\n" +
-			"n_onAnnotationDragStarted:(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V:GetOnAnnotationDragStarted_Lcom_mapbox_mapboxsdk_plugins_annotation_Annotation_Handler:Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerInvoker, Mapbox-Android-Plugin -Annotation-v8-0.7.0\n" +
+			"n_onAnnotationDrag:(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V:GetOnAnnotationDrag_Lcom_mapbox_mapboxsdk_plugins_annotation_Annotation_Handler:Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerInvoker, Mapbox-Android-Annotation-Plugin-v8\n" +
+			"n_onAnnotationDragFinished:(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V:GetOnAnnotationDragFinished_Lcom_mapbox_mapboxsdk_plugins_annotation_Annotation_Handler:Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerInvoker, Mapbox-Android-Annotation-Plugin-v8\n" +
+			"n_onAnnotationDragStarted:(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V:GetOnAnnotationDragStarted_Lcom_mapbox_mapboxsdk_plugins_annotation_Annotation_Handler:Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerInvoker, Mapbox-Android-Annotation-Plugin-v8\n" +
 			"";
-		mono.android.Runtime.register ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerImplementor, Mapbox-Android-Plugin -Annotation-v8-0.7.0", OnAnnotationDragListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerImplementor, Mapbox-Android-Annotation-Plugin-v8", OnAnnotationDragListenerImplementor.class, __md_methods);
 	}
 
 
@@ -23,7 +23,7 @@ public class OnAnnotationDragListenerImplementor
 	{
 		super ();
 		if (getClass () == OnAnnotationDragListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerImplementor, Mapbox-Android-Plugin -Annotation-v8-0.7.0", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationDragListenerImplementor, Mapbox-Android-Annotation-Plugin-v8", "", this, new java.lang.Object[] {  });
 	}
 
 

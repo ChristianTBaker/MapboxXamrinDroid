@@ -11,9 +11,9 @@ public class OnAnnotationLongClickListenerImplementor
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onAnnotationLongClick:(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V:GetOnAnnotationLongClick_Lcom_mapbox_mapboxsdk_plugins_annotation_Annotation_Handler:Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationLongClickListenerInvoker, Mapbox-Android-Plugin -Annotation-v8-0.7.0\n" +
+			"n_onAnnotationLongClick:(Lcom/mapbox/mapboxsdk/plugins/annotation/Annotation;)V:GetOnAnnotationLongClick_Lcom_mapbox_mapboxsdk_plugins_annotation_Annotation_Handler:Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationLongClickListenerInvoker, Mapbox-Android-Annotation-Plugin-v8\n" +
 			"";
-		mono.android.Runtime.register ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationLongClickListenerImplementor, Mapbox-Android-Plugin -Annotation-v8-0.7.0", OnAnnotationLongClickListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationLongClickListenerImplementor, Mapbox-Android-Annotation-Plugin-v8", OnAnnotationLongClickListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class OnAnnotationLongClickListenerImplementor
 	{
 		super ();
 		if (getClass () == OnAnnotationLongClickListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationLongClickListenerImplementor, Mapbox-Android-Plugin -Annotation-v8-0.7.0", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Com.Mapbox.Mapboxsdk.Plugins.Annotation.IOnAnnotationLongClickListenerImplementor, Mapbox-Android-Annotation-Plugin-v8", "", this, new java.lang.Object[] {  });
 	}
 
 

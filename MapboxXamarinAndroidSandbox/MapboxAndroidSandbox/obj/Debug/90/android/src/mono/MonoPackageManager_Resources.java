@@ -3,7 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "MapboxAndroidSandbox.dll" comes first in this list. */
 		"MapboxAndroidSandbox.dll",
-		"Mapbox-Android-Plugin -Annotation-v8-0.7.0.dll",
+		"Mapbox-Android-Annotation-Plugin-v8.dll",
 		"Mapbox-SDK-8.4.0.dll",
 		"MapboxAccounts.dll",
 		"MapboxCoreDroid.dll",
